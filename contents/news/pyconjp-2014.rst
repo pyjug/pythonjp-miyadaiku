@@ -1,3 +1,6 @@
+.. article::
+   :date:
+
 Python conference Japan 2014
 ================================
 
