@@ -1,0 +1,21 @@
+# Miyadaiku config file
+
+# Base URL of the site
+site_url: http://localhost:8888/
+
+# Title of the site
+site_title: FIXME - site title
+
+# Default language code
+lang: ja
+
+# Default charset
+charset: utf-8
+
+# Default timezone
+timezone: Asia/Tokyo
+
+# List of site theme
+# themes:
+#   - miyadaiku.themes.sample.blog
+
