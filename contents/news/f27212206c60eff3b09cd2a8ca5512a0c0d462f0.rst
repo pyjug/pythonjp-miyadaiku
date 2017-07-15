@@ -1,5 +1,5 @@
 .. article::
-   :date:
+   :date: 2015/12/04 01:00
 
 
 『入門Python 3』『実践Python 3』が出版されました

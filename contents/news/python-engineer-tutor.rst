@@ -1,5 +1,5 @@
 .. article::
-   :date:
+   :date: 2015-04-03 14:00:00
 
 
 【書籍】Pythonエンジニア養成読本［いまどきの開発ノウハウ満載！］ (Software Design plus) 

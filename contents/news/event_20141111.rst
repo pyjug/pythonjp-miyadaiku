@@ -1,5 +1,5 @@
 .. article::
-   :date:
+   :date: 2014/11/11 10:12
 
 
 BeagleBoneBlack体験セミナー＠Pythonでプログラミング

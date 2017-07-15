@@ -1,5 +1,5 @@
 .. article::
-   :date:
+   :date: 2014-05-23 21:00:00
 
 Python conference Japan 2014
 ================================

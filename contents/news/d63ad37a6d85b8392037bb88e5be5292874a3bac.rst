@@ -1,5 +1,5 @@
 .. article::
-   :date:
+   :date: 2015/01/13 17:11
 
 
 Raspberry Pi, BeagleBone Black紹介セミナー＠Pythonでプログラミング  第2弾

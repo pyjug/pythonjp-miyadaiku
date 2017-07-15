@@ -1,5 +1,5 @@
 .. article::
-   :date:
+   :date: 2015/06/19 13:36
 
 
 書籍『Cython――Cとの融合によるPythonの高速化』が発売になります
