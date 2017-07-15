@@ -5,7 +5,6 @@ Python 2.7.7 リリース
 =============================
 
 
-:date: 2014-06-02 14:00:00
 
 
 Python 2.7.7 の正式版 `Python 2.7.7 <https://www.python.org/download/releases/2.7.7/>`_ が公開されました。このリリースでの修正内容は、`Misc/Newsファイル <http://hg.python.org/cpython/raw-file/f89216059edf/Misc/NEWS>`_ で確認できます。

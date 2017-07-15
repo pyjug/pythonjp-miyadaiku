@@ -16,6 +16,7 @@ charset: utf-8
 timezone: Asia/Tokyo
 
 # List of site theme
-# themes:
-#   - miyadaiku.themes.sample.blog
-
+themes:
+  - miyadaiku.themes.pygments
+  - miyadaiku.themes.bootstrap4
+  - miyadaiku.themes.fontawesome

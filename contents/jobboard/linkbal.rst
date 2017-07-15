@@ -4,12 +4,12 @@
 【求人情報】株式会社リンクバル
 ==========================================================================
 
-:date: 2016/06/28 18:30
 
 
-.. image:: /images/jobboard/linkbal.png
-   :target: http://linkbal.co.jp/
-   :alt: 株式会社リンクバル
+.. jinja::
+   {{ macros.image(page, contents['./linkbal.png'],
+                   alt='株式会社リンクバル', link='http://linkbal.co.jp/') }}
+
 
 
 Pythonプログラマ募集中です

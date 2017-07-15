@@ -4,12 +4,13 @@
 【求人情報】株式会社Spoqa
 ==========================================================================
 
-:date: 2015/10/21 14:00
 
 
-.. image:: /images/jobboard/spoqa.png
-   :target: http://dodopoint.jp/
-   :alt: 株式会社Spoqa
+
+.. jinja::
+   {{ macros.image(page, contents['./spoqa.png'],
+                   alt='株式会社Spoqa', link='http://dodopoint.jp/') }}
+
 
 | Pythonプログラマーを募集します！
 |  

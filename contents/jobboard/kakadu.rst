@@ -5,12 +5,12 @@
 【求人情報】株式会社カカドゥ
 ==========================================================================
 
-:date: 2016/05/18 17:00
 
 
-.. image:: /images/jobboard/kakadu.png
-   :target: https://salonlist.jp/macaron/
-   :alt: https://salonlist.jp/macaron/
+
+.. jinja::
+   {{ macros.image(page, contents['./kakadu.png'],
+                   alt='株式会社カカドゥ', link='https://salonlist.jp/macaron/') }}
 
 
 【仕事内容】

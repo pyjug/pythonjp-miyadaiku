@@ -4,7 +4,6 @@
 Pythonドキュメント翻訳プロジェクト サイト移転
 ==========================================================================
 
-:date: 2015-05-13 10:00:00
 
 これまで、`Pythonドキュメント翻訳プロジェクト <https://github.com/python-doc-ja/python-doc-ja/wiki>`_ は Google Code を利用していましたが、`Google Codeの閉鎖 <http://google-opensource.blogspot.jp/2015/03/farewell-to-google-code.html>`_ に伴い、GitHub へと移転しました。
 

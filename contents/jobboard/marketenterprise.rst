@@ -4,12 +4,10 @@
 【求人情報】 株式会社マーケットエンタープライズ
 ==========================================================================
 
-:date: 2015/12/28 14:00
 
-.. image:: /images/jobboard/me_logo_RGB_w250.jpg
-   :target: http://www.marketenterprise.co.jp
-   :alt: 株式会社マーケットエンタープライズ
-
+.. jinja::
+   {{ macros.image(page, contents['./me_logo_RGB_w250.jpg'],
+                   alt='株式会社マーケットエンタープライズ', link='http://www.marketenterprise.co.jp') }}
 
 
 マーケットエンタープライズは「Webマーケティング」「IT」「オペレーション」の３つを高いレベルで融合させた「ネット型リユース事業」を展開し、リユース業界でオンリーワンビジネスを展開するベンチャー企業です。

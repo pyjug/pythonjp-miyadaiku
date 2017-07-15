@@ -1,0 +1,91 @@
+{% extends 'miyadaiku.themes.base!base.html' %}
+
+
+{% block head %}
+  {{ super() }}
+
+  <!-- include boolstrap4 -->
+  {{ bootstrap4.load_css(page) }}
+
+  <!-- include jquery.js -->
+  {{ jquery.load_js(page) }}
+
+  <!-- include tether.js -->
+  {{ tether.load_js(page) }}
+
+  <!-- include boolstrap4 js -->
+  {{ bootstrap4.load_js(page) }}
+
+  <!-- include pygments css -->
+  {{ pygments.load_css(page) }}
+  
+  <!-- include font awesome -->
+  {{ fontawesome.load_css(page) }}
+  
+  <link rel="stylesheet" href="{{ page.path_to('/static/css/main.css')}}">
+
+  {% block og %}{%endblock%}
+
+{% endblock head %}
+
+
+{% block body %}
+<nav class="topmenu" style="">
+  <div class="menublock">
+    <a href="{{ page.path_to('/index.yml') }}" class="menulink"> {{ macros.image(page, contents['/static/images/pyjug.png']) }}</a>
+    {{ page.link_to('/index.yml', text='Home', attrs={'class':'menulink'}) }}
+    {{ page.link_to('/news/index.yml', text='ニュース', attrs={'class':'menulink'}) }}
+    {{ page.link_to('/jobboard/index.yml', text='求人情報', attrs={'class':'menulink'}) }}
+    {{ page.link_to('/pages/contact.rst', text='Contact', attrs={'class':'menulink'}) }}
+  </div>
+
+  <form method="get" action="https://google.co.jp/search" id="searchform" name="searchform"
+          class="searchfaorm">
+    <input type="hidden" id="domains" name="domains" value="python.jp">
+    <input type="hidden" id="sitesearch" name="sitesearch" value="python.jp">
+    <input type="hidden" id="sourceid" name="sourceid" value="google-search">
+
+    <input class="form-control" type="text" placeholder="Search">
+    <button class="btn btn-outline-primary" style="vertical-align:baseline;" type="submit">Search</button>
+
+  </form>
+</nav>
+
+<div class="jumbotron">
+  <div class="container">
+    {% block jumbotron %}
+    {% endblock %}
+  </div>
+</div>
+
+
+
+<div id='content'>
+  {% block container %}
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        {% block content %} {% endblock %}
+      </div>
+
+      <div class="col-md-4">
+
+        {% block rightbox %} 
+          {% include 'rightbox.html' %}         
+        {% endblock %}
+
+      </div>
+    </div>
+  </div>
+  {% endblock %}
+</div>
+
+
+
+<div id="contentinfo" class="body">
+  Copyright © 2001-2017, <a href='/contact.html'>Python.jp</a>
+</div>
+<!-- /#contentinfo -->
+
+{% endblock body %}

@@ -4,12 +4,11 @@
 【求人情報】カイト株式会社
 ==========================================================================
 
-:date: 2015/04/20 15:30
 
-.. image:: /images/jobboard/cayto.png
-   :target: http://cayto.jp/
-   :alt: カイト株式会社
-   :width: 400px
+.. jinja::
+   {{ macros.image(page, contents['./cayto.png'], width='400px',
+                   alt='カイト株式会社', link='http://cayto.jp/') }}
+
 
 当社では、現在Python&AngularJS のプログラマーを募集しています。
 

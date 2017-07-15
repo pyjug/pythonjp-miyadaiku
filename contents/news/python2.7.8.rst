@@ -5,7 +5,6 @@ Python 2.7.8 リリース
 =============================
 
 
-:date: 2014-07-02 23:00:00
 
 
 Python 2.7 系の最新リリース `Python 2.7.8 <https://www.python.org/download/releases/2.7.8/>`_ が公開されました。

@@ -5,12 +5,10 @@
 【求人情報】株式会社ティルス
 ==========================================================================
 
-:date: 2015/05/01 14:30
 
-.. image:: /images/jobboard/tyrus_logo.png
-   :target: http://www.tyrus.co.jp/
-   :alt: 株式会社ティルス
-
+.. jinja::
+   {{ macros.image(page, contents['./tyrus_logo.png'],
+                   alt='株式会社ティルス', link='http://www.tyrus.co.jp/') }}
 
 
 

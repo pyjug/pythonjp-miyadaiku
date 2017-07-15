@@ -1,0 +1,35 @@
+{% for article in articles %}
+
+      <div class="body">
+        <div class="article_summary">
+          <div>
+            {% include 'article_infos.html' %}
+          </div>
+
+          <h2 class="entry-title articles_title">{{page.link_to(article)}}</h2>
+          <div class='article_summary_body'>{{ article.abstract}}</div>
+          <div class="article-button"><a href="{{ page.path_to(article) }}" class="btn btn-info btn-sm">すべて表示 ... </a>
+          </div>
+        </div>
+        <hr>
+
+      </div>
+{% endfor %}
+
+  <div class="index-pagination">
+    {% if cur_page != 1 %}
+      <a class="index-navi"
+         href="{{page.path_to(page, values=group_names, npage=cur_page-1)}}">&larr;</a>
+    {% else %}
+      <span class="index-navi index-disabled-link">&larr;</span>
+    {% endif %}
+    
+    {% if not is_last %}
+      <a class="index-navi"
+         href="{{ page.path_to(page, values=group_names, npage=cur_page+1) }}">&rarr;</a>
+    {% else %}
+      <span class="index-navi index-disabled-link">&rarr;</span>
+    {% endif %}
+  </div>
+
+{% include 'pagination.html' %}

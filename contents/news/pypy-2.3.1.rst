@@ -4,7 +4,6 @@
 Python3に準拠したPyPy 安定版をリリース
 ========================================
 
-:date: 2014-06-21 13:00:00
 
 Python 3 (3.2.5) に準拠した `PyPy <http://pypy.org/>`_ インタープリタの安定版、`PyPy3 2.3.1 <http://pypy.org/download.html#pypy3-2-3-1>`_ が `リリース <http://morepypy.blogspot.jp/2014/06/pypy3-231-fulcrum.html>`_ されました。
 

@@ -4,11 +4,11 @@
 【求人情報】株式会社ビープラウド
 ==========================================================================
 
-:date: 2015/02/2 11:00
 
-.. image:: /images/jobboard/beproud.png
-   :target: http://www.beproud.jp
-   :alt: 株式会社ビープラウド
+.. jinja::
+   {{ macros.image(page, contents['beproud.png'], 
+                   alt='株式会社ビープラウド', link='http://www.beproud.jp') }}
+
 
 `ビープラウド <http://www.beproud.jp/>`_ は、2008年4月にPythonを開発メイン言語として採用しました。
 その後、Pythonista達が会社に次々と集まり、お互い切磋琢磨しながら開発実績やノウハウを積み重ねて来ています。

@@ -4,7 +4,6 @@
 Python 3.4.1 リリース
 ============================
 
-:date: 2014-05-21 13:00:00
 
 `Python 3.4.1 <https://www.python.org/download/releases/3.4.1>`_ が公開されました。このリリースでの修正内容は、`Changelog <http://docs.python.org/3.4/whatsnew/changelog.html>`__ で確認できます。
 

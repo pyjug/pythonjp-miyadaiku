@@ -4,13 +4,11 @@
 【求人情報】株式会社Gunosy
 ==========================================================================
 
-:date: 2015/02/18 12:53
 
 
-.. image:: /images/jobboard/gunosy.png
-   :target: http://gunosy.co.jp
-   :alt: 株式会社Gunosy
-
+.. jinja::
+   {{ macros.image(page, contents['./gunosy.png'],
+                   alt='株式会社Gunosy', link='http://gunosy.co.jp') }}
 
 `Gunosy <http://gunosy.co.jp>`_ では、様々なツール・プロダクトがPythonで構築されています。グノシーのコアであるニュース記事の収集・推薦の基盤から、大量のトラフィックを捌く広告配信サーバまでPython製です。
 

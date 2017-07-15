@@ -4,11 +4,12 @@
 【求人情報】株式会社アカリ
 ==========================================================================
 
-:date: 2016/04/18 12:00
 
-.. image:: /images/jobboard/akariinc__360.jpg
-   :target: http://www.aka.jp
-   :alt: 株式会社アカリ
+
+.. jinja::
+   {{ macros.image(page, contents['akariinc__360.jpg'], 
+                   alt='株式会社アカリ', link='http://www.aka.jp') }}
+
 
 
 WEBバックグラウンドを支えるサーバーエンジニアを募集します

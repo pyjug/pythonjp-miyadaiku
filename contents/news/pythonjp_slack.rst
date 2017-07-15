@@ -4,7 +4,6 @@
 Python.jp slackチャンネル
 ============================
 
-:date: 2016-12-30 21:00:00
 
 `Python.jp slack channnel <https://pythonjp.slack.com/messages/general/>`_ を作成しました。
 

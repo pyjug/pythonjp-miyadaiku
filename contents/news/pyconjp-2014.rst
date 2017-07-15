@@ -4,7 +4,6 @@
 Python conference Japan 2014
 ================================
 
-:date: 2014-05-23 21:00:00
 
 今年もPythonの祭典 PyCon JP が行われます。
 

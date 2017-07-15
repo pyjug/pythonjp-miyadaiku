@@ -5,7 +5,6 @@ Python 2.7.7 rc1 リリース
 =============================
 
 
-:date: 2014-05-21 14:00:00
 
 
 Python 2.7.7 のリリース候補 `Python 2.7.7rc1 <https://www.python.org/download/releases/2.7.7/>`_ が公開されました。このリリースでの修正内容は、`Misc/Newsファイル <http://hg.python.org/cpython/raw-file/e32e3a9f3902/Misc/NEWS>`_ で確認できます。

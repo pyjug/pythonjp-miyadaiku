@@ -5,12 +5,11 @@
 【求人情報】カタリズム株式会社
 ==========================================================================
 
-:date: 2015/02/20 13:30
 
-.. image:: /images/jobboard/catarizm.png
-   :target: http://www.catarizm.co.jp
-   :alt: カタリズム株式会社
 
+.. jinja::
+   {{ macros.image(page, contents['./catarizm.png'], 
+                   alt='カタリズム株式会社', link='http://www.catarizm.co.jp') }}
 
 
 日本最大のアクティビティ予約プラットフォーム「ASOViEW! (あそびゅー！)」を運営するカタリズムでは、Pythonエンジニアを募集しています。

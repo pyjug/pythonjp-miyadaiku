@@ -4,15 +4,12 @@
 【求人情報】株式会社グリッド
 ==========================================================================
 
-:date: 2017/06/15
 
 
-.. image:: /images/jobboard/grid.png
-   :target: http://www.gridpredict.jp/
-   :alt: 株式会社グリッド
-   :width: 500px
-
-
+.. jinja::
+   {{ macros.image(page, contents['./grid.png'], width='500px',
+                   alt='株式会社グリッド', link='http://www.gridpredict.jp/') }}
+  
 
 最先端技術で社会問題を解決するエンジニアを募集！
 -----------------------------------------------------------

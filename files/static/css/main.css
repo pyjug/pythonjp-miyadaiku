@@ -1,0 +1,185 @@
+
+body {
+  font-family:  "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Arial, "ＭＳ Ｐゴシック", sans-serif;
+  line-height: 1.5em;
+}
+
+nav {
+  margin: 0.8em;
+  display: -webkit-flex; /* Safari */
+  display: flex;
+
+  -webkit-justify-content: space-between; /* Safari */
+  justify-content:         space-between;
+}
+
+.topmenu {
+  align-items:center;
+}
+
+.topmenu .menublock {
+  padding-left: .5em;
+  padding-right: .5em;
+}
+
+.topmenu .menulink {
+  display: inline-block;
+  padding-left: .5em;
+  padding-right: .5em;
+}
+
+.topmenu .searchform {
+  height: 100%;
+  vertical-align: middle;
+}
+
+.topmenu  .form-control {
+  display: inline;
+  width: 200px;
+}
+
+.topmenu  .btn {
+  display: inline;
+  }
+
+
+.ibox {
+  display: inline-block;
+}
+
+.center {
+  text-align: center;
+}
+
+.jumbotron {
+  padding: 1em 0em 1em 0em;
+  margin-bottom: 0.5em;
+}
+
+.sitetitle {
+  font-size: 2em;
+  color: #292b2c;
+  font-weight: bold;
+}
+
+.acard .card-block {
+  padding-top: 0px;
+}
+
+.acard h4 {
+  font-size: 1.3em;
+  font-weight: normal;
+}
+
+.right-box {
+  margin-left: 1em;
+  margin-bottom: 1em;
+}
+
+.right-box h2 {
+  margin: 0;
+  color: #234764;
+  font-size: 1em;
+}
+
+.right-box .btn {
+  font-size: 12px;
+  padding: 5px;
+}
+
+.right-box .ibox {
+  margin-right: 10px;
+  margin-bottom: 0.8em;
+}
+
+
+.published {
+  font-weight: bold;
+  font-size: 14px;
+  padding: 1em 1em .5em 0em;
+}
+
+.entry-title {
+  font-size: 1.5em;
+  padding: 0.1em 0em 0.3em;
+}
+
+.largeimage {
+  margin:.5em;
+  width:90%;
+}
+
+
+.articles_title {
+  font-size: 1.5em;
+  margin-top: 0.5em;
+}
+
+.article-button {
+}
+
+H1,H2,H3,H4,H5 {
+/*  font-family: Georgia, "Bitstream Vera Serif", "New York", Palatino, serif; */
+  font-family: 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, Arial, 'ＭＳ Ｐゴシック', sans-serif;
+  font-weight: bold;
+  line-height: 1.5em;
+}
+
+H1
+{
+  font-size: 140%;
+  color: #376A94;
+  text-decoration: none;
+}
+
+H1 A {
+  color: #234764;
+}
+
+H2
+{
+  font-size: 120%;
+
+  color: #366D9C;
+  margin: 1em 0 0.5em 0;
+}
+
+H3
+{
+  font-size: 110%;
+  color: #366D9C;
+  margin: 0.4em 0 0.0em 0;
+}
+
+H4
+{
+  font-size: 100%;
+  color: #366D9C;
+  margin: 0.4em 0 0.0em 0;
+}
+
+blockquote {
+  margin-left: 2em;
+}
+
+
+#contentinfo {
+  margin-top: 2em;
+  margin-right: 2em;
+  text-align: right;
+}
+
+
+.index-pagination {
+   font-size: 20px;
+}
+
+.index-navi {
+  border-style: solid;
+  padding: 3px;
+}
+
+.index-disabled-link {
+  pointer-events: none;
+  color: #f0f0f0;
+}
