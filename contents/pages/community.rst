@@ -78,7 +78,7 @@ Python 日本語メーリングリスト |pythonmljp|
 
 .. |pythonmljp| jinja::
 
-   {{ macros.image(page, contents['/static/images/pyjug.png'], style='float:right') }}
+   {{ macros.image(content.load('/static/images/pyjug.png'), style='float:right') }}
 
 .. raw:: html
 

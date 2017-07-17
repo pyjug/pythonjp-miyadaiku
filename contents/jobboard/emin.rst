@@ -6,7 +6,7 @@
 
 
 .. jinja::
-   {{ macros.image(page, contents['./emin.svg'], 
+   {{ macros.image(content.load('./emin.svg'), 
                    alt='Emotion Intelligence 株式会社', link='https://www.emin.co.jp/') }}
 
 |

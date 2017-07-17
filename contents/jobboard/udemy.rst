@@ -8,7 +8,7 @@
 
 
 .. jinja::
-   {{ macros.image(page, contents['./Udemy_logo_medium_green.jpg'], width='400px',
+   {{ macros.image(content.load('./Udemy_logo_medium_green.jpg'), width='400px',
                    alt='Udemy（ユーデミー）', link='http://www.benesse.co.jp/udemy/teach?aff_code=Ewh3Y11STX4GQBpxMkBPbG1RGXFfVVh8Al4ZeE5TQnYBRhFwXD5XMRM=&utm_source=pythonjp&utm_campaign=teach&utm_medium=com') }}
  
 

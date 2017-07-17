@@ -6,7 +6,7 @@
 
 
 .. jinja::
-   {{ macros.image(page, contents['./me_logo_RGB_w250.jpg'],
+   {{ macros.image(content.load('./me_logo_RGB_w250.jpg'),
                    alt='株式会社マーケットエンタープライズ', link='http://www.marketenterprise.co.jp') }}
 
 

@@ -7,7 +7,7 @@
 
 
 .. jinja::
-   {{ macros.image(page, contents['./fourm.png'], 
+   {{ macros.image(content.load('./fourm.png'), 
                    alt='株式会社フォーエム', link='http://fourm.jp') }}
   
 2009年に創業したフォーエムは、`米Googleより事業パートナーとして認定された <https://www.google.com/intl/ja/adsense/start/partners/partners.html>`_ 、世界数十社の一角をなすスタートアップです。
