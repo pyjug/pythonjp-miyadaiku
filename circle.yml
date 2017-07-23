@@ -1,0 +1,14 @@
+machine:
+  python:
+    version: 3.6.1
+
+dependencies:
+  pre:
+    - pip install wheel
+    - pip install miyadaiku
+    - pip install miyadaiku.themes.bootstrap4 miyadaiku.themes.fontawesome
+
+test:
+  override:
+    - miyadaiku-build .
+
