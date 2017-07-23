@@ -1,0 +1,4 @@
+type: feed
+feedtype: atom
+feed_num_articles: 10
+filename: all.atom.xml

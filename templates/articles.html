@@ -1,3 +1,5 @@
+{% import 'utils.html' as utils %}
+
 {% for article in articles %}
 
       <div class="body">
@@ -7,6 +9,7 @@
           </div>
 
           <h2 class="entry-title articles_title">{{page.link_to(article)}}</h2>
+          {{ utils.snsbuttons(article) }}
           <div class='article_summary_body'>{{ article.abstract}}</div>
           <div class="article-button"><a href="{{ page.path_to(article) }}" class="btn btn-info btn-sm">すべて表示 ... </a>
           </div>

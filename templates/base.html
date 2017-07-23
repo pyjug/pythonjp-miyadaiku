@@ -22,17 +22,33 @@
   <!-- include font awesome -->
   {{ fontawesome.load_css(page) }}
   
+  <link href="{{ page.load('/atom.yml').url }}" type="application/atom+xml" rel="alternate" title="python.jp Atom Feed" />
+  <link href="{{ page.load('/rss.yml').url }}" type="application/rss+xml" rel="alternate" title="python.jp RSS Feed" />
+
   <link rel="stylesheet" href="{{ page.path_to('/static/css/main.css')}}">
 
-  {% block og %}{%endblock%}
+  {{ macros.opengraph(page) }}
+
+
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.10";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+
 
 {% endblock head %}
 
 
 {% block body %}
+<div id="fb-root"></div>
+
 <nav class="topmenu" style="">
   <div class="menublock">
-    <a href="{{ page.path_to('/index.yml') }}" class="menulink"> {{ macros.image(page, contents['/static/images/pyjug.png']) }}</a>
+    <a href="{{ page.path_to('/index.yml') }}" class="menulink">
+        {{ macros.image(page.load('/static/images/pyjug.png')) }}</a>
     {{ page.link_to('/index.yml', text='Home', attrs={'class':'menulink'}) }}
     {{ page.link_to('/news/index.yml', text='ニュース', attrs={'class':'menulink'}) }}
     {{ page.link_to('/jobboard/index.yml', text='求人情報', attrs={'class':'menulink'}) }}
@@ -87,5 +103,12 @@
   Copyright © 2001-2017, <a href='/contact.html'>Python.jp</a>
 </div>
 <!-- /#contentinfo -->
+
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+
+<script type="text/javascript">!function(d,i){if(!d.getElementById(i)){var j=d.createElement("script");j.id=i;j.src="https://widgets.getpocket.com/v1/j/btn.js?v=1";var w=d.getElementById(i);d.body.appendChild(j);}}(document,"pocket-btn-js");</script>
+
+<script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
 
 {% endblock body %}
