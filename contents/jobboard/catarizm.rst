@@ -8,7 +8,7 @@
 
 
 .. jinja::
-   {{ macros.image(page, contents['./catarizm.png'], 
+   {{ macros.image(content.load('./catarizm.png'), 
                    alt='カタリズム株式会社', link='http://www.catarizm.co.jp') }}
 
 

@@ -8,7 +8,7 @@
 
 
 .. jinja::
-   {{ macros.image(page, contents['./spoqa.png'],
+   {{ macros.image(content.load('./spoqa.png'),
                    alt='株式会社Spoqa', link='http://dodopoint.jp/') }}
 
 

@@ -7,7 +7,7 @@
 
 
 .. jinja::
-   {{ macros.image(page, contents['./grid.png'], width='500px',
+   {{ macros.image(content.load('./grid.png'), width='500px',
                    alt='株式会社グリッド', link='http://www.gridpredict.jp/') }}
   
 

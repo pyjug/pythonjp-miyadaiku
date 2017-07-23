@@ -7,7 +7,7 @@
 
 
 .. jinja::
-   {{ macros.image(page, contents['./linkbal.png'],
+   {{ macros.image(content.load('./linkbal.png'),
                    alt='株式会社リンクバル', link='http://linkbal.co.jp/') }}
 
 

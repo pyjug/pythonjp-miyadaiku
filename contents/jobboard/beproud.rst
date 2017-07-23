@@ -6,7 +6,7 @@
 
 
 .. jinja::
-   {{ macros.image(page, contents['beproud.png'], 
+   {{ macros.image(content.load('beproud.png'), 
                    alt='株式会社ビープラウド', link='http://www.beproud.jp') }}
 
 

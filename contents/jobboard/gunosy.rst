@@ -7,7 +7,7 @@
 
 
 .. jinja::
-   {{ macros.image(page, contents['./gunosy.png'],
+   {{ macros.image(content.load('./gunosy.png'),
                    alt='株式会社Gunosy', link='http://gunosy.co.jp') }}
 
 `Gunosy <http://gunosy.co.jp>`_ では、様々なツール・プロダクトがPythonで構築されています。グノシーのコアであるニュース記事の収集・推薦の基盤から、大量のトラフィックを捌く広告配信サーバまでPython製です。

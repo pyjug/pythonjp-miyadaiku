@@ -7,7 +7,7 @@
 
 
 .. jinja::
-   {{ macros.image(page, contents['./squeeze.png'], width='400px',
+   {{ macros.image(content.load('./squeeze.png'), width='400px',
                    alt='株式会社SQUEEZE', link='http://www.squeeze-inc.co.jp/') }}
 
 

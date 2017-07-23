@@ -8,7 +8,7 @@
 
 
 .. jinja::
-   {{ macros.image(page, contents['./minma.png'],
+   {{ macros.image(content.load('./minma.png'),
                    alt='みんなのマーケット株式会社', link='http://www.minma.jp/') }}
   
 

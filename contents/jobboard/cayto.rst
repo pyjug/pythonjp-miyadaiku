@@ -6,7 +6,7 @@
 
 
 .. jinja::
-   {{ macros.image(page, contents['./cayto.png'], width='400px',
+   {{ macros.image(content.load('./cayto.png'), width='400px',
                    alt='カイト株式会社', link='http://cayto.jp/') }}
 
 

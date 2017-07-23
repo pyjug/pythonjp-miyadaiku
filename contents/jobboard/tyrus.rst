@@ -7,7 +7,7 @@
 
 
 .. jinja::
-   {{ macros.image(page, contents['./tyrus_logo.png'],
+   {{ macros.image(content.load('./tyrus_logo.png'),
                    alt='株式会社ティルス', link='http://www.tyrus.co.jp/') }}
 
 

@@ -7,7 +7,7 @@
 
 
 .. jinja::
-   {{ macros.image(page, contents['akariinc__360.jpg'], 
+   {{ macros.image(content.load('akariinc__360.jpg'), 
                    alt='株式会社アカリ', link='http://www.aka.jp') }}
 
 

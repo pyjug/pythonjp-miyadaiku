@@ -9,7 +9,7 @@
 
 
 .. jinja::
-   {{ macros.image(page, contents['./kakadu.png'],
+   {{ macros.image(content.load('./kakadu.png'),
                    alt='株式会社カカドゥ', link='https://salonlist.jp/macaron/') }}
 
 

@@ -7,7 +7,7 @@ PyCon JP 2016 Sphinxハンズオン
 
 .. jinja::
 
-   {{ macros.image(page, contents['./22027340636_8d2e74b3ce_z.jpg'], style='margin-bottom:3em') }}<br>
+   {{ macros.image(content.load('./22027340636_8d2e74b3ce_z.jpg'), style='margin-bottom:3em') }}<br>
 
 
 Python のリファレンス作成にも使われている Sphinx ですが今ではパブリック、クローズドを問わず多様なシーンで利用されているドキュメンテーションジェネレータです。
