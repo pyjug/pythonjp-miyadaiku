@@ -1,23 +1,4 @@
 {% extends "base.html" %}
-{% block title %}{{ page.title|striptags }}{% endblock %}
-
-
-{% block og %}
-
-<meta property="og:locale" content="ja_JP" />
-<meta property="og:type" content="article"/>
-<meta property="og:site_name" content="python.jp"/>
-
-<meta property="og:title" content="{{ page.title }}" />
-<meta property="og:url" content="{{ page.url }}" />
-
-<meta property="og:description" content="{{ page.abstract|striptags }}" />
-
-{% if page.date %}
-<meta property="article:published_time" content="{{ page.date }}" />
-{% endif%}
-
-{% endblock %}
 
 {% block jumbotron %}
   {% include "submission.html" %}

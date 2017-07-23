@@ -24,7 +24,7 @@
   
   <link rel="stylesheet" href="{{ page.path_to('/static/css/main.css')}}">
 
-  {% block og %}{%endblock%}
+  {{ macros.opengraph(page) }}
 
 {% endblock head %}
 
@@ -32,7 +32,8 @@
 {% block body %}
 <nav class="topmenu" style="">
   <div class="menublock">
-    <a href="{{ page.path_to('/index.yml') }}" class="menulink"> {{ macros.image(page, contents['/static/images/pyjug.png']) }}</a>
+    <a href="{{ page.path_to('/index.yml') }}" class="menulink">
+        {{ macros.image(page.load('/static/images/pyjug.png')) }}</a>
     {{ page.link_to('/index.yml', text='Home', attrs={'class':'menulink'}) }}
     {{ page.link_to('/news/index.yml', text='ニュース', attrs={'class':'menulink'}) }}
     {{ page.link_to('/jobboard/index.yml', text='求人情報', attrs={'class':'menulink'}) }}
