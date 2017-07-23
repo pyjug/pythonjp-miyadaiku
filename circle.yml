@@ -16,4 +16,4 @@ deployment:
   github:
     branch: master
     commands:
-      - scp -P 13855 -r outputs/* draft@www.python.jp:
+      - scp -P 13855 -r outputs/* "draft@www.python.jp:"
