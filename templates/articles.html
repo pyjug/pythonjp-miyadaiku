@@ -4,12 +4,13 @@
 
       <div class="body">
         <div class="article_summary">
-          <div>
-            {% include 'article_infos.html' %}
+
+          <div class='articlle_header'> 
+            {{ utils.page_date(article) }}
+            {{ utils.snsbuttons(article) }}
           </div>
 
           <h2 class="entry-title articles_title">{{page.link_to(article)}}</h2>
-          {{ utils.snsbuttons(article) }}
           <div class='article_summary_body'>{{ article.abstract}}</div>
           <div class="article-button"><a href="{{ page.path_to(article) }}" class="btn btn-info btn-sm">すべて表示 ... </a>
           </div>

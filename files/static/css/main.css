@@ -94,14 +94,13 @@ nav {
 
 
 .published {
-  font-weight: bold;
-  font-size: 14px;
-  padding: 1em 1em .5em 0em;
+  font-size: 12px;
+  padding-top: 0.1em;
 }
 
 .entry-title {
   font-size: 1.5em;
-  padding: 0.1em 0em 0.3em;
+  padding: 0.1em 0em 0em;
 }
 
 .largeimage {
@@ -109,10 +108,13 @@ nav {
   width:90%;
 }
 
+.articlle_header {
+  display:flex;
+  margin-left: 1rem;
+}
 
 .articles_title {
   font-size: 1.5em;
-  margin-top: 0.5em;
 }
 
 .article-button {
@@ -141,7 +143,7 @@ H2
   font-size: 120%;
 
   color: #366D9C;
-  margin: 1em 0 0.5em 0;
+  margin: 0.2em 0 0.5em 0;
 }
 
 H3
@@ -187,11 +189,12 @@ blockquote {
 .snsbuttons {
   display:flex;
   line-height: 1.0rem;
-  margin: 0px 10px 10px 10px;
+  margin: 0px 10px 0px 10px;
 
 }
 
 .snsbuttons > div {
-  margin: 3px;
+  margin: 3px 3px 0px 3px;
+  line-height: 1.0rem;
 }
 

@@ -11,13 +11,11 @@
 <div id="content" class="body article">
   <div>
     <div>
-      <div class="published">
-        {% if page.date %}
-          {{ page.date.strftime('%Y-%m-%d') }}
-        {% endif %}
+      <div class='articlle_header'> 
+        {{ utils.page_date(page) }}
+        {{ utils.snsbuttons(page) }}
       </div>
       <h1 class="entry-title">{{ page.link_to(page) }}</h1>
-      {{ utils.snsbuttons(page) }}
     </div>
 
     <div class="entry-content">
