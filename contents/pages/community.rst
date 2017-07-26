@@ -16,6 +16,9 @@
       }
   </style>
 
+.. raw:: html
+
+   <div id='pythonjpslack'/>
 
 Python.jp slackチャンネル  |pythonmljp|
 ===============================================

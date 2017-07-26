@@ -2,20 +2,13 @@
 
 {% block jumbotron %}
 
-{% if not page.category %}
-{% include "top-main.html" %}
-
-{% else %}
-
-  {% if page.category=="news" %}
-    <h1 class="sitetitle">ニュース</h1>
-  {% elif page.category=="jobboard" %}
-    <h1 class="sitetitle">求人情報</h1>
+  {% if page.index_title %}
+    <h1 class="sitetitle"> {{ page.index_title }} </h1>
   {% endif %}
 
-  {% include "submission.html" %}
+  {{ super() }}
 
-{% endif %}
+
 
 {% endblock %}
 

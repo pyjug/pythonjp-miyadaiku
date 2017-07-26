@@ -1,0 +1,5 @@
+type: config
+show_sns_button: true
+index_title: ''
+jumbo_content: /jumbo.html
+

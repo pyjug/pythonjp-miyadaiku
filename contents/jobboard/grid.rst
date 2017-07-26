@@ -7,9 +7,10 @@
 
 
 .. jinja::
-   {{ macros.image(content.load('./grid.png'), width='500px',
-                   alt='株式会社グリッド', link='http://www.gridpredict.jp/') }}
-  
+   <div style='margin:10px 0 20px 0'>{{ macros.image(content.load('./grid.png'), width='500px',
+                   alt='株式会社グリッド', link='http://www.gridpredict.jp/') }}</div>
+
+
 
 最先端技術で社会問題を解決するエンジニアを募集！
 -----------------------------------------------------------

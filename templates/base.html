@@ -4,6 +4,9 @@
 {% block head %}
   {{ super() }}
 
+  <!-- include font awesome -->
+  {{ docutils_html5.load_css(page) }}
+
   <!-- include boolstrap4 -->
   {{ bootstrap4.load_css(page) }}
 
@@ -22,6 +25,7 @@
   <!-- include font awesome -->
   {{ fontawesome.load_css(page) }}
   
+  
   <link href="{{ page.load('/atom.yml').url }}" type="application/atom+xml" rel="alternate" title="python.jp Atom Feed" />
   <link href="{{ page.load('/rss.yml').url }}" type="application/rss+xml" rel="alternate" title="python.jp RSS Feed" />
 
@@ -35,6 +39,14 @@
 
 {% block body %}
 <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.10&appId=136737689739296";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
 
 <nav class="topmenu" style="">
   <div class="menublock">
@@ -61,6 +73,7 @@
 <div class="jumbotron">
   <div class="container">
     {% block jumbotron %}
+      {{ page.load(page.jumbo_content).html }}
     {% endblock %}
   </div>
 </div>

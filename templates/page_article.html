@@ -1,26 +1,23 @@
 {% extends "base.html" %}
 
 {% block jumbotron %}
-  {% include "submission.html" %}
+  {% import 'utils.html' as utils %}
+
+  {% if page.show_sns_button %}
+    <div class='articlle_header'> 
+      {{ utils.page_date(page) }}
+      {{ utils.snsbuttons(page) }}
+    </div>
+  {% endif %}
+  <h1 class="entry-title">{{ page.link_to(page) }}</h1>
+
 {% endblock %}
 
 {% block content %}
 
-{% import 'utils.html' as utils %}
-
 <div id="content" class="body article">
-  <div>
-    <div>
-      <div class='articlle_header'> 
-        {{ utils.page_date(page) }}
-        {{ utils.snsbuttons(page) }}
-      </div>
-      <h1 class="entry-title">{{ page.link_to(page) }}</h1>
-    </div>
-
-    <div class="entry-content">
-      {{ page.html}}
-    </div><!-- /.entry-content -->
-  </div>
+  <div class="entry-content">
+    {{ page.html}}
+  </div><!-- /.entry-content -->
 </div>
 {% endblock %}

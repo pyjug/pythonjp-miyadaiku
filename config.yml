@@ -20,3 +20,4 @@ themes:
   - miyadaiku.themes.pygments
   - miyadaiku.themes.bootstrap4
   - miyadaiku.themes.fontawesome
+  - miyadaiku.themes.docutils_html5
