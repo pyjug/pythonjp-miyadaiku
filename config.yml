@@ -1,10 +1,10 @@
 # Miyadaiku config file
 
 # Base URL of the site
-site_url: http://localhost:8888/
+site_url: https://www.python.jp/draft/
 
 # Title of the site
-site_title: FIXME - site title
+site_title: python.jp
 
 # Default language code
 lang: ja
