@@ -10,15 +10,18 @@ dependencies:
 
 test:
   override:
-    - miyadaiku-build .
+    - true
 
 deployment:
   draft:
     branch: master
     commands:
+      - miyadaiku-build .
       - scp -P 13855 -r outputs/* "draft@www.python.jp:"
+
   release:
     branch: release
     commands:
+      - miyadaiku-build .
       - scp -P 13855 -r outputs/* "draft@www.python.jp:/var/www/miyadaiku/"
 
