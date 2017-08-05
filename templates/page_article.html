@@ -11,7 +11,7 @@
   <h1 class="entry-title">{{ page.link_to(page) }}</h1>
   {% if page.show_sns_button %}
     <div class='articlle_header'> 
-      {{ utils.snsbuttons(page, hatena=True) }}
+      {{ utils.snsbuttons(page) }}
     </div>
   {% endif %}
 
@@ -25,3 +25,31 @@
   </div><!-- /.entry-content -->
 </div>
 {% endblock %}
+
+
+{% block rightbox %}
+  {% if page.category -%}
+  <div class="card right-box">
+    <div class="card-block">
+      <div class="card-title">
+        <h2>最近の{{ page.index_title }}</h2>
+      </div>
+      {% set entries = contents.get_contents(
+                       filters={'category':[page.category]})[:5] %}
+
+      {% for c in entries %}
+        <div class='small_article_link'>
+          {{ c.link() }}
+          {% if loop.index != loop.length %}
+            <hr>
+          {% endif %}
+        </div>
+      {% endfor %}
+
+    </div>
+  </div>
+  {%- endif %}
+
+  {{ super() }}
+{% endblock %}
+

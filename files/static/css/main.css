@@ -4,6 +4,11 @@ body {
   line-height: 1.5em;
 }
 
+.container {
+  padding-right: 0px;
+  margin-right: 0px;
+}
+
 nav {
   margin: 0.8em;
   display: -webkit-flex; /* Safari */
@@ -196,5 +201,15 @@ blockquote {
 .snsbuttons > div {
   margin: 3px 3px 0px 3px;
   line-height: 1.0rem;
+}
+
+.small_article_link {
+  font-size: 0.9rem;
+  line-height: 1.3rem;
+}
+
+.small_article_link hr {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
