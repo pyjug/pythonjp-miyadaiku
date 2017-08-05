@@ -13,7 +13,12 @@ test:
     - miyadaiku-build .
 
 deployment:
-  github:
+  draft:
     branch: master
     commands:
       - scp -P 13855 -r outputs/* "draft@www.python.jp:"
+  release:
+    branch: release
+    commands:
+      - scp -P 13855 -r outputs/* "draft@www.python.jp:/var/www/miyadaiku/"
+
