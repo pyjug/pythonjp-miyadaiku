@@ -19,8 +19,8 @@ deployment:
       - miyadaiku-build .
       - scp -P 13855 -r outputs/* "draft@www.python.jp:"
 
-    branch: release
-    commands:
-      - miyadaiku-build -d site_url=https://www.python.jp/ .
-      - scp -P 13855 -r outputs/* "draft@www.python.jp:/var/www/miyadaiku/"
+#    branch: release
+#    commands:
+#      - miyadaiku-build -d site_url=https://www.python.jp/ .
+#      - scp -P 13855 -r outputs/* "draft@www.python.jp:/var/www/miyadaiku/"
 
