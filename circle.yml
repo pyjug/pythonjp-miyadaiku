@@ -10,7 +10,7 @@ dependencies:
 
 test:
   override:
-    - true
+    - "true"
 
 deployment:
   draft:
