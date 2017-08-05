@@ -21,3 +21,5 @@ themes:
   - miyadaiku.themes.bootstrap4
   - miyadaiku.themes.fontawesome
   - miyadaiku.themes.docutils_html5
+
+ga_tracking_id: UA-34175846-1
