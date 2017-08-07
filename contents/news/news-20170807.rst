@@ -1,0 +1,40 @@
+
+
+基礎編＜入門レベル＞ PythonでRaspberry PiのGPIOを動かしてみよう！
+---------------------------------------------------------------------
+
+.. article::
+   :date: 2017-08-07
+
+
+
+URL
+  http://www.physical-computing.jp/product/1288
+
+ 
+
+ 
+
+こちらのセミナーはPython言語を使用し、RaspberryPiにつないだハードを制御する方法を実際に試しながら学習できるセミナーとなっています。
+
+ 
+
+より多くのお客様にご受講頂きたく、セミナー中に使用する下記のキット、弊社商品【Raspberry Pi電子工作エントリーキット】をご購入いただいたお客様は半額の受講料でご受講いただけたりと、ご受講頂きやすい価格設定にさせて頂きました。
+
+ 
+
+その他にもセミナーを今回開催させていただく事になりあわせてご確認いただければ幸いです。
+
+ 
+
+ 
+
+RaspPiセミナー
+  http://www.physical-computing.jp/product-list/301
+
+ 
+
+Arduinoセミナー
+  http://www.physical-computing.jp/product-list/300
+
+ 
