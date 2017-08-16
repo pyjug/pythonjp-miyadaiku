@@ -9,19 +9,20 @@
     </div>
   {% endif %}
   <h1 class="entry-title">{{ page.link_to(page) }}</h1>
-  {% if page.show_sns_button %}
-    <div class='articlle_header'> 
-      {{ utils.snsbuttons(page) }}
-    </div>
-  {% endif %}
 
 {% endblock %}
 
 {% block content %}
+  {% import 'utils.html' as utils %}
+
 
 <div id="content" class="body article">
   <div class="entry-content">
     {{ page.html}}
+
+  {% if page.show_sns_button %}
+    {{ utils.snsbuttons(page) }}
+  {% endif %}
   </div><!-- /.entry-content -->
 </div>
 {% endblock %}
