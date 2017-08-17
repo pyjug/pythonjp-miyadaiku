@@ -132,10 +132,11 @@
 
 <script>
 $(function() {
-  $(".enlarge_img").on("click", function() {
+  $(".enlarge_img").on("click", function(e) {
     let img = $(event.currentTarget).children('img')[0];
     $('#enlargeimage').attr('src', img.src);
     $('#imagemodal').modal('show');
+    e.preventDefault();
   });
 })
 </script>

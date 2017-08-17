@@ -34,9 +34,9 @@
 {%- endmacro %}
 
 {% macro enlarge_image(src, alt=None, _class=None, style=None, width=None, height=None, link_class="") -%}
-
+  {% set w = width if width else '80%' %}
   <a href="#" class="enlarge_img {{link_class}}">
-    {{ macros.image(src, alt=alt, width=width, height=height) }}
+    {{ macros.image(src, alt=alt, width=w, height=height) }}
   </a>
 
 {%- endmacro %}

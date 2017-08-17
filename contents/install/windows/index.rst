@@ -6,7 +6,7 @@ Windowsでは、PythonはOSに添付されていないため、自分でパッ�
 
 Windowsでよく使われるPythonのパッケージに、次の2種類があります。
 
-- `Python.org公式パッケージ <https://www.python.org/downloads/>`_
+- `Python.org 公式パッケージ <https://www.python.org/downloads/>`_
 
   Pythonの開発元で作成した、公式のパッケージです。Pythonインタープリタと標準モジュール・ドキュメントをインストールします。
 

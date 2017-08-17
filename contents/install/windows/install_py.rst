@@ -1,4 +1,4 @@
-公式パッケージ
+公式パッケージのインストール
 -----------------------------------
 
 
@@ -11,16 +11,16 @@ https://www.python.org/downloads/windows/ より、パッケージをダウン�
 最新パッケージとして、Python 3.x と Python 2.7.x がダウンロードできます。特別な理由がなければ、Python 3.x (下図では Python 3.6.2) をクリックします。
 
 
-:jinja:`{{ macros.image(content.load('./download-windows.png')) }}`
+:jinja:`{{ utils.enlarge_image(content.load('./download-win.png')) }}`
 
 
 画面の一番下に、ダウンロード可能なファイルが表示されます。インストールするWindowsが32bit版なら
 
-  ``Windows x86 web-based installer``
+  **Windows x86 web-based installer**
 
 64bit版なら
 
-  ``Windows x86-64 web-based installer``
+  **Windows x86-64 web-based installer**
 
 をインストールしてください。
 
@@ -32,7 +32,7 @@ Windowsの種類が不明な場合は、
 を参照に確認してください。
 
 
-:jinja:`{{ macros.image(content.load('./download-windows-2.png')) }}`
+:jinja:`{{ utils.enlarge_image(content.load('./download-win2.png')) }}`
 
 
 
@@ -41,13 +41,9 @@ Windowsの種類が不明な場合は、
 
 ダウンロードしたパッケージを実行し、*Install now* をクリックしてインストールを開始します。
 
-:jinja:`{{ macros.image(content.load('./installer1.png'), width=500) }}`
+:jinja:`{{ utils.enlarge_image(content.load('./py-install1.png')) }}`
 
 
-次の画面が表示されれば、インストール完了です。
-
-
-:jinja:`{{ macros.image(content.load('./installer2.png'), width=500) }}`
 
 
 TBD chocolatey/nuget
@@ -67,7 +63,15 @@ WindowsではCコンパイラが添付されていないため、別途インス
 
     **Build Tools for Visual Studio 2017**
 
-をインストールします。
+をダウンロードします。
 
-:jinja:`{{ macros.image(content.load('./download_vstools.png'), width=500) }}`
+:jinja:`{{ utils.enlarge_image(content.load('./download-vstools.png')) }}`
 
+
+ダウンロードしたインストーラを実行し、
+
+    **Visual C++ Build Tools 2017**
+
+をチェックして **インストール** ボタンをクリックします。
+
+:jinja:`{{ utils.enlarge_image(content.load('./install-vc.png')) }}`
