@@ -12,7 +12,7 @@ Conda パッケージのインストール
 
 .. code-block::
 
-   C:\Users\user1>conda install idna
+   C:\Users\user1>>conda install idna
    Fetching package metadata ...........
    Solving package specifications: .
 

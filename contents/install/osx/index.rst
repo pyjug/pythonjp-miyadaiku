@@ -1,6 +1,0 @@
-
-macOS
---------------------------------
-
-asfasdfsad
-sadfsadf
