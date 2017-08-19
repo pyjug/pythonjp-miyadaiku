@@ -18,7 +18,7 @@ Pythonを使い続けていると、いろいろな用途に合わせて、Pytho
 Virtualenvのインストール
 =============================
 
-Virtualenvは、``pip`` コマンドでインストールできます。
+Virtualenvは、:jinja:`{{ page.link_to('./pip.rst') }}` コマンドでインストールできます。
 
 .. code-block::
 
@@ -40,8 +40,6 @@ Virtualenvは、``pip`` コマンドでインストールできます。
 
 
 ``C:\Users\user1\py3env\`` に Python3.6 用の仮想環境が作成されました。
-
-
 
 
 仮想環境の切り替え
@@ -105,9 +103,7 @@ PowerShellを起動し、次のコマンドを実行します。
    Commands:
      install                     Install packages.
      download                    Download packages.
-      ...
-      ...
-      ...
+     …
 
 ``pip`` コマンドを使って、通常通りパッケージをインストールできます。
 
@@ -120,9 +116,7 @@ PowerShellを起動し、次のコマンドを実行します。
      Downloading argparse-1.4.0-py2.py3-none-any.whl
    Collecting six (from tse)
      Using cached six-1.10.0-py2.py3-none-any.whl
-      ...
-      ...
-      ...
+     …
 
 
 インストールしたパッケージは、仮想環境内にのみ書き込まれ、元の Python や他の仮想環境からは利用できません。
@@ -166,7 +160,7 @@ Python2.7 を使って、仮想環境を作成します。
 .. code-block:: 
 
    C:\Users\user1> py27env\Scripts\activate.bat
-   (py27env) C:\Users\ishimoto>python
+   (py27env) C:\Users\user1>python
    Python 2.7.13 (v2.7.13:a06454b1afa1, Dec 17 2016, 20:53:40) [MSC v.1500 64 bit (AMD64)] on win32
    Type "help", "copyright", "credits" or "license" for more information.
    >>>
