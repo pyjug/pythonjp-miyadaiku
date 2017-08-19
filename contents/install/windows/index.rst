@@ -16,11 +16,11 @@ Windowsでよく使われるPythonのパッケージに、次の2種類があり
   データサイエンス向けに作成されたパッケージで、公式パッケージに加えて、科学技術計算などを中心とした数多くのモジュールやツールが独自の形式で同梱されています。
 
 
-一般的なアプリケーション・Web開発やシステム管理ツールとしてPythonを利用する場合は、公式パッケージでも問題ありません。
+一般的なアプリケーション・Web開発やシステム管理ツールとしてPythonを利用する場合は、公式パッケージで問題ありません。
 
-データサイエンス・機械学習などを中心としてPythonを使用するなら、多くのモジュールがデフォルトでインストールされるAnacondaは便利です。特に、プログラミングが専門ではない研究者などのユーザにとっては、環境構築の手間を大きく省けます。
+データサイエンス・機械学習などを中心としてPythonを使用するなら、多くのモジュールがデフォルトでインストールされる Anaconda は便利です。特に、プログラミングが専門ではない研究者などのユーザにとっては、環境構築の手間を大きく省けます。
 
-しかし、Anacondaは一部に独自技術を使用しているため、公式パッケージでは一般的に使用されているツールなどでも、Anaconda では利用できないものがあります。Anacondaを利用する場合には、慣れるまではできるだけAnacondaが提供する環境だけを利用するように心がけたほうが良いかもしれません。
+しかし、Anaconda は一部に独自技術を使用しているため、公式パッケージでは一般的に使用されているツールなどでも、Anaconda では利用できないものがあります。Anaconda を利用する場合には、慣れるまではできるだけ Anaconda が提供する環境だけを利用するように心がけたほうが良いかもしれません。
 
 
 
@@ -28,7 +28,9 @@ Windowsでよく使われるPythonのパッケージに、次の2種類があり
 
    <div class="card">
      <div class="card-block">
-       <h4 class="card-title">{{ content.link_to('./install_py.rst') }}</h4>
+       <h2 style='margin: 0; text-align: center;'>
+         {{ content.link_to('./official/install_py.rst', text='公式パッケージのインストール手順') }}
+       </h2>
      </div>
    </div>
 
@@ -36,7 +38,9 @@ Windowsでよく使われるPythonのパッケージに、次の2種類があり
 
    <div class="card">
      <div class="card-block">
-       <h4 class="card-title">{{ content.link_to('./install_anaconda.rst') }}</h4>
+       <h2 style='margin: 0; text-align: center;'>
+         {{ content.link_to('./anaconda/install_anaconda.rst', text='Anaconda のインストール手順') }}
+       </h2>
      </div>
    </div>
 

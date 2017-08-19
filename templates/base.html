@@ -119,12 +119,12 @@
 <div class="modal fade" id="imagemodal">
   <div class="modal-dialog">
     <div class="modal-content">
-      <div class="modal-header">
+      <div class="modal-body">
         <button type="button" class="close" data-dismiss="modal">
             &times;
-        </button>
+        </button><br>
+        <img src="" id=enlargeimage>
       </div>
-      <div class="modal-body"><img src="" id=enlargeimage></div>
     </div>
   </div>
 </div>
@@ -133,7 +133,7 @@
 <script>
 $(function() {
   $(".enlarge_img").on("click", function(e) {
-    let img = $(event.currentTarget).children('img')[0];
+    let img = $(e.currentTarget).children('img')[0];
     $('#enlargeimage').attr('src', img.src);
     $('#imagemodal').modal('show');
     e.preventDefault();

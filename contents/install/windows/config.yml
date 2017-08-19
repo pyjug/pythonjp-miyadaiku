@@ -1,0 +1,4 @@
+type: config
+breadclumpath: '/install/install.html'
+submenupath: 'install_py.rst, virtualenv.rst'
+submenupath: './official/install_py.rst, ./anaconda/install_anaconda.rst, '

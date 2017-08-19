@@ -34,9 +34,23 @@
 {%- endmacro %}
 
 {% macro enlarge_image(src, alt=None, _class=None, style=None, width=None, height=None, link_class="") -%}
-  {% set w = width if width else '80%' %}
   <a href="#" class="enlarge_img {{link_class}}">
-    {{ macros.image(src, alt=alt, width=w, height=height) }}
+    {{ macros.image(src, alt=alt, width=width, height=height) }}
   </a>
-
 {%- endmacro %}
+
+{% macro make_links(page, refs, sep) -%}
+  {% set links = [] %}
+  {% for ref in refs.split(',') %}
+    {% if ref %}
+      {% set obj = page.load(ref.strip()) %}
+      {% if obj.is_same(page) %}
+        {% set _ = links.append(obj.title) | escape %}
+      {% else %}
+        {% set _ = links.append(obj.link()) %}
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+  {{ sep.join(links) | safe }}
+{%- endmacro %}
+

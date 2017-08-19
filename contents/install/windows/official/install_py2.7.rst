@@ -1,5 +1,8 @@
-公式パッケージ
+Python 2.7のインストール
 -----------------------------------
+
+
+Python2 でしか利用できない古いモジュールやアプリケーションを使用する場合、Pyton3 と Python2 をどちらもインストールして併用できます。
 
 
 パッケージのダウンロード
@@ -45,7 +48,7 @@ Windowsの種類が不明な場合は、
 :jinja:`{{ utils.enlarge_image(content.load('./py27-install3.png')) }}`
 
 
-Microsoft Visual C++ Compiler for Python 2.7 
+Cコンパイラのインストール
 ++++++++++++++++++++++++++++++++++++++++++++++++++
 
 
@@ -74,3 +77,16 @@ WindowsではCコンパイラが添付されていないため、別途インス
 をチェックして **Install** ボタンをクリックします。
 
 :jinja:`{{ utils.enlarge_image(content.load('./install-vc27-1.png')) }}`
+
+
+実行環境の切り替え
++++++++++++++++++++++++++++++
+
+
+Python2.7 への実行環境の切り替えは、`Virtualenv <https://virtualenv.pypa.io/en/stable/>`_ で行います。
+
+仮想環境の作成方法は、
+
+    :jinja:`{{ content.link_to('virtualenv.rst', fragment='select_python_version')}}` 
+
+を参照してください。
