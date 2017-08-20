@@ -194,7 +194,6 @@ H4
 }
 
 
-
 blockquote {
   margin-left: 2em;
 }
@@ -214,6 +213,10 @@ dt:before {
 dd {
   margin-left: 1.5rem;
   margin-bottom: 1.5rem;
+}
+
+.simple li {
+  margin-bottom: 1rem;
 }
 
 #contentinfo {

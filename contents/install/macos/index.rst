@@ -13,6 +13,10 @@ macOS でよく使われるパッケージとして、次の2種類を紹介し�
 
   macOS でよく使われるパッケージマネージャで、Python だけではなく、他の多くのアプリケーションの管理を行います。
 
+  一般的なアプリケーション・Web開発やシステム管理ツールとしてPythonを利用する場合は、Homebrewからインストールするパッケージで問題ありません。
+
+
+
 
 :jinja:`{{ content.load('/install/about_anaconda.rst').html }}`
 
