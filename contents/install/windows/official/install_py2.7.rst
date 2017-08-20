@@ -79,13 +79,21 @@ WindowsではCコンパイラが添付されていないため、別途インス
 :jinja:`{{ utils.enlarge_image(content.load('./install-vc27-1.png')) }}`
 
 
-実行環境の切り替え
+Python2の実行
 +++++++++++++++++++++++++++++
 
+Python 2.7 は、:jinja:`content.link_to('py_launcher.rst')` で実行できます。
 
-Python2.7 への実行環境の切り替えは、`Virtualenv <https://virtualenv.pypa.io/en/stable/>`_ で行います。
+.. code-block::
 
-仮想環境の作成方法は、
+   C:\> py -2
+   Python 2.7.13 (v2.7.13:a06454b1afa1, Dec 17 2016, 20:53:40) [MSC v.1500 64 bit (AMD64)] on win32
+   Type "help", "copyright", "credits" or "license" for more information.
+   >>>
+
+
+
+また、Python2.7 でも、`Virtualenv <https://virtualenv.pypa.io/en/stable/>`_ による仮想環境を作成できます。
 
     :jinja:`{{ content.link_to('virtualenv.rst', fragment='select_python_version')}}` 
 

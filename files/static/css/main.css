@@ -15,20 +15,6 @@ pre {
   margin-top: 1rem;
 }
 
-.entry-content h1 {
-  margin: 1.5rem 0 1rem;
-  font-size: 2.0rem;
-}
-
-.entry-content h2 {
-  margin: 2rem 0 1rem;
-}
-
-.entry-content h3 {
-  margin: 2rem 0 1rem;
-}
-
-
 .jumbotron {
   padding: 1rem 0rem 1rem 2rem;
   margin: 0 2rem 0.5rem 2rem; 
@@ -192,10 +178,43 @@ H4
   margin: 0.4em 0 0.0em 0;
 }
 
+.entry-content h1 {
+  margin: 1.5rem 0 1rem;
+  font-size: 2.0rem;
+}
+
+.entry-content h2 {
+  margin: 2rem 0 0.5rem;
+  font-size: 1.5rem;
+}
+
+.entry-content h3 {
+  margin: 2rem 0 0.5rem;
+  font-size: 1.2rem;
+}
+
+
+
 blockquote {
   margin-left: 2em;
 }
 
+
+dt {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  text-indent: -1rem;
+  padding-left: 1rem;}
+
+dt:before {
+    content: "\025B8";
+    margin-right: 0.5rem;
+}
+
+dd {
+  margin-left: 1.5rem;
+  margin-bottom: 1.5rem;
+}
 
 #contentinfo {
   margin-top: 2em;
@@ -292,6 +311,11 @@ blockquote {
 .headerref_h2 {
   font-size: 0.8rem;
   margin-left: 1rem;
+}
+
+.headerref_h3 {
+  font-size: 0.8rem;
+  margin-left: 1.5rem;
 }
 
 .article_summary_body h1 {

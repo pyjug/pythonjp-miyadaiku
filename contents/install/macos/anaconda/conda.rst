@@ -12,7 +12,7 @@ Conda パッケージのインストール
 
 .. code-block::
 
-   C:\Users\user1>>conda install idna
+   $ conda install idna
    Fetching package metadata ...........
    Solving package specifications: .
 
@@ -34,7 +34,7 @@ Conda環境の作成
 
 .. code-block::
 
-   C:\Users\user1>conda create --name env1
+   $ conda create --name env1
    Fetching package metadata ...........
    Solving package specifications:
    Package plan for installation in environment C:\Users\user1\Anaconda3\envs\env1:
@@ -49,8 +49,8 @@ Conda環境は独立したPythonの実行環境で、他の環境には影響を
 
 .. code-block::
 
-   C:\Users\user1>activate env1
-   (env1) C:\Users\user1>
+   $ activate env1
+   (env1) $ 
 
 環境が切り替わると、コマンドプロンプトに ``(env1)`` と表示されます。
 
@@ -62,7 +62,7 @@ Pythonのバージョンを指定して環境を作成するときは、``python
 
 .. code-block::
 
-   C:\Users\user1>conda create -n py2env python=2.7
+   $ conda create -n py2env python=2.7
    Fetching package metadata ...........
    Solving package specifications: .
 
