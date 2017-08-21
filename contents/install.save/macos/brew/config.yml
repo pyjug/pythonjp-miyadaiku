@@ -1,3 +1,3 @@
 type: config
 breadclumpath: '/install/install.html, /install/macos/index.rst'
-submenupath: 'index.rst, pip.rst, virtualenv.rst, anaconda/install.rst'
+submenupath: 'install.rst, pip.rst, virtualenv.rst'

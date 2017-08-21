@@ -1,3 +1,3 @@
 type: config
-breadclumpath: '/install/install.html'
-submenupath: './official/install_py.rst, ./anaconda/install_anaconda.rst, '
+breadclumpath: '/install/install.html, index.rst'
+submenupath: 'index.rst, install_vstools2017.rst, py_launcher.rst, pip.rst, virtualenv.rst, install_py2.7.rst, anaconda/install_anaconda.rst'

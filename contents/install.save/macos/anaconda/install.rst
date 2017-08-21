@@ -1,7 +1,5 @@
-Anaconda
+Anaconda のインストール
 -----------------------------------
-
-:jinja:`{{ content.load('/install/about_anaconda.rst').html }}`
 
 
 パッケージのダウンロード
