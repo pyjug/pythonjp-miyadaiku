@@ -14,10 +14,10 @@ test:
 
 deployment:
   draft:
-    branch: master
     commands:
       - miyadaiku-build .
-      - scp -P 13855 -r outputs/* "draft@www.python.jp:"
+      - mv outputs $CIRCLE_BRANCH
+      - scp -P 13855 -r $CIRCLE_BRANCH "draft@www.python.jp:"
 
   release:
     branch: release
