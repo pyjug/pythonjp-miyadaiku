@@ -9,7 +9,7 @@ pip
 
 .. code-block::
 
-   $ pip install tse
+   $ pip install xxx
    …
 
 
@@ -17,10 +17,10 @@ pip
 
 .. code-block::
 
-   $ pip uninstall tse
+   $ pip uninstall xxx
    …
    Proceed (y/n)?
-    Successfully uninstalled tse-0.0.15
+    Successfully uninstalled xxx-0.0.15
 
 
 Pythonを指定してインストール
@@ -28,21 +28,21 @@ Pythonを指定してインストール
 
 複数のバージョンの Python がインストールされている環境では、どの Python の実行環境にパッケージをインストールするか、指定する必要があります。
 
-次のように、パッケージをインストールする対象の Python を使って ``pip`` を呼び出だすと、簡単にインストール先を指定できます。
+パッケージは、``pip`` を実行する Pythonの実行環境にインストールされます。複数のPythonがインストールされている環境で Python 3.6 にパッケージをインストールする場合には、Python 3.6 を使って次のように実行します。
 
 
 .. code-block::
 
-   $ python3.6 -m pip install tse
+   $ python3.6 -m pip install xxx
    …
 
-この場合は、``python3.6`` にパッケージをインストールします。また、別のPython環境にパッケージをインストールする場合には、
+特定のディレクトリにあるPython 2.7環境にパッケージをインストールする場合には、
 
 
 .. code-block::
 
-   $ /opt/python/bin/python2.7 -m pip install tse
+   $ /opt/python/bin/python2.7 -m pip install xxx
    …
 
-のように、インストール先のPythonを指定して実行します。
+とします。
 

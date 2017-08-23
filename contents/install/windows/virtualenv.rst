@@ -1,3 +1,4 @@
+
 仮想環境
 --------------------------------
 
@@ -82,29 +83,33 @@ PowerShellを起動し、次のコマンドを実行します。
 仮想環境の使用
 =============================
 
-仮想環境に切り替えると、環境変数 ``PATH`` が設定され、``python`` コマンド や ``py`` コマンドで仮想環境の ``Scripts`` ディレクトリから実行されるようになります。
+仮想環境に切り替えると、環境変数 ``PATH`` が設定され、``python`` コマンド や ``py`` コマンドで仮想環境の Pythonを実行できるようになります。
 
-``Scripts`` ディレクトリには ``pip`` などのコマンドもインストールされており、コマンドラインから直接実行できるようになります。
 
 .. code-block:: 
 
    C:\Users\user1> C:\Users\user1\py3env\Scripts\activate.bat
-   (py3env) C:\Users\user1>pip
+   (py3env) C:\Users\user1>python
+   Python 3.6.2 (v3.6.2:5fd33b5, Jul  8 2017, 04:57:36) [MSC v.1900 64 bit (AMD64)] on win32
+   Type "help", "copyright", "credits" or "license" for more information.
+   >>>
 
-   Usage:
-     pip <command> [options]
 
-   Commands:
-     install                     Install packages.
-     download                    Download packages.
-     …
+仮想環境を使用中は、仮想環境の ``Scripts`` ディレクトリにインストールされるコマンドも実行できるようになります。``pip`` などコマンドが、次のように実行できます。
 
-``pip`` コマンドを使って、通常通りパッケージをインストールできます。
+.. code-block::
+
+   C:\Users\user1> C:\Users\user1\py3env\Scripts\activate.bat
+   (py3env) C:\Users\user1>pip 
+
+   
+
+``pip`` コマンドを使って、仮想環境にパッケージをインストールできます。
 
 .. code-block:: 
 
    (py3env) C:\Users\user1>pip install tse
-   Collecting tse
+       Collecting tse
      Downloading tse-0.0.15.tar.gz
    Collecting argparse (from tse)
      Downloading argparse-1.4.0-py2.py3-none-any.whl
@@ -114,6 +119,8 @@ PowerShellを起動し、次のコマンドを実行します。
 
 
 インストールしたパッケージは、仮想環境内にのみ書き込まれ、元の Python や他の仮想環境からは利用できません。
+
+
 
 
 仮想環境の終了
@@ -142,7 +149,7 @@ Pythonを指定した仮想環境
 
    C:\Users\user1> py -2 -m pip install virtualenv
 
-Python2.7 を使って、仮想環境を作成します。
+まず、Python2.7 を使って、仮想環境を作成します。
 
 .. code-block:: 
 
@@ -153,7 +160,7 @@ Python2.7 を使って、仮想環境を作成します。
 
 .. code-block:: 
 
-   C:\Users\user1> py27env\Scripts\activate.bat
+   C:\Users\user1>py27env\Scripts\activate.bat
    (py27env) C:\Users\user1>python
    Python 2.7.13 (v2.7.13:a06454b1afa1, Dec 17 2016, 20:53:40) [MSC v.1500 64 bit (AMD64)] on win32
    Type "help", "copyright", "credits" or "license" for more information.
