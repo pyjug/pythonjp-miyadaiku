@@ -37,6 +37,17 @@ VirtualEnv
 
 仮想環境に切り替えると、環境変数 ``PATH`` が設定され、``python`` コマンド で仮想環境の ``bin`` ディレクトリから実行されるようになります。
 
+通常、``python`` コマンドは Python2.7、``python3`` コマンドは Python 3.x を実行しますが、仮想環境中では、``python`` コマンドは仮想環境を作成した Python を起動します。Python 3.x 用の仮想環境では、``python`` コマンドで Python 3.x が実行されます。
+
+.. code-block:: 
+
+   (py3env) $ python
+   Python 3.6.1 (default, Apr  4 2017, 09:40:21)
+   [GCC 4.2.1 Compatible Apple LLVM 8.1.0 (clang-802.0.38)] on darwin
+   Type "help", "copyright", "credits" or "license" for more information.
+   >>>
+
+
 ``bin`` ディレクトリには ``pip`` などのコマンドもインストールされており、コマンドラインから実行できるようになります。
 
 .. code-block:: 
@@ -51,7 +62,12 @@ VirtualEnv
      download                    Download packages.
      …
 
-``pip`` コマンドを使って、通常通りパッケージをインストールできます。
+
+パッケージのインストール
+=============================
+
+
+仮想環境を利用中も、通常通り ``pip`` コマンドを使ってパッケージをインストールできます。
 
 .. code-block:: 
 
@@ -112,7 +128,3 @@ Python2.7 を使って、仮想環境を作成します。
    [GCC 4.2.1 Compatible Apple LLVM 8.1.0 (clang-802.0.38)] on darwin
    Type "help", "copyright", "credits" or "license" for more information.
    >>>
-
-
-
-

@@ -44,6 +44,17 @@ Python3 のインストール
    …
 
 
+インストールしたPythonは、``python3`` コマンドで実行できます。
+
+.. code-block::
+
+   $ python3
+   Python 3.6.1 (default, Apr  4 2017, 09:40:21)
+   [GCC 4.2.1 Compatible Apple LLVM 8.1.0 (clang-802.0.38)] on darwin
+   Type "help", "copyright", "credits" or "license" for more information.
+   >>>
+
+
 Python2 のインストール
 ===========================
 
@@ -58,3 +69,12 @@ Python2 のインストール
    ==> /usr/local/Cellar/python/2.7.13_1/bin/python2 -s setup.py --no-user-cfg install --force --verbose --single-version-ex
    …
 
+インストールしたPythonは、``python`` コマンドや ``python2`` コマンドで実行できます。
+
+.. code-block::
+
+   $ python
+    Python 2.7.13 (default, Apr  4 2017, 08:47:57)
+    [GCC 4.2.1 Compatible Apple LLVM 8.1.0 (clang-802.0.38)] on darwin
+    Type "help", "copyright", "credits" or "license" for more information.
+    >>>
