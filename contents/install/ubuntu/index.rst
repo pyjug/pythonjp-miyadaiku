@@ -23,7 +23,10 @@ Python 3.5/Python 2.7がインストールされており、そのままで利�
 Python 3.6 のインストール
 ++++++++++++++++++++++++++++++
 
-Python 3.6 を使用する場合は、`Jonathon F <https://launchpad.net/~jonathonf>`_ 氏のプライベートリポジトリからインストールできます。
+Python 3.6 を使用する場合は、`Jonathon F さんのプライベートリポジトリ <https://launchpad.net/~jonathonf>`_ からインストールできます。
+
+:jinja:`{{ content.link_to('./pip.rst') }}` がインストールされないため、http://bootstrap.pypa.io よりインストールします。
+
 
 .. code-block:: sh
 
@@ -32,6 +35,23 @@ Python 3.6 を使用する場合は、`Jonathon F <https://launchpad.net/~jonath
    $ sudo apt-get install python3.6 python3.6-dev
    $ wget https://bootstrap.pypa.io/get-pip.py
    $ sudo python3.6 get-pip.py
+
+
+Pythonの実行
++++++++++++++++++++
+
+Python各バージョンは次のコマンドで実行できます。
+
+Python 3.5
+    ``python3``、``python3.5``
+
+Python 3.6
+    ``python3.6``
+
+Python 2.7
+    ``python2``、``python2.7``
+
+
 
 
 Ubuntu 16.10 以降
@@ -44,7 +64,7 @@ Python 3.5/Python 2.7がインストールされています。Python 3.6も追�
    $ sudo apt install python3.6
 
 
-デフォルトでは :jinja:`{{ content.link_to('./pip.rst') }}` がインストールされていませんので、インストールしておきます。
+デフォルトでは :jinja:`{{ content.link_to('./pip.rst') }}` がインストールされないので、別途インストールしておきます。
 
 また、Pythonの拡張パッケージをインストールする際に必要となる、開発用パッケージも入れておきましょう。
 
@@ -55,5 +75,16 @@ Python 3.5/Python 2.7がインストールされています。Python 3.6も追�
    $ apt install python-pip python-dev
 
 
+Pythonの実行
++++++++++++++++++++
 
+Python各バージョンは次のコマンドで実行できます。
 
+Python 3.5
+    ``python3``、``python3.5``
+
+Python 3.6
+    ``python3.6``
+
+Python 2.7
+    ``python2``、``python2.7``
