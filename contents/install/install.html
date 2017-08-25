@@ -1,8 +1,66 @@
 title: 環境構築ガイド
 type: article
 
-<h4>{{ content.link_to('/install/windows/index.rst', text='Windows') }}</h4>
-<h4>{{ content.link_to('/install/macos/index.rst', text='macOS') }}</h4>
-<h4>{{ content.link_to('/install/ubuntu/index.rst', text='Ubuntu') }}</h4>
-<h4>{{ content.link_to('/install/centos/index.rst', text='CentOS') }}</h4>
-<h4>{{ content.link_to('/install/fedora/index.rst', text='Fedora') }}</h4>
+
+{% set envs = [
+   ('Windows', './windows.png', './windows/index.rst'),
+   ('macOS', None, './macos/index.rst'),
+   ('Ubuntu', './ubuntu.png', './ubuntu/index.rst'),
+   ('CentOS', './centos.png', './centos/index.rst'),
+   ('Fedora', './fedora.png', './fedora/index.rst'),
+   ]
+%}
+
+
+<style>
+  .oslist {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+
+
+  .oslistitem {
+    vertical-align: top;
+    text-align: center;
+    height: 150px;
+    width: 200px;
+    border: solid 1px rgba(0,0,0,.125);
+    border-radius: .25rem;
+  }
+
+  .oslistitem:hover {
+    border: solid 3px rgba(0,0,0,.525);
+  }
+
+
+
+  .oslist img {
+    display: inline-block;
+    width:100px;
+    max-height: 150px;
+    vertical-align: text-bottom;
+  }
+
+  .oslist h1 {
+    display: inline-block;
+    vertical-align: middle;
+    height: 150px;
+  }
+</style>
+
+<div class='oslist'>
+
+{% for (text, img, link) in envs %}
+   <div class='oslistitem'>
+   <a href='{{ content.path_to(link) }}'>
+   <h1>
+     {% if img %}<img src='{{ content.path_to(img) }}'>{% endif %} <br>
+     {{ text }}<br>
+   </h1>
+
+   </a> 
+   </div>
+{% endfor %}
+
+</div>
