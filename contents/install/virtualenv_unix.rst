@@ -37,7 +37,9 @@ VirtualEnv
 
 仮想環境に切り替えると、環境変数 ``PATH`` が設定され、``python`` コマンド で仮想環境の ``bin`` ディレクトリから実行されるようになります。
 
-通常、``python`` コマンドは Python2.7、``python3`` コマンドは Python 3.x を実行しますが、仮想環境中では、``python`` コマンドは仮想環境を作成した Python を起動します。Python 3.x 用の仮想環境では、``python`` コマンドで Python 3.x が実行されます。
+通常、``python`` コマンドは Python2.7を実行し、Python 3.x を実行する場合は``python3`` コマンドを使用しますが、仮想環境中では、``python`` コマンドは仮想環境を作成した Python を起動します。
+
+Python 3.x 用の仮想環境では、``python`` コマンドで Python 3.x が実行されます。
 
 .. code-block:: 
 
