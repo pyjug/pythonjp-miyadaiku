@@ -14,7 +14,7 @@ Pythonの拡張パッケージをインストールする際に必要となる�
 
 .. code-block:: sh
 
-   $ dnf install python3-deve
+   $ dnf install python3-devel
 
 
 Python 2.7 のインストール
