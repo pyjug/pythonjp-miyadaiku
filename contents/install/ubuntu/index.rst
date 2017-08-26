@@ -16,8 +16,8 @@ Python 3.5/Python 2.7がインストールされており、そのままで利�
 
 .. code-block:: sh
 
-   $ apt install python3-pip python3-dev
-   $ apt install python-pip python-dev
+   $ sudo apt install python3-pip python3-dev
+   $ sudo apt install python-pip python-dev
 
 
 Python 3.6 のインストール
@@ -49,7 +49,7 @@ Python 3.6
     ``python3.6``
 
 Python 2.7
-    ``python2``、``python2.7``
+    ``python``、``python2``、``python2.7``
 
 
 
@@ -70,10 +70,11 @@ Python 3.5/Python 2.7がインストールされています。Python 3.6も追�
 
 .. code-block:: sh
 
-   $ apt install python3.6-pip python3.6-dev
-   $ apt install python3.5-pip python3.5-dev
-   $ apt install python-pip python-dev
-
+   $ sudo apt install python3.5-pip python3.5-dev
+   $ sudo apt install python-pip python-dev
+   $ sudo apt install python3.6-dev
+   $ wget https://bootstrap.pypa.io/get-pip.py
+   $ sudo python3.6 get-pip.py
 
 Pythonの実行
 +++++++++++++++++++
@@ -87,4 +88,6 @@ Python 3.6
     ``python3.6``
 
 Python 2.7
-    ``python2``、``python2.7``
+    ``python``、``python2``、``python2.7``
+
+
