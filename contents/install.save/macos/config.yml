@@ -1,3 +1,0 @@
-type: config
-breadclumpath: '/install/install.html'
-submenupath: './brew/install.rst, ./anaconda/install.rst, '

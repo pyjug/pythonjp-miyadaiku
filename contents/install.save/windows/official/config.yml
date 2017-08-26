@@ -1,3 +1,0 @@
-type: config
-breadclumpath: '/install/install.html, /install/windows/index.rst'
-submenupath: 'install_py.rst, install_vstools2017.rst, py_launcher.rst, pip.rst, virtualenv.rst, install_py2.7.rst'
