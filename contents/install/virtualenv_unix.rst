@@ -6,6 +6,13 @@
 VirtualEnv
 *******************************
 
+Virtualenvは、:jinja:`{{ page.link_to('./pip.rst') }}` コマンドでインストールできます。
+
+.. code-block::
+
+   $ pip3 install virtualenv
+
+
 
 仮想環境の作成
 =============================

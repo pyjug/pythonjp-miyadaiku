@@ -8,12 +8,6 @@
 
 
 
-Virtualenvは、:jinja:`{{ content.link_to('./pip.rst') }}` コマンドでインストールできます。
-
-.. code-block::
-
-   $ pip3 install virtualenv
-
 
 Virtualenvのコマンド
 =========================
@@ -23,6 +17,8 @@ Virtualenvのコマンド
 
    {{ content.load('/install/virtualenv_unix.rst').html }}
 
+
+.. target:: virtualenvwrapper
 
 Virtualenvwrapper
 =========================

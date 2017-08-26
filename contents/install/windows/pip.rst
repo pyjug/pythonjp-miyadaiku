@@ -5,7 +5,7 @@ pip
 
 `pip <https://pip.pypa.io/en/stable/>`_ は、`The Python Package Index <https://pypi.python.org/pypi>`_ に公開されているPythonパッケージのインストールなどを行うユーティリティで、Python 3.4以降には、標準で付属しています。
 
-Windows環境では、pipコマンドは :jinja:`{{ content.path_to('./py_launcher.rst') }}` を使用した起動が簡単です。
+Windows環境では、pipコマンドは :jinja:`{{ content.link_to('./py_launcher.rst') }}` を使用した起動が簡単です。
 
 .. code-block::
 
