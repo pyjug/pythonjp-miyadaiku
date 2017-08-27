@@ -1,0 +1,33 @@
+{% extends "page_article.html" %}
+
+{% block jumbotron %}
+  <span style='font-size:0.8rem;'>
+   {{ utils.make_links(page, page.breadclumpath, ' 〉 ') }}
+  </span>
+
+  <h1>{{page.link()}}</h1>
+
+  <span style='font-size:0.8rem;'>
+   {{ utils.make_links(page, page.submenupath, ' ￤ ') }}
+  </span>
+{% endblock %}
+
+
+{% block rightbox %}
+  <div class="card right-box">
+    <div class="card-block headerref">
+      <div class="card-title">
+        <h2>{{ page.title }}</h2>
+      </div>
+      {% set headers = page.headers %}
+
+      {% if headers %}
+        {% for id, elem, text in headers %}
+          <div class="headerref_{{ elem }}">
+            <a href="#{{id}}">{{text}}</a>
+          </div>
+        {% endfor %}
+      {% endif %}
+    </div>
+  </div>
+{% endblock %}
