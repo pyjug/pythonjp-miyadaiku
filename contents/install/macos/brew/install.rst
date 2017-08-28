@@ -10,7 +10,7 @@ Homebrewのインストール
 
 LaunchPadから ``ターミナル`` を起動し、次のコマンドを入力します。
 
-.. code-block:: sh
+.. code-block:: console
 
    $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
    ==> This script will install:
@@ -29,7 +29,7 @@ Python3 のインストール
 
 ``ターミナル`` で、次のコマンドを入力します。
 
-.. code-block:: sh
+.. code-block:: console
 
    $ brew install python3
    ==> Installing dependencies for python3: readline, sqlite, gdbm, openssl, xz
@@ -44,7 +44,7 @@ Python2 のインストール
 
 ``ターミナル`` で、次のコマンドを入力します。
 
-.. code-block:: sh
+.. code-block:: console
 
    $ brew install python2
    ==> Downloading https://homebrew.bintray.com/bottles/python-2.7.13_1.sierra.bottle.tar.gz

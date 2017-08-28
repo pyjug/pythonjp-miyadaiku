@@ -15,7 +15,7 @@ CentOSのリポジトリは Python 3.x をリリースしていないので、`I
 
 まず、IUS のリポジトリを yum に追加します
 
-.. code-block:: sh
+.. code-block:: console
 
    $ su
    # yum -y install https://centos7.iuscommunity.org/ius-release.rpm
@@ -23,7 +23,7 @@ CentOSのリポジトリは Python 3.x をリリースしていないので、`I
 次のコマンドで、Python 3.6 をインストールします。また、拡張モジュールのインストールに必要な開発環境と、:jinja:`{{ content.link_to('./pip.rst') }}` コマンドもインストールします。
 
 
-.. code-block:: sh
+.. code-block:: console
 
    $ su
    # yum -y install python36u  python36u-devel python36u-pip
@@ -34,7 +34,7 @@ Python 2.7 のインストール
 
 Python 2.7 はデフォルトでインストール済みですが、拡張モジュールのインストールに必要な開発環境と、:jinja:`{{ content.link_to('./pip.rst') }}` コマンドをインストールします。
 
-.. code-block:: sh
+.. code-block:: console
 
    $ su
    # yum -y install yum install python2-devel python2-pip

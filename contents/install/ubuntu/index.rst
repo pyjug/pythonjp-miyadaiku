@@ -14,7 +14,7 @@ Python 3.5/Python 2.7がインストールされており、そのままで利�
 
 また、Pythonの拡張パッケージをインストールする際に必要となる、開発用パッケージも入れておきましょう。
 
-.. code-block:: sh
+.. code-block:: console
 
    $ sudo apt install python3-pip python3-dev
    $ sudo apt install python-pip python-dev
@@ -28,7 +28,7 @@ Python 3.6 を使用する場合は、`Jonathon F さんのプライベートリ
 :jinja:`{{ content.link_to('./pip.rst') }}` がインストールされないため、http://bootstrap.pypa.io よりインストールします。
 
 
-.. code-block:: sh
+.. code-block:: console
 
    $ sudo add-apt-repository ppa:jonathonf/python-3.6
    $ sudo apt-get update
@@ -59,7 +59,7 @@ Ubuntu 16.10 以降
 
 Python 3.5/Python 2.7がインストールされています。Python 3.6も追加インストール可能です。
 
-.. code-block:: sh
+.. code-block:: console
 
    $ sudo apt install python3.6
 
@@ -68,7 +68,7 @@ Python 3.5/Python 2.7がインストールされています。Python 3.6も追�
 
 また、Pythonの拡張パッケージをインストールする際に必要となる、開発用パッケージも入れておきましょう。
 
-.. code-block:: sh
+.. code-block:: console
 
    $ sudo apt install python3.5-pip python3.5-dev
    $ sudo apt install python-pip python-dev

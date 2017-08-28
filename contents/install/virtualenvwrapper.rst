@@ -25,7 +25,7 @@ Shell環境設定ファイルの修正
 
 ``~/.bashrc`` などのShell環境設定ファイルに、以下の設定を追加します。
 
-.. code-block:: sh
+.. code-block:: console
 
    export WORKON_HOME=$HOME/.virtualenvs
    export PROJECT_HOME=$HOME/projects
@@ -34,7 +34,7 @@ Shell環境設定ファイルの修正
 
 ファイルを修正したら、次のコマンドで修正を適用します。
 
-.. code-block:: sh
+.. code-block:: console
 
    $ . ~/.bashrc
 

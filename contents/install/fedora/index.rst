@@ -12,9 +12,10 @@ Python 3.6がインストールされており、そのままで利用可能で�
 
 Pythonの拡張パッケージをインストールする際に必要となる、開発用パッケージも入れておきましょう。
 
-.. code-block:: sh
+.. code-block:: console
 
-   $ dnf install python3-devel
+   $ su
+   # dnf install python3-devel
 
 
 Python 2.7 のインストール
@@ -24,9 +25,10 @@ Python 2.7はインストールされていないため、必要なら別途イ�
 
 
 
-.. code-block:: sh
+.. code-block:: console
 
-   $ dnf install python2 python2-devel
+   $ su
+   # dnf install python2 python2-devel
 
 Pythonの実行
 +++++++++++++++++++
