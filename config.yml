@@ -23,3 +23,6 @@ themes:
   - miyadaiku.themes.docutils_html5
 
 ga_tracking_id: UA-34175846-1
+
+
+imports: utils.html

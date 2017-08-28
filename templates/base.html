@@ -74,11 +74,9 @@
 </nav>
 
 <div class="jumbotron">
-  <div class="container">
-    {% block jumbotron %}
-      {{ content.load(content.jumbo_content).html }}
-    {% endblock %}
-  </div>
+  {% block jumbotron %}
+    {{ content.load(content.jumbo_content).html }}
+  {% endblock %}
 </div>
 
 
@@ -86,7 +84,7 @@
 <div id='content'>
   {% block container %}
 
-  <div class="container">
+  <div class="main">
     <div class="row">
       <div class="col-md-8">
         {% block content %} {% endblock %}
@@ -117,5 +115,34 @@
 <script type="text/javascript">!function(d,i){if(!d.getElementById(i)){var j=d.createElement("script");j.id=i;j.src="https://widgets.getpocket.com/v1/j/btn.js?v=1";var w=d.getElementById(i);d.body.appendChild(j);}}(document,"pocket-btn-js");</script>
 
 <script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
+
+
+
+
+<div class="modal fade" id="imagemodal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <button type="button" class="close" data-dismiss="modal">
+            &times;
+        </button><br>
+        <img src="" id=enlargeimage>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script>
+$(function() {
+  $(".enlarge_img").on("click", function(e) {
+    let img = $(e.currentTarget).children('img')[0];
+    $('#enlargeimage').attr('src', img.src);
+    $('#imagemodal').modal('show');
+    e.preventDefault();
+  });
+})
+</script>
+
 
 {% endblock body %}
