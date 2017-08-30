@@ -1,0 +1,30 @@
+書籍「Python言語によるプログラミングイントロダクション第2版」
+=====================================================================================
+
+.. article::
+   :date: 2017-08-30
+
+
+
+.. raw:: html
+
+   <a href='http://www.kindaikagaku.co.jp/information/kd0518.htm'><img src='http://www.kindaikagaku.co.jp/img/book/KD0518-170.jpg' style='max-height:300px; float:left; margin-right: 2rem;'></a>
+
+
+
+
+出版日
+    2017年9月1日
+
+URL
+    http://www.kindaikagaku.co.jp/information/kd0518.htm
+
+
+
+最新にして最強!! MIT人気講義の教科書、第2版！
+
+大変好評を得ている，MITのトップクラスの人気を誇る講義内容をまとめた計算科学の教科書の第2版。
+
+今回の改訂では，後半の内容が大幅に増え，新たに5章が追加されている。特に「機械学習」を意識して，統計学の話題が豊富になっている。
+
+Python言語を活用して，計算科学を学ぶ読者必携の書！ Python Ver3.5に対応。
