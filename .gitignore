@@ -12,3 +12,4 @@ build
 .venv
 
 outputs
+_depends.pickle
