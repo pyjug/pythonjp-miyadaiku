@@ -1,0 +1,5 @@
+type: config
+subpages:
+    - /install/macos/index.rst
+    - /install/macos/pip.rst
+    - /install/macos/virtualenv.rst

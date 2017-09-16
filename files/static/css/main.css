@@ -303,9 +303,36 @@ dd {
   padding: 2px 3px 1px;
 }
 
+
 .headerref {
   line-height: 1.5rem;
 }
+
+.headerref h2 {
+  line-height: 2rem;
+  margin-left: .5rem;
+  margin-right: .5rem;
+}
+
+.header_curpage {
+  background-color: #eceeef;
+}
+
+.header_subheaders {
+  margin-bottom: .5rem;
+  margin-left: 1rem;
+  margin-right: .5rem;
+}
+
+.headerref h2 a {
+  color: #234764;
+  font-weight: normal;
+}
+
+.headerref .header_curpage h2 a {
+  color: #0275d8;
+}
+
 
 .headerref_h1 {
   font-size: 0.9rem;
@@ -331,4 +358,19 @@ dd {
 
 .article_summary_body h3 {
   font-size: 1.2rem;
+}
+
+
+.page_prev_cur_next {
+  font-size: 0.8rem;
+  flex-basis: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.page_link_item {
+  flex-basis: 0;
+  flex-grow: 1;
+  text-align: center;
 }

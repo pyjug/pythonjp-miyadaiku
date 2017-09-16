@@ -8,26 +8,50 @@
   <h1>{{page.link()}}</h1>
 
   <span style='font-size:0.8rem;'>
-   {{ utils.make_links(page, page.submenupath, ' ￤ ') }}
+   {{ utils.make_links(page, page.subpages, ' ￤ ') }}
   </span>
+{% endblock %}
+
+
+{% block content_body %}
+  {{ page.html}}
+  <hr>
+  {{ utils.prev_and_next(page, page.subpages)}}
+  <hr>
+
 {% endblock %}
 
 
 {% block rightbox %}
   <div class="card right-box">
-    <div class="card-block headerref">
-      <div class="card-title">
-        <h2>{{ page.title }}</h2>
-      </div>
-      {% set headers = page.headers %}
+    <div class="headerref">
+      {% for p in page.subpages %}
+        {% set curpage = page.load(p) %}
+        {% set is_same = page.is_same(curpage) %}
 
-      {% if headers %}
-        {% for id, elem, text in headers %}
-          <div class="headerref_{{ elem }}">
-            <a href="#{{id}}">{{text}}</a>
+        {% if is_same %}
+          <div class='header_curpage'>
+            <h2>{{ curpage.link() }}</h2>
+            {% set headers = page.headers %}
+
+            {% if headers %}
+              <div class='header_subheaders'>
+                {% for id, elem, text in headers %}
+                  <div class="headerref_{{ elem }}">
+                    <a href="#{{id}}">{{text}}</a>
+                  </div>
+                {% endfor %}
+              </div>
+            {% endif %}
           </div>
-        {% endfor %}
-      {% endif %}
+
+        {% else %}
+          <div class='header_otherpage'>
+            <h2>{{ curpage.link() }}</h2>
+          </div>
+        {% endif %}
+      {% endfor %}
     </div>
   </div>
+
 {% endblock %}

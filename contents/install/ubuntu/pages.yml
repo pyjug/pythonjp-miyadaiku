@@ -1,0 +1,5 @@
+type: config
+subpages:
+    - /install/ubuntu/index.rst
+    - /install/ubuntu/pip.rst
+    - /install/ubuntu/virtualenv.rst

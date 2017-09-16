@@ -1,0 +1,5 @@
+type: config
+subpages:
+    - /install/fedora/index.rst
+    - /install/fedora/pip.rst
+    - /install/fedora/virtualenv.rst

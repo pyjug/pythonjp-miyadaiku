@@ -41,7 +41,10 @@
 
 {% macro make_links(page, refs, sep) -%}
   {% set links = [] %}
-  {% for ref in refs.split(',') %}
+  {% if isinstance(refs, str) %}
+    {% set refs = refs.split(',') %}
+  {% endif %}
+  {% for ref in refs %}
     {% if ref %}
       {% set obj = page.load(ref.strip()) %}
       {% if obj.is_same(page) %}
@@ -54,3 +57,29 @@
   {{ sep.join(links) | safe }}
 {%- endmacro %}
 
+
+
+{% macro prev_and_next(page, pagelist) -%}
+  {% set prev, next = get_prev_and_next_page(page, pagelist) %}
+  <div class='page_prev_cur_next'>
+    <div class='page_link_item'>
+      {% if prev %}
+        <a href='{{ prev.path() }}'>&lArr; {{ prev.title }}</a>
+      {% endif %}
+    </div>
+
+    <div class='page_link_item'>
+      {{ page.link() }}
+    </div>
+
+    <div class='page_link_item'>
+      {% if next %}
+        <a href='{{ next.path() }}'>{{ next.title }} &rArr;</a>
+      {% endif %}
+    </div>
+  </div>
+
+  {% if prev %}
+  {% endif %}
+
+{%- endmacro %}

@@ -1,8 +1,6 @@
 {% extends "base.html" %}
 
 {% block jumbotron %}
-  {% import 'utils.html' as utils %}
-
   {% if page.show_sns_button %}
     <div class='articlle_header'> 
       {{ utils.page_date(page) }}
@@ -13,16 +11,16 @@
 {% endblock %}
 
 {% block content %}
-  {% import 'utils.html' as utils %}
-
 
 <div id="content" class="body article">
   <div class="entry-content">
-    {{ page.html}}
+    {% block content_body %}
+      {{ page.html}}
+    {% endblock %}
 
-  {% if page.show_sns_button %}
-    {{ utils.snsbuttons(page) }}
-  {% endif %}
+    {% if page.show_sns_button %}
+      {{ utils.snsbuttons(page) }}
+    {% endif %}
   </div><!-- /.entry-content -->
 </div>
 {% endblock %}

@@ -1,3 +1,2 @@
 type: config
 breadclumpath: '/install/install.html, /install/ubuntu/index.rst'
-submenupath: 'index.rst, pip.rst, virtualenv.rst, anaconda/install.rst'
