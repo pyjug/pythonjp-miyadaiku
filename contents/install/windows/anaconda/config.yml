@@ -1,3 +1,0 @@
-type: config
-breadclumpath: '/install/install.html, /install/windows/index.rst'
-submenupath: 'install_anaconda.rst, conda.rst'
