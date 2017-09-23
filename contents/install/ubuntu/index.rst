@@ -23,9 +23,7 @@ Python 3.5/Python 2.7がインストールされており、そのままで利�
 Python 3.6 のインストール
 ++++++++++++++++++++++++++++++
 
-Python 3.6 を使用する場合は、`Jonathon F さんのプライベートリポジトリ <https://launchpad.net/~jonathonf>`_ からインストールできます。
-
-:jinja:`{{ content.link_to('./pip.rst') }}` がインストールされないため、http://bootstrap.pypa.io よりインストールします。
+Python 3.6 を使用する場合は、`Jonathon F さんのプライベートリポジトリ <https://launchpad.net/~jonathonf>`_ からインストールできます。:jinja:`{{ content.link_to('./pip.rst') }}` コマンドは、http://bootstrap.pypa.io よりインストールします。
 
 
 .. code-block:: console
