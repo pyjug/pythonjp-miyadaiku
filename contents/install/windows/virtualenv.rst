@@ -66,7 +66,7 @@ PowerShellを起動し、次のコマンドを実行します。
 
 .. code-block::
 
-    PS C:\> Set-ExecutionPolicy Unrestricted -Force -Scope CurrentUser
+    PS C:\> Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
 
 
 次に、作成した仮想環境の ``Scripts\activate.ps1`` を実行します
