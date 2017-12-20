@@ -199,11 +199,17 @@ blockquote {
 }
 
 
+dl.field-list > dt,
+dl.option-list > dt,
+dl.docinfo > dt,
+dl.footnote > dt,
+dl.citation > dt,
 dt {
   font-size: 1.1rem;
   margin-bottom: 0.5rem;
   text-indent: -1rem;
-  padding-left: 1rem;}
+  padding-left: 1rem;
+}
 
 dt:before {
     content: "\025B8";
