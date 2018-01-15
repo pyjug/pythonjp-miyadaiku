@@ -7,11 +7,11 @@
 
 当サイトのコンテンツは、
 
-    https://github.com/pyjug/pelican.python.jp
+    https://github.com/pyjug/pythonjp-miyadaiku
 
 で管理されています。サイト内容への質問などは、 
 
-    https://github.com/pyjug/pelican.python.jp/issues 
+    https://github.com/pyjug/pythonjp-miyadaiku/issues
 
 にてご連絡ください。
 

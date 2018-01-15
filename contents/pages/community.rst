@@ -71,6 +71,29 @@ Python.jp slackチャンネル  |pythonmljp|
 
    <div style='clear=both'><br/></div>
 
+
+----
+
+.. raw:: html
+
+   <div id='pyladies_tokyo'/>
+
+
+PyLadies Tokyo :jinja:`<img src={{ page.path_to("./pyladies_tokyo.png") }} style='float:right'>`
+======================================================================================================================================================
+
+
+`PyLadies Tokyo <https://pyladies-tokyo.connpass.com/>`_ は，`PyLadies <http://www.pyladies.com/>`_  の東京(or 日本!?)支部として，女性 Pythonista (=Python利用者) を繋ぐために活動しています．本コミュニティでは Python が好きな女性の参加を心待ちにしています^^！
+
+初心者／熟練者問いませんので，Pythonでコードを書いたことがない・・・という方でも，Pythonに興味があればお気軽にご参加下さい．（Pythonを用いた初心者向けイベントも企画します）
+
+
+
+
+.. raw:: html
+
+   <div style='clear=both' ><br></div> 
+
 ----
 
 Python 日本語メーリングリスト |pythonmljp|
