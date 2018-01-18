@@ -20,7 +20,7 @@
 
    <div id='pythonjpslack'/>
 
-Python.jp slackチャンネル  |pythonmljp|
+Python.jp slack  |pythonmljp|
 ===============================================
 
 `Python.jp Slack channnel <https://pythonjp.slack.com>`_ を作成しました。情報交換・質問・雑談などにご利用ください。

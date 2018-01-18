@@ -1,7 +1,7 @@
 .. article::
    :date: 2016-12-30 21:00:00
 
-Python.jp slackチャンネル
+Python.jp slack
 ============================
 
 
