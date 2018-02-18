@@ -1,2 +1,4 @@
 type: config
-breadclumpath: '/install/install.html, /install/fedora/index.rst'
+breadclumpath: 
+    - /install/install.html
+    - /install/fedora/index.rst

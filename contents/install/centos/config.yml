@@ -1,2 +1,4 @@
 type: config
-breadclumpath: '/install/install.html, /install/centos/index.rst'
+breadclumpath: 
+    - /install/install.html
+    - /install/centos/index.rst
