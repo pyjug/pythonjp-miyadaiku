@@ -1,2 +1,5 @@
 type: config
-breadclumpath: '/install/install.html, /install/anaconda/index.rst'
+
+breadclumpath: 
+    - /install/install.html
+    - /install/anaconda/index.rst

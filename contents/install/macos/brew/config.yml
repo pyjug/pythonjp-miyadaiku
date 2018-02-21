@@ -1,3 +1,4 @@
 type: config
-breadclumpath: '/install/install.html, /install/macos/index.rst'
-submenupath: 'install.rst, pip.rst, virtualenv.rst'
+breadclumpath: 
+    - /install/install.html
+    - /install/macos/index.rst
