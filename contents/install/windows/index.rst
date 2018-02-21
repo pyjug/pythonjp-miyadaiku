@@ -1,60 +1,24 @@
 
-Python3のインストール
+Windows 環境のPython
 --------------------------------
 
-Windows環境に、Pythonの公式パッケージをダウンロードしてインストールする手順を解説します。
+Windows環境では、PythonはOSに添付されていないので、自分でパッケージをダウンロードしてインストールします。
 
+ここでは、Windows環境に、Pythonの公式パッケージをダウンロードしてインストールする手順を解説します。
 
+インストール手順
+=========================
 
-パッケージのダウンロード
-+++++++++++++++++++++++++++++
+:jinja:`{{ content.link_to('./install_py3.rst') }}` 
 
+   Python 3.x の公式パッケージをダウンロードし、インストールします。
 
-https://www.python.org/downloads/windows/ より、パッケージをダウンロードします。
+:jinja:`{{ content.link_to('./install_vstools2017.rst') }}` (オプション)
 
-最新パッケージとして、Python 3.x と Python 2.7.x がダウンロードできます。特別な理由がなければ、Python 3.x.x (下図では Python 3.6.4) をクリックします。
+   Pythonの拡張パッケージをインストールするときに、Cコンパイラが必要となる場合があります。
 
-:jinja:`{{ utils.enlarge_image(content.load('./download-win-1.png')) }}`
+   Windows環境では、Cコンパイラが添付されていないので、必要に応じてインストールします。
 
+:jinja:`{{ content.link_to('./install_py2.7.rst') }}` (オプション)
 
-
-
-画面の一番下に、ダウンロード可能なファイルが表示されます。
-
-:jinja:`{{ utils.enlarge_image(content.load('./download-win2.png')) }}`
-
-
-インストールするWindowsが32bit版なら
-
-  **Windows x86 web-based installer**
-
-64bit版なら
-
-  **Windows x86-64 web-based installer**
-
-をダウンロードします。
-
-Windowsの種類が不明な場合は、
-
-    https://support.microsoft.com/ja-jp/help/958406
-
-を参照して確認できます。
-
-
-
-
-
-
-
-
-パッケージのインストール
-+++++++++++++++++++++++++++++
-
-ダウンロードしたパッケージを実行し、*Install now* をクリックしてインストールを開始します。
-
-:jinja:`{{ utils.enlarge_image(content.load('./py-install1.png')) }}`
-
-
-
-
-TBD chocolatey/nuget
+   Python 2.7が必要であれば、公式パッケージをダウンロードしてインストールします。
