@@ -3,7 +3,7 @@ Pythonの実行方法
 ===============================
 
 
-Windows環境では、Pythonランチャー  ``py.exe`` がインストールされます。
+Windows環境では、Pythonランチャー ``py.exe`` がインストールされます。
 
 MacOS や Linux などの Unix系OSでは、``python`` コマンドで Python を実行しますが、Windowsではこの ``py.exe`` で実行したほうが便利です。
 
@@ -61,3 +61,6 @@ PATH 環境変数の登録
 :jinja:`{{ utils.enlarge_image(content.load('./py-install1.png')) }}`
 
 
+``PATH`` 環境変数には、Pythonのインストールディレクトリ(``C:\Users\XXX\AppData\Local\Programs\Python\Python36\``)と、インストールディレクトリの ``Scripts`` ディレクトリ(``:\Users\ishimoto\AppData\Local\Programs\Python\Python36\Scripts\``) が追加されます。
+
+``Scripts`` ディレクトリは、``pip.exe`` コマンドなど、追加でインストールしたコマンドの実行ファイルがインストールされるディレクトリです。
