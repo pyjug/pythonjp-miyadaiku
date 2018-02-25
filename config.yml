@@ -1,7 +1,7 @@
 # Miyadaiku config file
 
 # Base URL of the site
-site_url: https://www.python.jp/draft/
+site_url: https://www.python.jp/
 
 # Title of the site
 site_title: python.jp

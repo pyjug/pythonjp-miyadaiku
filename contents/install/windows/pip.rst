@@ -3,9 +3,11 @@ pip
 ===============================
 
 
-`pip <https://pip.pypa.io/en/stable/>`_ は、`The Python Package Index <https://pypi.python.org/pypi>`_ に公開されているPythonパッケージのインストールなどを行うユーティリティで、Python 3.4以降には、標準で付属しています。
+`pip <https://pip.pypa.io/en/stable/>`_ は、`The Python Package Index <https://pypi.python.org/pypi>`_ に公開されている、Pythonパッケージのインストールを行うユーティリティです。
 
-Windows環境では、pipコマンドは :jinja:`{{ content.link_to('./py_launcher.rst') }}` を使用した起動が簡単です。
+Python 3.4以降には、標準で付属しています。
+
+Windows環境では、pipコマンドは :jinja:`{{ content.link_to('./py_launcher.rst') }}` を使用した簡単に起動できます。
 
 .. code-block::
 
@@ -13,12 +15,23 @@ Windows環境では、pipコマンドは :jinja:`{{ content.link_to('./py_launch
 
 
 
-パッケージのインストールは、``pip install`` コマンドで行います。
+パッケージのインストールは、``pip install`` コマンドで行います。``xxxx`` パッケージをインストールするときは、次のように実行します。
 
 .. code-block::
 
    C:\Users\user1>py -m pip install xxxx
    …
+
+
+不要なパッケージは、``pip uninstall`` コマンドで削除できます。
+
+.. code-block::
+
+   C:\Users\user1>py -m pip uninstall xxxx
+   …
+   Proceed (y/n)?
+    Successfully uninstalled xxxx-0.0.15
+
 
 
 Pythonを指定してインストール
@@ -42,13 +55,3 @@ Pythonを指定してインストール
    …
 
 とします。
-
-不要なパッケージは、``pip uninstall`` コマンドで削除できます。
-
-.. code-block::
-
-   C:\Users\user1>py -m pip uninstall xxxx
-   …
-   Proceed (y/n)?
-    Successfully uninstalled xxxx-0.0.15
-
