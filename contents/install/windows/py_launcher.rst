@@ -1,11 +1,11 @@
 
-Pythonランチャー
+Pythonの実行方法
 ===============================
 
 
-Python 3.3以降には、Pythonランチャーとして ``py.exe`` がインストールされます。
+Windows環境では、Pythonランチャー ``py.exe`` がインストールされます。
 
-MacOS や Linux などの Unix系OSでは、Python は ``python`` コマンドで実行しますが、Windowsではこの ``py.exe`` で実行したほうが便利です。
+MacOS や Linux などの Unix系OSでは、``python`` コマンドで Python を実行しますが、Windowsではこの ``py.exe`` で実行したほうが便利です。
 
 
 通常、Python をコマンドラインから実行するときには、Pythonをインストールしたディレクトリを環境変数というシステム設定に記録する必要がありますが、``py.exe`` は、設定をしなくとも実行できます。
@@ -19,6 +19,9 @@ MacOS や Linux などの Unix系OSでは、Python は ``python`` コマンド�
    >>>
 
 ``py.exe`` は、最後にインストールしたバージョンの Python を実行します。インストール済みの、他のバージョンの Python を実行する場合は、オプションで指定します。
+
+Python 3.6をインストールしてある環境では、``py -3.6`` でPython 3.6を指定して実行できます。
+
 
 .. code-block::
 
@@ -39,6 +42,7 @@ Python 2.x は、``py.exe -2`` で起動できます。
 
 Pythonにインストールされた :jinja:`{{ content.link_to('./pip.rst') }}` などのモジュールをコマンドとして実行するときは、通常の ``python.exe`` と同じように、``-m`` オプションでモジュール名を指定して実行できます。
 
+たとえば、``pip`` パッケージを実行するときは、次のように ``-m`` オプションを使って実行できます。
 
 .. code-block::
 
@@ -46,3 +50,17 @@ Pythonにインストールされた :jinja:`{{ content.link_to('./pip.rst') }}`
    virtualenv==15.1.0
 
 
+PATH 環境変数の登録
+-------------------------
+
+``py.exe`` を使わず、``python.exe`` コマンドを実行するときは、環境変数 ``PATH``  にPythonのインストールディレクトリを登録します。
+
+:jinja:`{{page.link_to('./install_py3.rst', fragment='execute_py3_install')}}` 時に **"Add Python 3.x to PATH"** を指定していれば、自動的に ``PATH`` が設定されます。
+
+
+:jinja:`{{ utils.enlarge_image(content.load('./py-install1.png')) }}`
+
+
+``PATH`` 環境変数には、Pythonのインストールディレクトリ(``C:\Users\XXX\AppData\Local\Programs\Python\Python36\``)と、インストールディレクトリの ``Scripts`` ディレクトリ(``:\Users\ishimoto\AppData\Local\Programs\Python\Python36\Scripts\``) が追加されます。
+
+``Scripts`` ディレクトリは、``pip.exe`` コマンドなど、追加でインストールしたコマンドの実行ファイルがインストールされるディレクトリです。

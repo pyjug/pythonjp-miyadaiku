@@ -12,7 +12,7 @@ Windows環境に、Pythonの公式パッケージをダウンロードしてイ�
 
 https://www.python.org/downloads/windows/ より、パッケージをダウンロードします。
 
-最新パッケージとして、Python 3.x と Python 2.7.x がダウンロードできます。特別な理由がなければ、Python 3.x.x (下図では Python 3.6.4) をクリックします。
+特別な理由がなければ、Python 3.x.x (下図では Python 3.6.4) をクリックします。
 
 :jinja:`{{ utils.enlarge_image(content.load('./download-win-1.png')) }}`
 
@@ -45,7 +45,7 @@ Windowsの種類が不明な場合は、
 
 
 
-
+.. target:: execute_py3_install
 
 パッケージのインストール
 +++++++++++++++++++++++++++++
