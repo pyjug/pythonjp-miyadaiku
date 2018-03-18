@@ -10,6 +10,7 @@ PyData Osaka ハンズオン #3 開催
    <div style='margin:10px 0 20px 0;
                background-image: url({{content.path_to('./pydata.osaka.png')}});
                background-position: center;
+               background-repeat: no-repeat;
                height: 400px;
                width: 100%;
                '>
