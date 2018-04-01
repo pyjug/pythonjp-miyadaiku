@@ -145,14 +145,9 @@ Pylons Project JP
 
 ----
 
-|djangojp| djangoproject.jp
+djangoproject.jp
 ============================
 
-
-.. |djangojp| raw:: html
-
-    <img src='http://djangoproject.jp/m//img/django-logo-negative.png' 
-        style='float:right;'  hspace=10 vspace=10 width=200>
 
 `djangoproject.jp <http://djangoproject.jp/>`_ は、日本の `Django <https://www.djangoproject.com/>`_ ユーザ有志でつくられたユーザコミュニティで、2006年2月に結成されました。 djangoproject.jp ウェブサイトやメーリングリストを通じて Django に関する情報交換を行い、国内での Django (と、もちろんインデントも!)の普及に努めています。
 
