@@ -145,7 +145,7 @@ Pylons Project JP
 
 ----
 
-|djangojp| djangoproject.jp
+djangoproject.jp
 ============================
 
 
