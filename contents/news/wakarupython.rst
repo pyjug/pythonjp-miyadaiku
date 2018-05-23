@@ -1,6 +1,6 @@
 .. article::
    :date: 2018/05/23
-
+   :og_image: ./wakarupython.jpg
 
 わかるPython［決定版］
 =====================================
