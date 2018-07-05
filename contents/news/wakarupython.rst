@@ -7,11 +7,7 @@
 
 .. jinja::
 
-   <div style='margin:40px auto; max-width: 80%;' >
-       {{ macros.image(content.load('./wakarupython.jpg'), width='80%',
-             link='http://www.sbcr.jp/products/4797395440.html') }}
-   </div>
-
+   {{utils.page_image(content, 'http://www.sbcr.jp/products/4797395440.html')}}
 
 出版日
     2018年5月22日
