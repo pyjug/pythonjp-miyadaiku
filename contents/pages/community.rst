@@ -21,6 +21,7 @@
 
    <div id='pythonjpdiscord'/>
 
+.. target:: pythonjp_discord
 
 Python.jp Discordサーバ  :jinja:`<img width='100' src={{ page.path_to("./discord-logo.png") }} style='float:right'>`
 ==============================================================================================================================
@@ -45,57 +46,6 @@ Python.jp Discordサーバ  :jinja:`<img width='100' src={{ page.path_to("./disc
 .. raw:: html
 
    <div id='pythonjpslack'/>
-
-Python.jp slack  |pythonmljp|
-===============================================
-
-`Python.jp Slack channnel <https://pythonjp.slack.com>`_ を作成しました。情報交換・質問・雑談などにご利用ください。
-
-.. raw:: html
-
-    <form
-     id='submit_inviteslackform'
-     style='margin-top:1em; padding: 1em; border:solid 1px #c0c0c0;'
-     action=''>
-        <div>pythonjp.slack.com招待メールを送信</div>
-        <div>
-            <input type='email'
-             required
-             placeholder='メールアドレスを入力してください'
-             size='40'
-             id='slackinvitemail'/>
-            <button type='submit' id='submit_invideslack'>送信</button>
-        </div>
-        <div class='slackresult'></div>
-    </form>
-
-    <script>
-    $(function() {
-      $("#submit_inviteslackform").submit(function(e) {
-        event.preventDefault();
-        $.ajax({
-            url:"/cgi-bin/send_slack_inv.py",
-            type:"POST",
-            dataType: "json",
-            data: {
-                email: $("#slackinvitemail").val()
-            },
-            success: function(json) {
-                $('.slackresult').text(json['result']);
-            },
-            error: function( jqXHR, textStatus, errorThrown) {
-                alert(textStatus)
-                $('.slackresult').text(textStatus);
-            }
-        });
-      })
-    });
-
-    </script>
-
-.. raw:: html
-
-   <div style='clear=both'><br/></div>
 
 
 ----
@@ -239,4 +189,59 @@ Python mini Hack-a-thon
    <div style='clear=both'><br/></div>
 
 
+
+----
+
+Python.jp slack  |pythonmljp|
+===============================================
+
+`Python.jp Slack channnel <https://pythonjp.slack.com>`_ の運用は停止する予定です。
+:jinja:`{{ content.link(fragment="pythonjp_discord") }}` をご利用ください。
+
+
+.. raw:: html
+
+    <form
+     id='submit_inviteslackform'
+     style='margin-top:1em; padding: 1em; border:solid 1px #c0c0c0;'
+     action=''>
+        <div>pythonjp.slack.com招待メールを送信</div>
+        <div>
+            <input type='email'
+             required
+             placeholder='メールアドレスを入力してください'
+             size='40'
+             id='slackinvitemail'/>
+            <button type='submit' id='submit_invideslack'>送信</button>
+        </div>
+        <div class='slackresult'></div>
+    </form>
+
+    <script>
+    $(function() {
+      $("#submit_inviteslackform").submit(function(e) {
+        event.preventDefault();
+        $.ajax({
+            url:"/cgi-bin/send_slack_inv.py",
+            type:"POST",
+            dataType: "json",
+            data: {
+                email: $("#slackinvitemail").val()
+            },
+            success: function(json) {
+                $('.slackresult').text(json['result']);
+            },
+            error: function( jqXHR, textStatus, errorThrown) {
+                alert(textStatus)
+                $('.slackresult').text(textStatus);
+            }
+        });
+      })
+    });
+
+    </script>
+
+.. raw:: html
+
+   <div style='clear=both'><br/></div>
 
