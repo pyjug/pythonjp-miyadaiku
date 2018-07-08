@@ -158,6 +158,11 @@ H1 A,
   color: #234764;
 }
 
+.jumbotron H1 {
+  margin-bottom: 0;
+}
+
+
 H2
 {
 /*  font-size: 120%; */
