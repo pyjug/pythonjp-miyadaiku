@@ -26,21 +26,16 @@
 Python.jp Discordサーバ  :jinja:`<img width='100' src={{ page.path_to("./discord-logo.png") }} style='float:right'>`
 ==============================================================================================================================
 
-`Python.jp Discord サーバ <https://discordapp.com/channels/410969055495847936/411701597861838868>`_ を作成しました。情報交換・質問・雑談などにご利用ください。次のリンクから登録できます。
-
-
-.. raw:: html
-
-   <div style='margin-top:1em; padding: 1em; border:solid 1px #c0c0c0;'>
-
-   <a href="https://discord.gg/YEHx883"><img width=150 src='./discord-banner.png'/> Discord Python.jpサーバに参加</a>
-   </div>
-
-
 
 .. raw:: html
 
    <div style='clear=both'><br/></div>
+
+`Python.jp Discord サーバ <https://discordapp.com/channels/410969055495847936/411701597861838868>`_ を作成しました。情報交換・質問・雑談などにご利用ください。次のページから登録できます。
+
+:jinja:`{{ content.link_to('./pythonjp_discord.rst') }}`
+
+
 
 
 .. raw:: html
@@ -196,7 +191,7 @@ Python.jp slack  |pythonmljp|
 ===============================================
 
 `Python.jp Slack channnel <https://pythonjp.slack.com>`_ の運用は停止する予定です。
-:jinja:`{{ content.link(fragment="pythonjp_discord") }}` をご利用ください。
+:jinja:`{{ content.link(fragment="pythonjp_discord", text='Python.jp Discordサーバ') }}` をご利用ください。
 
 
 .. raw:: html
