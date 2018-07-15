@@ -86,10 +86,10 @@
 
 
 
-{% macro page_image(content, link) -%}
+{% macro page_image(content, link, alt) -%}
 
    <div style='margin:40px auto; max-width: 80%;' >
-       {{ macros.image(content.load(content.og_image), width='80%',
+       {{ macros.image(content.load(content.og_image), alt=alt, width='80%',
              link=link) }}
    </div>
 
