@@ -1,18 +1,16 @@
 .. article::
    :date: 2018/07/13
+   :og_image: ./nii.gif
+
 
 【求人情報】 オープンサイエンス基盤研究センター 特任技術専門員（特定有期雇用職員）募集
 =================================================================================================
 
 
-
 .. jinja::
-   <div style='margin:40px 0 40px 0'>
-     {{ macros.image(content.load('./nii.gif'),
-        alt='国立情報学研究所', width='400px',
-        link='https://www.nii.ac.jp/about/recruit/2018/0709-2.html') }}
-     <br><small><a href='https://www.nii.ac.jp/about/recruit/2018/0709-2.html'>https://www.nii.ac.jp/about/recruit/2018/0709-2.html</a></small>
-   </div>
+
+   {{utils.page_image(content, 'http://www.sbcr.jp/products/4797395440.html', alt='国立情報学研究所')}}
+
 
 
 国立情報学研究所では、研究データを適切に管理・運用するためのサービスを国内の大学や研究機関に提供するために、平成29年度より研究データ基盤構築の事業を実施しています。
