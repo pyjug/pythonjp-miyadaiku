@@ -94,6 +94,12 @@ nav {
   margin-bottom: 1em;
 }
 
+
+.right-box .card-block {
+  padding: 10px;
+}
+
+
 .right-box h2 {
   margin: 0;
   color: #234764;
