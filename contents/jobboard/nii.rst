@@ -9,7 +9,7 @@
 
 .. jinja::
 
-   {{utils.page_image(content, 'http://www.sbcr.jp/products/4797395440.html', alt='国立情報学研究所')}}
+   {{utils.page_image(content, 'https://www.nii.ac.jp/about/recruit/2018/0709-2.html', alt='国立情報学研究所')}}
 
 
 
