@@ -34,3 +34,4 @@ jobs:
               scp -P 13855 gen.tjz "draft@www.python.jp:/var/www/html/www/"
               ssh -p 13855 draft@www.python.jp "cd /var/www/html/www/; tar xjf gen.tjz"
             fi
+
