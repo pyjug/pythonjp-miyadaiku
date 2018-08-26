@@ -14,11 +14,11 @@ jobs:
           key: deps1-{{ .Branch }}-{{ checksum "Pipfile.lock" }}
       - run:
           command: |
-            pipenv run install
+            pipenv install
       - save_cache: # special step to save dependency cache
           key: deps1-{{ .Branch }}-{{ checksum "Pipfile.lock" }}
           paths:
             - ".venv"
       - run:
           command: |
-            miyadaiku-build -d site_url=https://www.python.jp/ .
+            pipenv run miyadaiku-build -d site_url=https://www.python.jp/ .
