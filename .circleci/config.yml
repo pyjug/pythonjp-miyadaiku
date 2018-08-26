@@ -22,6 +22,7 @@ jobs:
       - run:
           command: |
             pipenv run miyadaiku-build -d site_url=https://www.python.jp/ .
+      - run:
           command: |
             if [ "${CIRCLE_BRANCH}" != "release" ]; then
               mv outputs "${CIRCLE_BRANCH}"
