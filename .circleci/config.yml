@@ -1,0 +1,38 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/python:3.6
+        environment:
+          PIPENV_VENV_IN_PROJECT: 1
+    steps:
+      - checkout
+      - run: # install and activate virtual environment with pip
+          command: |
+            pip install pipenv
+      - restore_cache:
+          key: deps1-{{ .Branch }}-{{ checksum "Pipfile.lock" }}
+      - run:
+          command: |
+            pipenv install
+      - save_cache: # special step to save dependency cache
+          key: deps1-{{ .Branch }}-{{ checksum "Pipfile.lock" }}
+          paths:
+            - ".venv"
+      - run:
+          command: |
+            pipenv run miyadaiku-build -d site_url=https://www.python.jp/ .
+      - run:
+          command: |
+            if [ "${CIRCLE_BRANCH}" != "release" ]; then
+              mv outputs "${CIRCLE_BRANCH}"
+              tar cjf gen.tjz "${CIRCLE_BRANCH}"
+              scp -o StrictHostKeyChecking=no -P 13855 gen.tjz "draft@www.python.jp:"
+              ssh -o StrictHostKeyChecking=no -p 13855 draft@www.python.jp "tar xjf gen.tjz"
+            else
+              cd outputs
+              tar cjf gen.tjz .
+              scp -o StrictHostKeyChecking=no -P 13855 gen.tjz "draft@www.python.jp:/var/www/html/www/"
+              ssh -o StrictHostKeyChecking=no -p 13855 draft@www.python.jp "cd /var/www/html/www/; tar xjf gen.tjz"
+            fi
+

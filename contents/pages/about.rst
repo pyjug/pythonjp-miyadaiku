@@ -43,16 +43,16 @@ Pythonはパワフル・・・そして高速
 .. Fans of Python use the phrase "batteries included" to describe the
    `standard library <http://docs.python.org/library/>`_, which covers
    everything from asynchronous processing to zip files. The language itself
-   is a flexible powerhouse that can handle practically any 
+   is a flexible powerhouse that can handle practically any
    `problem domain </about/apps>`__.
    Build your own web server in three lines of code. Build flexible
    data-driven code using Python's powerful and dynamic introspection
    capabilities and advanced language features such as `meta-classes
    <http://www.onlamp.com/pub/a/python/2003/04/17/metaclasses.html>`_,
    `duck typing <http://en.wikipedia.org/wiki/Duck_typing>`_ and
-   `decorators </dev/peps/pep-0318/>`_. 
+   `decorators </dev/peps/pep-0318/>`_.
 
-Pythonファンはよく、非同期プロセスからzipファイルの圧縮展開までこなす\ `標準ライブラリ <http://docs.python.jp/2/library/>`_\
+Pythonファンはよく、非同期プロセスからzipファイルの圧縮展開までこなす\ `標準ライブラリ <https://docs.python.org/ja/2.7/library/>`_\
 を説明するのに、「バッテリー同梱(batteries included)」というフレーズを良く使います。\
 言語そのものも、さまざまな\ `問題ドメイン <http://www.python.org/about/apps>`__\ を実用的に扱えるほど、柔軟な言語になっています。\
 3行で自分のウェブサーバを構築することもできます。Pythonの強力な動的内省機能と、メタクラス、\
@@ -60,11 +60,11 @@ Pythonファンはよく、非同期プロセスからzipファイルの圧縮�
 `デコレータ <http://www.python.org/dev/peps/pep-0318/>`_\ などの上級向けの機能を使うことで、柔軟なデータ駆動のコードを作成することもできます。
 
 .. Python lets you write the code you need, quickly. And, thanks to a highly
-   optimized byte compiler and support libraries, Python code runs more than 
+   optimized byte compiler and support libraries, Python code runs more than
    fast enough for most applications. The traditional implementation of CPython
    uses a bytecode virtual machine; `PyPy <http://pypy.org/>`_
-   supports just-in-time (JIT) compilation to machine code. Also, Jython and 
-   IronPython (see below) support JIT compilation on their respective 
+   supports just-in-time (JIT) compilation to machine code. Also, Jython and
+   IronPython (see below) support JIT compilation on their respective
    virtual machine implementations.
 
 Pythonを使うと、書きたいコードをすばやく書くことができます。そして、高度に最適化されたバイトコードコンパイラとそのライブラリのお陰で、\
@@ -79,26 +79,26 @@ Pythonと他のものを組み合わせる
 
 .. Python can integrate with `COM <http://sourceforge.net/projects/pywin32/>`_, `.NET
    <http://www.zope.org/Members/Brian/PythonNet>`_, and `CORBA
-   <http://aspn.activestate.com/ASPN/Cookbook/Python/Recipe/81254>`_ objects.  
+   <http://aspn.activestate.com/ASPN/Cookbook/Python/Recipe/81254>`_ objects.
 
 Pythonは、\ `COM <http://sourceforge.net/projects/pywin32/>`_\ 、\ `.NET
 <http://www.zope.org/Members/Brian/PythonNet>`_\ 、\ `CORBA
 <http://aspn.activestate.com/ASPN/Cookbook/Python/Recipe/81254>`_\ などのオブジェクトと組み合わせることができます。
 
 .. For Java libraries, use `Jython <http://www.jython.org>`_, an
-   implementation of Python for the Java Virtual Machine.   
+   implementation of Python for the Java Virtual Machine.
 
 Javaのライブラリを利用する場合は、Java仮想マシン用に実装されたPythonインタプリタの\ `Jython <http://www.jython.org>`_\ を使ってください。
 
 .. For .NET, try `IronPython <http://www.codeplex.com/Wiki/View.aspx?ProjectName=IronPython>`_ ,
-   Microsoft's new implementation of Python for .NET, or `Python for .NET 
+   Microsoft's new implementation of Python for .NET, or `Python for .NET
    <http://pythonnet.sourceforge.net/>`_.
 
 .NETのライブラリを利用する場合は、Microsoftの新しいPython実装である\ `IronPython <http://www.codeplex.com/Wiki/View.aspx?ProjectName=IronPython>`_\
 か、\ `Python for .NET <http://pythonnet.sourceforge.net/>`_\ を利用してください。
 
 
-.. Python is also supported for the `Internet Communications Engine (ICE) 
+.. Python is also supported for the `Internet Communications Engine (ICE)
    <http://www.zeroc.com/ice.html>`_ and many other integration technologies.
 
 Pythonは\ `インターネット・コミュニケーション・エンジン(ICE) <http://www.zeroc.com/ice.html>`_\ や多くの他の技術との組み合わせもサポートしています。
@@ -106,18 +106,18 @@ Pythonは\ `インターネット・コミュニケーション・エンジン(I
 .. If you find something that Python cannot do, or if you need the
    performance advantage of low-level code, you can write `extension
    modules <http://www.python.org/doc/ext/intro.html>`_ in C or C++, or
-   wrap existing code with `SWIG <http://www.swig.org/>`_ or 
+   wrap existing code with `SWIG <http://www.swig.org/>`_ or
    `Boost.Python <http://www.boost.org/libs/python/doc/>`_. Wrapped modules
    appear to your program exactly like native Python code. That's
    language integration made easy. You can also go the opposite route and
    `embed Python <http://docs.python.org/extending/embedding.html>`_ in your
    own application, providing your users with a language they'll enjoy
-   using. 
+   using.
 
-もし、Pythonでできないことを、もしくは低レベルコードの高速性が必要になった場合は、C/C++で\ `拡張モジュール <http://docs.python.jp/2/extending/extending.html>`_\
+もし、Pythonでできないことを、もしくは低レベルコードの高速性が必要になった場合は、C/C++で\ `拡張モジュール <https://docs.python.org/ja/2.7/extending/extending.html>`_\
 を作成したり、既存のコードを\ `SWIG <http://www.swig.org/>`_\ や\ `Boost.Python <http://www.boost.org/libs/python/doc/>`_\ を使ってラップすることができます。\
 ラップされたモジュールはネイティブのPythonコードと同じように、プログラムの中から利用することができます。言語への組み込みが簡単なように作られています。\
-これとは反対方向になりますが、アプリケーションの中に\ `Pythonを組み込んで <http://docs.python.jp/2/extending/embedding.html>`_\
+これとは反対方向になりますが、アプリケーションの中に\ `Pythonを組み込んで <https://docs.python.org/ja/2.7/extending/embedding.html>`_\
 アプリケーションのユーザにPythonを使って楽しんでもらうこともできます。
 
 .. Python runs everywhere
@@ -127,7 +127,7 @@ Pythonはどこでも実行可能
 
 .. Python is available for all major operating systems: Windows,
    Linux/Unix, OS/2, Mac, Amiga, among others. There are even
-   versions that run on `.NET <http://workspaces.gotdotnet.com/ironpython>`__, 
+   versions that run on `.NET <http://workspaces.gotdotnet.com/ironpython>`__,
    the `Java virtual machine <http://www.jython.org/>`_, and `Nokia Series 60
    <http://www.forum.nokia.com/python>`_ cell phones. You'll be pleased to
    know that the same source code will run unchanged across all
@@ -138,7 +138,7 @@ Pythonは、Windows、Linux/Unix、OS/2、Mac、Amigaなど多くのメジャー
 `Nokia Series 60 <http://www.forum.nokia.com/python>`_\ 携帯電話で動くバージョンもあります。\
 一度書いたソースコードが、変更なしにすべての環境で動くことを知ると、うれしくなってくるでしょう。
 
-.. Your favorite system isn't listed here? It may still support Python if 
+.. Your favorite system isn't listed here? It may still support Python if
    there's a C compiler for it. Ask around on `news:comp.lang.python
    <news:comp.lang.python>`__ - or just try compiling Python yourself.
 
@@ -151,9 +151,9 @@ Pythonはフレンドリー、そして学習しやすい
 ----------------------------------------
 
 .. The Python newsgroup is known as one of the friendliest around. The avid
-   developer and user `community </community>`_ maintains a 
-   `wiki <http://wiki.python.org/moin/>`_, hosts international and local 
-   `conferences </community/workshops>`_, runs development sprints, 
+   developer and user `community </community>`_ maintains a
+   `wiki <http://wiki.python.org/moin/>`_, hosts international and local
+   `conferences </community/workshops>`_, runs development sprints,
    and contributes to online code repositories.
 
 Pythonのニューズグループは、もっともフレンドリーなグループとして知られています。熱心な開発者やユーザ\ `コミュニティ <http://www.python.org/community>`_\ が、\
@@ -169,7 +169,7 @@ Pythonのニューズグループは、もっともフレンドリーなグル�
    first-rate `books <http://wiki.python.org/moin/PythonBooks>`_ completes
    the learning package.
 
-Pythonは完全な\ `ドキュメント <http://docs.python.jp/>`_\ を提供しています。言語に組み込みのドキュメントと、ウェブページとして提供しているものがあります。\
+Pythonは完全な\ `ドキュメント <https://docs.python.org/ja/>`_\ を提供しています。言語に組み込みのドキュメントと、ウェブページとして提供しているものがあります。\
 また、\ `既存の言語ユーザ向けのオンラインチュートリアル <http://wiki.python.org/moin/BeginnersGuide/Programmers>`_\ と、\
 `完全に新しくプログラミングをはじめるユーザ向けのオンラインチュートリアル <http://wiki.python.org/moin/BeginnersGuide/NonProgrammers>`_\
 も提供しています。どのドキュメントも、生産性をすばやく上げられるようにデザインされています。また、さまざまな一級の\ `書籍 <http://wiki.python.org/moin/PythonBooks>`_\
