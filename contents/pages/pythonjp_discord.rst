@@ -1,9 +1,24 @@
 
 
 
-
 :jinja:`<img width='50' src={{ page.path_to("./discord-logo.png") }}>` Python.jp Discordサーバ 
 ######################################################################################################################################################
+
+
+.. jinja::
+    <style>
+      .entry-content h2 {font-size: 1.2rem;}
+    </style>
+
+    <div style='font-size: 0.8rem; margin-left: 2em; line-height: 1.5rem;
+                margin-bottom: 2rem;'>
+
+      <li> {{ content.link_to(content, fragment='termofuse') }} </li>
+      <li> {{ content.link_to(content, fragment='channels') }} </li>
+      <li> {{ content.link_to(content, fragment='askingquestions') }} </li>
+
+    </div>
+
 
 `Python.jp Discord サーバ <https://discordapp.com/channels/410969055495847936/411701597861838868>`_ を作成しました。情報交換・質問・雑談などにご利用ください。次のリンクから登録できます。
 
@@ -14,10 +29,15 @@
 .. raw:: html
 
    <div style='margin-top:1em; padding: 1em; border:solid 1px #c0c0c0;'>
-
-   <a href="https://discord.gg/YEHx883"><img width=150 src='./discord-banner.png'/> Discord Python.jpサーバに参加</a>
+     <a href="https://discord.gg/YEHx883"><img width=150 src='./discord-banner.png'/>
+       Discord Python.jpサーバに参加
+     </a>
    </div>
 
+
+
+
+.. target:: termofuse
 
 Python.jp Discordサーバの利用にあたって
 -----------------------------------------------
@@ -32,6 +52,8 @@ Python.jp Discordサーバの利用にあたって
 
 - `Discordコミュニティガイドライン <https://discordapp.com/guidelines>`_ に従ってください。
 
+
+.. target:: channels
 
 チャンネルの紹介
 -----------------------------------------------
@@ -111,4 +133,87 @@ Python初心者、プログラミング初心者の質問用のチャンネル�
 `Pythonドキュメント翻訳プロジェクト <https://github.com/python-doc-ja/python-doc-ja>`_ のチャンネルです。ドキュメントの翻訳に興味のある方はご参加下さい。
 
 
+
+.. target:: askingquestions
+
+質問するときには
+-----------------------------------------------
+
+Pythonプログラミングに関する質問は大歓迎ですが、スムーズに解決するために、以下の点を心がけて下さい。
+
+
+動作環境を詳しく教えて下さい
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+使用しているOSや、Pythonのバージョンなどを、できるだけ詳しく書いて下さい。
+
+
+例:
+
+::
+
+    OS: Windows10
+    Python: 3.5.2 (default, Nov 23 2017, 16:37:01) [GCC 5.4.0 20160609]
+
+
+Pythonのバージョンは、 Python の ``sys.version`` を出力して、結果をそのまま書いて下さい。
+
+``sys.version`` は、次のコマンドで出力できます。
+
+
+.. code-block::
+
+   $ python3 -c 'import sys; print(sys.version)'
+   3.5.2 (default, Nov 23 2017, 16:37:01)
+   [GCC 5.4.0 20160609]
+
+
+
+エラーメッセージは省略しないで下さい
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Pythonのエラーが発生している場合は、エラーの一部分だけでなく、できるだけエラーメッセージ全体を貼って下さい。エラーメッセージが多すぎて困るということはありません。
+
+
+Pythonの実行中にエラーが出た場合、次のようなメッセージが出力されると思います。
+
+.. code-block::
+
+    $ python3 -c 'def foo():1/0
+    foo()'
+    Traceback (most recent call last):
+      File "<string>", line 2, in <module>
+      File "<string>", line 1, in foo
+    ZeroDivisionError: division by zero
+
+
+このようなエラーが出た場合、``ZeroDivisionError`` の部分だけでなく、エラーメッセージ全体を教えて下さい。
+
+Python以外のエラーも、できるだけ省略せず、エラーメッセージ全体を教えて下さい。
+
+エラーメッセージには、個人の氏名や電話番号など、個人情報に属する情報や企業秘密に該当するデータが含まれている場合があります。そういった情報が含まれる場合は、その部分は伏せ字にしてから書き込んで下さい。
+
+
+ソースコードはなるべくたくさん貼って下さい
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+質問に関するソースコードは、できるだけたくさん書き込んで下さい。
+
+一部分だけを抜粋されると、回答しにくい場合があります。ソースコードが多すぎて困るということはありません。
+
+ソースコードが書きかけでも、出来ているところまで見せて下さい。
+
+「〇〇を開発したいんですが、やり方がわかりません」という質問でも、できているところまで見せてもらえると、アドバイスしやすいです。
+
+
+質問を消さないでください
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+自分の問題が解決してしまうと、書き込んだ質問を消してしまう方がいます。
+
+しかし、特別な事情がなければ、消さないで下さい。
+
+回答する人たちは、質問した当人だけでなく、他の人々もあとから参照することを期待して書き込んでいます。
+
+しかし、質問を消されてしまうと、あとから情報を利用するのが難しくなってしまいます。そういった事が繰り返されると、回答者に「あ、この人は質問消す人だな」と認識され、無視されるようになってしまうかもしれません。
 

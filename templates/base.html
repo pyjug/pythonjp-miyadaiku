@@ -37,6 +37,39 @@
   {{ macros.opengraph(page) }}
   {{ macros.google_analytics() }}
 
+<script>
+
+var entityMap = {
+  '&': '&amp;',
+  '<': '&lt;',
+  '>': '&gt;',
+  '"': '&quot;',
+  "'": '&#39;',
+  '/': '&#x2F;',
+  '`': '&#x60;',
+  '=': '&#x3D;'
+};
+
+function escapeHtml (string) {
+  return String(string).replace(/[&<>"'`=\/]/g, function (s) {
+    return entityMap[s];
+  });
+}
+
+$(document).ready(function() {
+  $('.section h1, .section h2, .section h3, .section h4').hover(
+    function() {
+      const elemid = escapeHtml(this.parentElement.id)
+      const a = "<sup class='dynhashlink'><a href='#" + elemid + "'>¶</a></sup>"
+      $(this).append(a)
+    },
+    function() {
+      $(this).find(".dynhashlink").remove()
+    })
+})
+
+</script>
+
 {% endblock head %}
 
 
