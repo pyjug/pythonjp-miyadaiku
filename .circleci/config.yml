@@ -28,11 +28,11 @@ jobs:
               mv outputs "${CIRCLE_BRANCH}"
               tar cjf gen.tjz "${CIRCLE_BRANCH}"
               scp -P 13855 gen.tjz "draft@www.python.jp:"
-              ssh -p 13855 draft@www.python.jp "tar xjf gen.tjz"
+              ssh -o StrictHostKeyChecking=no -p 13855 draft@www.python.jp "tar xjf gen.tjz"
             else
               cd outputs
               tar cjf gen.tjz .
               scp -P 13855 gen.tjz "draft@www.python.jp:/var/www/html/www/"
-              ssh -p 13855 draft@www.python.jp "cd /var/www/html/www/; tar xjf gen.tjz"
+              ssh -o StrictHostKeyChecking=no -p 13855 draft@www.python.jp "cd /var/www/html/www/; tar xjf gen.tjz"
             fi
 
