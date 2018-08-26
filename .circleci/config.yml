@@ -22,3 +22,4 @@ jobs:
       - run:
           command: |
             pipenv run miyadaiku-build -d site_url=https://www.python.jp/ .
+
