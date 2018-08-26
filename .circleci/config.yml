@@ -22,8 +22,8 @@ jobs:
       - run:
           command: |
             if [ "${CIRCLE_BRANCH}" != "release" ]; then
-              mv output {{ .Branch }}
-              tar cjf gen.tjz {{ .Branch }}
+              mv output "${CIRCLE_BRANCH}"
+              tar cjf gen.tjz "${CIRCLE_BRANCH}"
               scp -P 13855 gen.tjz "draft@www.python.jp:"
               ssh -p 13855 draft@www.python.jp "tar xjf gen.tjz"
             else
