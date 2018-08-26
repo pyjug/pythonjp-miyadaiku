@@ -21,5 +21,14 @@ jobs:
             - ".venv"
       - run:
           command: |
-            pipenv run miyadaiku-build -d site_url=https://www.python.jp/ .
-
+            if [ "${CIRCLE_BRANCH}" != "release" ]; then
+              mv output {{ .Branch }}
+              tar cjf gen.tjz {{ .Branch }}
+              scp -P 13855 gen.tjz "draft@www.python.jp:"
+              ssh -p 13855 draft@www.python.jp "tar xjf gen.tjz"
+            else
+              cd output
+              tar cjf gen.tjz .
+              scp -P 13855 gen.tjz "draft@www.python.jp:/var/www/html/www/"
+              ssh -p 13855 draft@www.python.jp "cd /var/www/html/www/; tar xjf gen.tjz"
+            fi
