@@ -31,8 +31,8 @@ jobs:
               ssh -o StrictHostKeyChecking=no -p 13855 draft@www.python.jp "tar xjf gen.tjz"
             else
               cd outputs
-              tar cjf gen.tjz .
-              scp -o StrictHostKeyChecking=no -P 13855 gen.tjz "draft@www.python.jp:/var/www/html/www/"
+              tar cjf ../gen.tjz .
+              scp -o StrictHostKeyChecking=no -P 13855 ../gen.tjz "draft@www.python.jp:/var/www/html/www/"
               ssh -o StrictHostKeyChecking=no -p 13855 draft@www.python.jp "cd /var/www/html/www/; tar xjf gen.tjz"
             fi
 
