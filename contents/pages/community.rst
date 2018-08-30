@@ -190,7 +190,7 @@ Python mini Hack-a-thon
 Python.jp slack  |pythonmljp|
 ===============================================
 
-`Python.jp Slack channnel <https://pythonjp.slack.com>`_ の運用は停止する予定です。
+`Python.jp Slack channnel <https://pythonjp.slack.com>`_ は停止しました。
 :jinja:`{{ content.link(fragment="pythonjp_discord", text='Python.jp Discordサーバ') }}` をご利用ください。
 
 
