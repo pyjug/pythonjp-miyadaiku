@@ -13,9 +13,9 @@
     <div style='font-size: 0.8rem; margin-left: 2em; line-height: 1.5rem;
                 margin-bottom: 2rem;'>
 
-      <li> {{ content.link_to(content, fragment='termofuse') }} </li>
-      <li> {{ content.link_to(content, fragment='channels') }} </li>
-      <li> {{ content.link_to(content, fragment='askingquestions') }} </li>
+      <li> {{ content.link(fragment='termofuse') }} </li>
+      <li> {{ content.link(fragment='channels') }} </li>
+      <li> {{ content.link(fragment='askingquestions') }} </li>
 
     </div>
 
@@ -106,7 +106,9 @@ Python言語一般に関する話題はこちら。
 
 Python初心者、プログラミング初心者の質問用のチャンネルです。
 
-**このチャンネルでは、質問の内容や質問の方法に対して、お説教したり文句をつけたりするのは禁止です。** 
+はじめての質問の前に、「\ :jinja:`{{ content.link(fragment='askingquestions') }}`」を読んでおくと、スムーズに回答を得られるかもしれません。
+
+**なお、このチャンネルでは、質問の内容や質問の方法に対して、お説教したり文句をつけたりするのは禁止です。** 
 
 そういった発言はどのチャンネルでも控えていただきたいですが、このチャンネルでは特に重罪とします。
 
