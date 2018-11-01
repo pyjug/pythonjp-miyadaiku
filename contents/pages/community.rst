@@ -215,7 +215,7 @@ Python.jp slack  |pythonmljp|
     <script>
     $(function() {
       $("#submit_inviteslackform").submit(function(e) {
-        event.preventDefault();
+        e.preventDefault();
         $.ajax({
             url:"/cgi-bin/send_slack_inv.py",
             type:"POST",
@@ -231,6 +231,7 @@ Python.jp slack  |pythonmljp|
                 $('.slackresult').text(textStatus);
             }
         });
+        return false;
       })
     });
 
