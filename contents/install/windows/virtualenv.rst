@@ -96,20 +96,11 @@ PowerShellを起動し、次のコマンドを実行します。
    >>>
 
 
-仮想環境を使用中は、仮想環境の ``Scripts`` ディレクトリにインストールされるコマンドも実行できるようになります。``pip`` などコマンドが、次のように実行できます。
-
-.. code-block::
-
-   C:\Users\user1> C:\Users\user1\py3env\Scripts\activate.bat
-   (py3env) C:\Users\user1>pip 
-
-   
-
 ``pip`` コマンドを使って、仮想環境にパッケージをインストールできます。
 
 .. code-block:: 
 
-   (py3env) C:\Users\user1>pip install tse
+   (py3env) C:\Users\user1>py -m pip install tse
        Collecting tse
      Downloading tse-0.0.15.tar.gz
    Collecting argparse (from tse)
@@ -120,6 +111,15 @@ PowerShellを起動し、次のコマンドを実行します。
 
 
 インストールしたパッケージは、仮想環境内にのみ書き込まれ、元の Python や他の仮想環境からは利用できません。
+
+仮想環境を使用中は、仮想環境の ``Scripts`` ディレクトリにインストールされるコマンドも実行できるようになります。``pip`` などコマンドを、次のように実行できます。
+
+.. code-block::
+
+   C:\Users\user1> C:\Users\user1\py3env\Scripts\activate.bat
+   (py3env) C:\Users\user1>pip 
+
+   
 
 
 

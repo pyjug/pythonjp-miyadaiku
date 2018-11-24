@@ -3,7 +3,7 @@ subpages:
     - /install/windows/index.rst
     - /install/windows/install_py3.rst
     - /install/windows/install_vstools2017.rst
-    - /install/windows/install_py2.7.rst
     - /install/windows/py_launcher.rst
     - /install/windows/pip.rst
     - /install/windows/virtualenv.rst
+    - /install/windows/install_py2.7.rst
