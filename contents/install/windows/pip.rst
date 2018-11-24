@@ -7,15 +7,17 @@ pip
 
 Python 3.4以降には、標準で付属しています。
 
-Windows環境では、pipコマンドは :jinja:`{{ content.link_to('./py_launcher.rst') }}` を使用した簡単に起動できます。
+Windows環境では、pipコマンドは :jinja:`{{ content.link_to('./py_launcher.rst') }}` で紹介した ``py`` コマンドを使って簡単に起動できます。
 
 .. code-block::
 
    C:\>py -m pip install xxxx
 
 
+.. note:: ``py`` コマンドを使わず、``pip`` コマンドを使っても実行できますが、初心者の方には ``py`` コマンドをおすすめします。
 
-パッケージのインストールは、``pip install`` コマンドで行います。``xxxx`` パッケージをインストールするときは、次のように実行します。
+
+パッケージのインストールは、``install`` コマンドで行います。``xxxx`` パッケージをインストールするときは、次のように実行します。
 
 .. code-block::
 
@@ -23,7 +25,7 @@ Windows環境では、pipコマンドは :jinja:`{{ content.link_to('./py_launch
    …
 
 
-不要なパッケージは、``pip uninstall`` コマンドで削除できます。
+不要なパッケージは、``uninstall`` コマンドで削除できます。
 
 .. code-block::
 

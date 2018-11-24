@@ -5,7 +5,7 @@ Cコンパイラのインストール
 Pythonの拡張モジュールをインストールする際に、Cコンパイラが必要となる場合があります。WindowsではCコンパイラが添付されていないため、必要に応じて別途インストールします。
 
 
-Python3.6の場合は、
+Python3.6/3.7の場合は、
 
   https://www.visualstudio.com/ja/downloads
 

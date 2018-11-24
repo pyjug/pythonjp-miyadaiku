@@ -82,7 +82,7 @@ WindowsではCコンパイラが添付されていないため、別途インス
 Python2の実行
 +++++++++++++++++++++++++++++
 
-Python 2.7 は、:jinja:`{{ content.link_to('py_launcher.rst') }}` で実行できます。
+Python 2.7 は、:jinja:`{{ content.link_to('py_launcher.rst') }}` で紹介する ``py`` コマンドで実行すると便利です。
 
 .. code-block::
 
