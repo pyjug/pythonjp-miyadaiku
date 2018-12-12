@@ -29,13 +29,10 @@
 .. raw:: html
 
    <div style='margin-top:1em; padding: 1em; border:solid 1px #c0c0c0;'>
-     <a href="https://discord.gg/YEHx883"><img width=150 src='./discord-banner.png'/>
+     <a href="https://discord.gg/z2rTA3u"><img width=150 src='./discord-banner.png'/>
        Discord Python.jpサーバに参加
      </a>
    </div>
-
-
-
 
 .. target:: termofuse
 

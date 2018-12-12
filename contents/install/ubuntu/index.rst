@@ -30,7 +30,7 @@ Python 3.6 を使用する場合は、`Jonathon F さんのプライベートリ
 
    $ sudo add-apt-repository ppa:jonathonf/python-3.6
    $ sudo apt-get update
-   $ sudo apt-get install python3.6 python3.6-dev
+   $ sudo apt-get install python3.6 python3.6-dev python3.6-venv
    $ wget https://bootstrap.pypa.io/get-pip.py
    $ sudo python3.6 get-pip.py
 
