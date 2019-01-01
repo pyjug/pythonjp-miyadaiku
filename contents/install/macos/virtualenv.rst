@@ -9,22 +9,8 @@
 
 
 
-VirtualEnv
---------------------
 
 .. jinja::
 
-   {{ content.load('/install/virtualenv_unix.rst').html }}
-
-
-.. target:: virtualenvwrapper
-
-Virtualenvwrapper
---------------------
-
-
-.. jinja::
-
-   {{ content.load('/install/virtualenvwrapper.rst').html }}
-
+   {{ content.load('/install/venv_unix.rst').html }}
 
