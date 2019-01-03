@@ -14,6 +14,6 @@ Python を使って開発や実験を行うときは、用途に応じて専用�
 - 異なるバージョンの Python を使いたい。Python2 でしか利用できない、古いモジュールやアプリケーションを使用する場合、Python3.x と Python2.x を切り替えたい。
 
 
-仮想環境には特定のバージョンのPython本体と、各種モジュールがインストールされます。あるプロジェクトで使用する仮想環境では Python 3.6 と Django 1.11をインストールし、別のプロジェクトの仮想環境には Python 2.7 と Django 1.10 を利用する、といった環境を簡単に構築できます。
+仮想環境には特定のバージョンのPython本体と、各種モジュールがインストールされます。あるプロジェクトで使用する仮想環境では Python 3.6 と Django 1.11をインストールし、別のプロジェクトの仮想環境には Python 3.5 と Django 1.10 を利用する、といった環境を簡単に構築できます。
 
-仮想環境を作成するモジュールには `Virtualenv <https://virtualenv.pypa.io/en/stable/>`_ と、`venv <https://docs.python.org/ja/3/library/venv.html>`_ があります。ここでは、Python3 の標準ライブラリである `venv` を取り上げます。
+仮想環境を作成するモジュールには `Virtualenv <https://virtualenv.pypa.io/en/stable/>`_ と、`venv <https://docs.python.org/ja/3/library/venv.html>`_ があります。ここでは、Python3 の標準ライブラリである ``venv`` を紹介します。

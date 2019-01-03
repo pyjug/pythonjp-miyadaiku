@@ -5,20 +5,10 @@
 
 .. jinja::
 
-   {% do context.set(no_virtualenvwrapper=1) %}
-   {{ content.load('/install/why_virtualenv.rst').html }}
+   {{ content.load('/install/why_venv.rst').html }}
 
 
 
-
-Virtualenvのインストール
-=============================
-
-Virtualenvは、:jinja:`{{ page.link_to('./pip.rst') }}` コマンドでインストールできます。
-
-.. code-block::
-
-   C:\> py -m pip install virtualenv
 
 
 仮想環境の作成
@@ -29,13 +19,10 @@ Virtualenvは、:jinja:`{{ page.link_to('./pip.rst') }}` コマンドでイン�
 
 .. code-block:: 
 
-   C:\Users\user1> py -m virtualenv py3env
-   Using base prefix 'C:\\Users\\user1\\AppData\\Local\\Programs\\Python\\Python36'
-   New python executable in C:\Users\user1\py3env\Scripts\python.exe
-   Installing setuptools, pip, wheel...done.
+   C:\Users\user1> py -m venv C:\Users\user1\py3env
 
+このコマンドは、指定したディレクトリ ``C:\Users\user1\py3env`` に仮想環境を作成します。
 
-``C:\Users\user1\py3env\`` に Python3.6 用の仮想環境が作成されました。
 
 
 仮想環境の切り替え
@@ -54,7 +41,7 @@ Windowsでは、Python を コマンド プロンプトで実行する場合と�
    (py3env) C:\Users\user1>
 
 
-コマンド プロンプトの先頭に ``(py3env)`` と表示され、仮想環境が設定されたことを示します。
+コマンド プロンプトの先頭に ``(py3env)`` と表示され、仮想環境で実行中であることを示します。
 
 
 PowerShellでの切り替え
@@ -62,11 +49,12 @@ PowerShellでの切り替え
 
 まず、PowerShellでPowerShellスクリプトを実行できるようにします。
 
-PowerShellを起動し、次のコマンドを実行します。
+PowerShellを起動し、次のコマンドを実行します。このコマンドは、一番最初に一回だけ実行してください。2回目以降は不要です。
+
 
 .. code-block::
 
-    PS C:\> Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+    PS C:\> Set-ExecutionPolicy RemoteSigned -Scope CurrentUser -Force
 
 
 次に、作成した仮想環境の ``Scripts\activate.ps1`` を実行します
@@ -74,10 +62,11 @@ PowerShellを起動し、次のコマンドを実行します。
 .. code-block:: 
 
    PS C:\Users\user1> C:\Users\user1\py3env\Scripts\activate.ps1
+
    (py3env) C:\Users\user1>
 
 
-コマンド プロンプトの先頭に ``(py3env)`` と表示され、仮想環境が設定されたことを示します。
+コマンド プロンプトの先頭に ``(py3env)`` と表示され、仮想環境で実行中であることを示します。
 
 
 
@@ -96,7 +85,7 @@ PowerShellを起動し、次のコマンドを実行します。
    >>>
 
 
-``pip`` コマンドを使って、仮想環境にパッケージをインストールできます。
+仮想環境を使用中に ``pip`` コマンドでパッケージをインストールすると、仮想環境にインストールされます。
 
 .. code-block:: 
 
@@ -119,10 +108,6 @@ PowerShellを起動し、次のコマンドを実行します。
    C:\Users\user1> C:\Users\user1\py3env\Scripts\activate.bat
    (py3env) C:\Users\user1>pip 
 
-   
-
-
-
 
 仮想環境の終了
 =============================
@@ -137,33 +122,26 @@ PowerShellを起動し、次のコマンドを実行します。
 
 .. target:: select_python_version
 
-バージョン別の仮想環境
+Pythonを指定した仮想環境
 ==========================================================
 
 複数のバージョンの Python をインストールしている環境では、使用する Python を指定して仮想環境を作成できます。
 
-異なるバージョンの Python 用に仮想環境を作成する場合、そちらの環境にも ``virtualenv`` をインストールしておくと簡単です。
 
-次のコマンドは、Python2.7 に ``virtualenv`` をインストールします。
-
-.. code-block:: 
-
-   C:\Users\user1> py -2 -m pip install virtualenv
-
-Python2.7 に ``virtualenv`` をインストールしたら、Python2.7用の仮想環境を作成します。
+Python 3.6とPython 3.7がインストールされた環境で、Python 3.7の仮想環境を作成する場合は、次のように指定します。
 
 .. code-block:: 
 
-   C:\Users\user1> py -2 -m virtualenv py27env
+   C:\Users\user1> py -3.7 -m venv py37env
 
-ここで作成した ``py27env`` を使用すると、python2.7 環境に切り替わります。
+ここで作成した ``py37env`` を使用すると、python 3.7の仮想環境に切り替わります。
 
 
 .. code-block:: 
 
-   C:\Users\user1>py27env\Scripts\activate.bat
-   (py27env) C:\Users\user1>python
-   Python 2.7.13 (v2.7.13:a06454b1afa1, Dec 17 2016, 20:53:40) [MSC v.1500 64 bit (AMD64)] on win32
+   C:\Users\user1>py37env\Scripts\activate.bat
+   (py37env) C:\Users\user1>python
+   Python 3.7.1 (v3.7.1:260ec2c36a, Oct 20 2018, 14:57:15) [MSC v.1915 64 bit (AMD64)] on win32
    Type "help", "copyright", "credits" or "license" for more information.
    >>>
 

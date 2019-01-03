@@ -2,7 +2,13 @@
 Python3のインストール
 --------------------------------
 
-Windows環境に、Pythonの公式パッケージをダウンロードしてインストールする手順を解説します。
+
+Windows 環境のPython
+--------------------------------
+
+Windows環境では、PythonはOSに添付されていないので、自分でパッケージをダウンロードしてインストールします。
+
+ここでは、Windows環境に、Pythonの公式パッケージをダウンロードしてインストールする手順を解説します。
 
 
 
@@ -12,7 +18,7 @@ Windows環境に、Pythonの公式パッケージをダウンロードしてイ�
 
 https://www.python.org/downloads/windows/ より、パッケージをダウンロードします。
 
-特別な理由がなければ、Python 3.x.x (下図では Python 3.6.4) をクリックします。
+特別な理由がなければ、Python 3.x.x (下図では Python 3.7.1) をクリックします。
 
 :jinja:`{{ utils.enlarge_image(content.load('./download-win-1.png')) }}`
 
