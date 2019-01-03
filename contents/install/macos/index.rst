@@ -2,79 +2,85 @@
 macOS環境のPython
 --------------------------------
 
-macOS Sierra では、Python 2.7 がインストールされています。しかし、Python 2.x はもう古いリリースで、あまり推奨できません。
+現在のmacOS では、Python 2.7 がインストールされています。しかし、Python 2.7 はもう古いリリースで、利用はおすすめできません。
 
-また、そのままのmacOS環境では、他のライブラリを使用した拡張モジュールのインストールなどが難しくなるため、なんらかのパッケージマネージャを利用して、その管理下で Python 環境を整備することをおすすめします。
-
-
-ここでは、代表的な macOS 用パッケージマネージャである `Homebrew <https://brew.sh/>`_ を使ってPython をインストールする手順を紹介します。
+ここでは、最新のPythonをダウンロードして、インストールする手順を紹介します。
 
 
-Homebrewのインストール
+Python3 のダウンロード
 ===========================
 
-LaunchPadから **ターミナル** を起動し、次のコマンドを入力します。
+ブラウザで https://www.python.org/downloads/ を開きます。macOSで開いた場合は、**「Downoad Python 3.x.x」** をクリックして最新版のインストーラをダウンロードします。
 
-.. code-block:: console
+:jinja:`{{ utils.enlarge_image(content.load('./download.png')) }}`
 
-   $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-   ==> This script will install:
-   /usr/local/bin/brew
-   /usr/local/share/doc/homebrew
-   /usr/local/share/man/man1/brew.1
-   /usr/local/share/zsh/site-functions/_brew
-   /usr/local/etc/bash_completion.d/brew
-   /usr/local/Homebrew
-   …
+
+最新バージョン以外のPythonを利用する場合は、画面下のバージョン別ダウンロードページへのリンクから、**「macOS 64-bit installer」** (macOS 10.8以前の場合は 「macOS 64-bit/32-bit installer」) をダウンロードします。
+
 
 
 
 Python3 のインストール
 ===========================
 
-**ターミナル**  で、次のコマンドを入力します。
+ダウンロードしたパッケージを実行し、画面の指示に従ってインストールします。
 
-.. code-block:: console
-
-   $ brew install python3
-   ==> Installing dependencies for python3: readline, sqlite, gdbm, openssl, xz
-   ==> Installing python3 dependency: readline
-   ==> Downloading https://homebrew.bintray.com/bottles/readline-7.0.3_1.sierra.bot
-   ######################################################################## 100.0%
-   …
+:jinja:`{{ utils.enlarge_image(content.load('./installer.png')) }}`
 
 
-インストールしたPythonは、``python3`` コマンドで実行できます。
+
+SSL証明書のインストール
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Python3.6以降では、インストール後にネットワーク通信に使用するSSL証明書をインストールする必要があります。
+
+1. ファインダで **アプリケーションフォルダ** を開きます。
+
+
+2. **Python 3.xフォルダ** (Python 3.7.xなら **Python 3.7 フォルダ**) をダブルクリックし、フォルダを開きます。
+
+   :jinja:`{{ utils.enlarge_image(content.load('./finder1.png')) }}`
+
+
+3. **Install Certificates.command** ファイルをダブルクリックし、証明書のインストールを行います。
+
+   :jinja:`{{ utils.enlarge_image(content.load('./install_cert.png')) }}`
+
+
+   インストールが終了すると、次のような画面が表示されます。
+
+
+   :jinja:`{{ utils.enlarge_image(content.load('./cert_finished.png')) }}`
+
+
+
+Python3 の実行方法
+===========================
+
+Pythonインストーラは、環境変数 ``PATH`` の設定を行いますので、インストール終了後、新しく起動したコンソールでは、``python3`` コマンドで最後にインストールしたPythonを実行できます。
 
 .. code-block::
 
    $ python3
-   Python 3.6.1 (default, Apr  4 2017, 09:40:21)
-   [GCC 4.2.1 Compatible Apple LLVM 8.1.0 (clang-802.0.38)] on darwin
+   Python 3.7.2 (v3.7.2:9a3ffc0492, Dec 24 2018, 02:44:43)
+   [Clang 6.0 (clang-600.0.57)] on darwin
    Type "help", "copyright", "credits" or "license" for more information.
    >>>
 
 
-Python2 のインストール
-===========================
 
-**ターミナル**  で、次のコマンドを入力します。
-
-.. code-block:: console
-
-   $ brew install python2
-   ==> Downloading https://homebrew.bintray.com/bottles/python-2.7.13_1.sierra.bottle.tar.gz
-   ######################################################################## 100.0%
-   ==> Pouring python-2.7.13_1.sierra.bottle.tar.gz
-   ==> /usr/local/Cellar/python/2.7.13_1/bin/python2 -s setup.py --no-user-cfg install --force --verbose --single-version-ex
-   …
-
-インストールしたPythonは、``python`` コマンドや ``python2`` コマンドで実行できます。
+または、``python3.7`` のように、バージョンを指定してPythonを実行します。
 
 .. code-block::
 
-   $ python
-    Python 2.7.13 (default, Apr  4 2017, 08:47:57)
-    [GCC 4.2.1 Compatible Apple LLVM 8.1.0 (clang-802.0.38)] on darwin
-    Type "help", "copyright", "credits" or "license" for more information.
-    >>>
+   $ python3.7
+   Python 3.7.2 (v3.7.2:9a3ffc0492, Dec 24 2018, 02:44:43)
+   [Clang 6.0 (clang-600.0.57)] on darwin
+   Type "help", "copyright", "credits" or "license" for more information.
+   >>>
+
+
+環境変数 ``PATH`` は、使用中のシェルに応じた設定ファイルで設定されますので、必要に応じて修正してください。設定ファイルは、bashの場合は ``~/.bash_profile``、zshの場合は ``~/.zprofile``、その他の場合は ``~/.profile`` などとなります。
+
+インストール時にディレクトリ ``/usr/local/bin`` にも Python3コマンドやPython3.xコマンドのリンクが作成されますので、こちらを利用するようにしても良いでしょう。
+

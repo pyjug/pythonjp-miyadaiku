@@ -91,10 +91,18 @@ Python 2.7 は、:jinja:`{{ content.link_to('py_launcher.rst') }}` で紹介す�
    Type "help", "copyright", "credits" or "license" for more information.
    >>>
 
+Python2.7にPyPIからパッケージをインストールするときは、次のように指定します
+
+.. code-block::
+
+   C:\> py -2 -m pip install Pillow
 
 
-また、Python2.7 を実行するための `Virtualenv <https://virtualenv.pypa.io/en/stable/>`_ による仮想環境を作成できます。
 
-    :jinja:`{{ content.link_to('virtualenv.rst', fragment='select_python_version')}}` 
 
-を参照してください。
+..
+    また、Python2.7 を実行するための `Virtualenv <https://virtualenv.pypa.io/en/stable/>`_ による仮想環境を作成できます。
+
+        :jinja:`{{ content.link_to('virtualenv.rst', fragment='select_python_version')}}` 
+
+    を参照してください。
