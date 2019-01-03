@@ -2,9 +2,11 @@
 Windows 環境のPython
 --------------------------------
 
-Windows環境では、PythonはOSに添付されていないので、自分でパッケージをダウンロードしてインストールします。
+Windows環境では、Python公式サイトで64bit版Windows用と32bit版Windows用のパッケージが公開されています。Windowsの種類が不明な場合は、
 
-ここでは、Windows環境に、Pythonの公式パッケージをダウンロードしてインストールする手順を解説します。
+    https://support.microsoft.com/ja-jp/help/958406
+
+を参照して確認してください。
 
 
 
