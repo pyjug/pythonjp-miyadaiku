@@ -53,7 +53,6 @@ https://www.continuum.io/downloads より、パッケージをダウンロード
    Initializing Anaconda3 in /home/user1/.bashrc
    A backup will be made to: /home/user1/.bashrc-anaconda3.bak
 
-ここでは、デフォルトの ``no`` を選択して設定を行わないほうが、既存のシステムへの影響が少なく、おすすめです。手動で次のコマンドを実行して、``conda`` コマンドだけを有効にするようにしましょう。
 
 .. target:: conda_conf
 

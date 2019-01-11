@@ -25,9 +25,7 @@ Conda環境は独立したPythonの実行環境で、他の環境に影響を与
 
 AnacondaのPythonを利用するときは、Conda環境を有効にしてからコマンドを実行します。Conda環境は、``conda activate`` コマンドで開始します。
 
-
-   # macOS の場合
-   $ echo "source /anaconda3/etc/profile.d/conda.sh" >> ~/.bash_profile
+.. code-block::
 
    $ conda activate
    (base) $ 
@@ -83,10 +81,6 @@ conda環境を終了するときは、``conda deactivate`` コマンドを実行
 
    (py37env) $ conda deactivate
    $ 
-
-Conda パッケージのインストール
-++++++++++++++++++++++++++++++++++++++
-
 
 
 Conda パッケージのインストール
