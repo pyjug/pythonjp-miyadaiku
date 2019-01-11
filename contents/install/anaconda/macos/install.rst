@@ -53,3 +53,5 @@ zshなど、bash以外のシェルを利用している場合は、以下のよ�
    # fishの場合
    $ echo "source ~/anaconda3/etc/fish/conf.d/conda.fish" >> ~/.config/fish/config.fish
 
+Conda環境については、:jinja:`{{ content.link_to('../conda.rst') }}` を参照してください。
+

@@ -8,10 +8,9 @@ Anaconda には `conda <https://conda.io/docs/index.html>`_ コマンドがイ�
 
    macOS、Linux では、conda コマンドの実行環境を設定する必要があります。macOSの場合は :jinja:`{{ content.link_to('macos/install.rst', fragment='conda_conf', text='macOSの設定') }}`、Linuxの場合は  :jinja:`{{ content.link_to('unix/install.rst', fragment='conda_conf', text='Linuxの設定') }}` を参照してください。
 
-LinuxやmacOSでは ``conda`` コマンドはシェルの関数となっており、Anacondaのインストール先に ``PATH`` 環境変数を設定せずとも使用できるようになっています。
+LinuxやmacOSでは、 ``conda`` コマンドは通常のコマンドのようにターミナルから使用できます。
 
-
-Windows環境では、スタートメニューの「**Anaconda3(64bit)** | **Anaconda Prompt**」で表示されるコマンドプロンプトから、condaコマンドを実行できます。
+Windows環境では、スタートメニューの「**Anaconda3(64bit)** | **Anaconda Prompt**」で表示されるコマンドプロンプトから、``conda`` コマンドを実行できます。
 
 
 
