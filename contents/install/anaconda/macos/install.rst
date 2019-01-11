@@ -31,3 +31,25 @@ https://www.continuum.io/downloads より、パッケージをダウンロード
 :jinja:`{{ utils.enlarge_image(content.load('./install4.png')) }}`
 
 :jinja:`{{ utils.enlarge_image(content.load('./install5.png')) }}`
+
+
+.. target:: conda_conf
+
+condaコマンドの設定
++++++++++++++++++++++++++++++
+
+利用しているシェルがbashの場合は、自動的に ``conda`` が利用できるように設定され、デフォルトのConda環境である ``base`` が有効になります。
+
+zshなど、bash以外のシェルを利用している場合は、以下のようにcondaコマンドを設定します。
+
+.. code-block:: bash
+
+   # bashの場合
+   $ echo "source ~/anaconda3/etc/profile.d/conda.sh" >> ~/.bashrc
+
+   # zshの場合
+   $ echo "source ~/anaconda3/etc/profile.d/conda.sh" >> ~/.zshrc
+
+   # fishの場合
+   $ echo "source ~/anaconda3/etc/fish/conf.d/conda.fish" >> ~/.config/fish/config.fish
+

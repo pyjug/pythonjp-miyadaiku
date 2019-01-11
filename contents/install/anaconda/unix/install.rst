@@ -52,23 +52,36 @@ https://www.continuum.io/downloads より、パッケージをダウンロード
    [no] >>> <-------------------------------------- エンターを入力(下記参照)
    Initializing Anaconda3 in /home/user1/.bashrc
    A backup will be made to: /home/user1/.bashrc-anaconda3.bak
+
+
+.. target:: conda_conf
+
+condaコマンドの設定
++++++++++++++++++++++++++++++
    
 
 途中で、
 
     |   Do you wish the installer to initialize Anaconda3
     |   in your /home/user1/.bashrc ? [yes|no]
-    
-と質問されます。ここで ``yes`` と指定すると、自動的にデフォルトのConda環境である ``base`` がアクティブとなります。
 
-ここでは、デフォルトの ``no`` を選択して設定を行わないほうが、既存のシステムへの影響が少なく、おすすめです。手動で次のコマンドを実行して、``conda`` コマンドだけを有効にするようにしましょう。
+という選択肢が表示されます。
+
+ここでは、デフォルトの ``no`` が既存のシステムへの影響が少なく、おすすめです。手動で次のコマンドを実行して、``conda`` コマンドを有効にしましょう。
 
 .. code-block:: bash
 
    # bashの場合
-   $ echo "source ~/anaconda3/etc/profile.d/conda.sh" >> ~/.bash_profile
+   $ echo "source ~/anaconda3/etc/profile.d/conda.sh" >> ~/.bashrc
 
+   # zshの場合
+   $ echo "source ~/anaconda3/etc/profile.d/conda.sh" >> ~/.zshrc
+
+   # fishの場合
+   $ echo "source ~/anaconda3/etc/fish/conf.d/conda.fish" >> ~/.config/fish/config.fish
+
+
+ここで ``yes`` と指定した場合は、bashを利用している環境では自動的にデフォルトのConda環境である ``base`` がアクティブとなります。
 
 Conda環境については、:jinja:`{{ content.link_to('../conda.rst') }}` を参照してください。
-
 
