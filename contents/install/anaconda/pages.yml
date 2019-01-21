@@ -1,7 +1,7 @@
 type: config
 subpages:
     - /install/anaconda/index.rst
-    - /install/anaconda/windows/install_anaconda.rst
+    - /install/anaconda/windows/install.rst
     - /install/anaconda/macos/install.rst
     - /install/anaconda/unix/install.rst
     - /install/anaconda/conda.rst

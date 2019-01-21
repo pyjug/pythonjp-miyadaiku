@@ -6,7 +6,7 @@ Windows 版のインストール
 +++++++++++++++++++++++++++++
 
 
-https://www.continuum.io/downloads より、パッケージをダウンロードします。
+https://www.anaconda.com/download/ より、パッケージをダウンロードします。
 
 :jinja:`{{ utils.enlarge_image(content.load('./download-anaconda.png')) }}`
 
