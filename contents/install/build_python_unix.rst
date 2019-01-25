@@ -34,6 +34,7 @@ https://www.python.org/downloads より、パッケージをダウンロード�
    $ ./configure --enable-shared
    $ make
    $ sudo make install
+   $ sudo ldconfig
 
 ビルドしたコマンドは ``/usr/local/bin`` にインストールされ、``python3.7`` コマンドまたは ``python3`` コマンドで起動できます。
 
