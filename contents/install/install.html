@@ -17,8 +17,6 @@ article_template: installguide_index.html
     flex-wrap: wrap;
   }
 
-
-
   .oslistitem {
     vertical-align: top;
     text-align: center;
@@ -48,19 +46,26 @@ article_template: installguide_index.html
     height: 150px;
     font-size: 40px;
   }
+
+  .oslist .md_header_block {
+    display: inline-block;
+  }
+
+
 </style>
 
 <div class='oslist'>
 
 {% for (text, img, link) in envs %}
    <div class='oslistitem'>
-   <a href='{{ content.path_to(link) }}'>
+
    <h1>
-     {% if img %}<img src='{{ content.path_to(img) }}'>{% endif %} <br>
-     {{ text }}<br>
+     <a class='oslistitemanchor' href='{{ content.path_to(link) }}'>
+       {% if img %}<img src='{{ content.path_to(img) }}'>{% endif %} <br>
+       {{ text }}<br>
+     </a>
    </h1>
 
-   </a> 
    </div>
 {% endfor %}
 
