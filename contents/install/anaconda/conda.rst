@@ -82,6 +82,15 @@ conda環境を終了するときは、``conda deactivate`` コマンドを実行
    $ 
 
 
+.. caution::
+
+   Conda環境とよく似た仮想環境を提供するツールに、Python標準パッケージの `venvモジュール <https://docs.python.org/ja/3.6/library/venv.html#module-venv>`__ や、`Virtualenv <https://virtualenv.pypa.io/en/latest/>`__ などがあります。
+
+   venv や Virtualenv は Anacondaを使わない環境では広く利用されていますが、Anaconda では Condaコマンドで同等の機能が提供されていますので、利用する必要はありません。
+
+   うかつに利用すると Conda と venv/VirtualEnvの2重管理となってしまい、管理が難しくなってしまいます。Pythonのパッケージ管理の仕組みを理解するまでは、Anaconda環境ではCondaだけを利用することをおすすめします。
+
+
 Conda パッケージのインストール
 ++++++++++++++++++++++++++++++++++++++
 
