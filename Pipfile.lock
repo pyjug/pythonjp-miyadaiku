@@ -154,19 +154,18 @@
         },
         "miyadaiku": {
             "hashes": [
-                "sha256:2cfa6729e8b32ccfcc4abd3371e9ca0d53164b42d3c80814552458ce38fba2c1",
-                "sha256:57c952339b9510cc8bc575a4488ca6e231113287f4dc03bb0c3eb840fb8358f3"
+                "sha256:06b49a80c72f1fad6688cdd60c56521a81d52b4be7d8c2d48f3d8c9ab7ca9163",
+                "sha256:1a8ba9f33331f604cd3b1758ccdc3826946e295e3382bab68db5baa5a0618226"
             ],
             "index": "pypi",
-            "version": "==0.0.60"
+            "version": "==0.0.62"
         },
         "miyadaiku.themes.bootstrap4": {
             "hashes": [
-                "sha256:682793c6b55709a350bdeaa2201f586ad6d01fea1475a8ec1a8941640a4cd76c",
-                "sha256:f5ac4dfdb744e01820b7413ff6447b2d7857359fc2c2955b9ca727443279cef7"
+                "sha256:e64af4939224bc339319d0bbe2e8fcac1c0a762a7466b1481d0d334db9ab961d"
             ],
             "index": "pypi",
-            "version": "==0.0.9"
+            "version": "==0.10"
         },
         "miyadaiku.themes.fontawesome": {
             "hashes": [
@@ -183,19 +182,18 @@
             ],
             "version": "==0.0.10"
         },
-        "miyadaiku.themes.tether": {
+        "miyadaiku.themes.popper-js": {
             "hashes": [
-                "sha256:21f8ada34d4c113bf54d367fd085adfe64d83ed298dc5d2e175bf3562cad6551",
-                "sha256:863552a2c65a01a4a980dacb84814080e77d0b086646cb10e596eeba7a9e49e1"
+                "sha256:61c70a043b0fa24d31a3109553bdda6b9748b5787ab05d21b19094f2f9cbb466"
             ],
-            "version": "==0.0.7"
+            "version": "==0.1"
         },
         "nbconvert": {
             "hashes": [
-                "sha256:08d21cf4203fabafd0d09bbd63f06131b411db8ebeede34b0fd4be4548351779",
-                "sha256:a8a2749f972592aa9250db975304af6b7337f32337e523a2c995cc9e12c07807"
+                "sha256:302554a2e219bc0fc84f3edd3e79953f3767b46ab67626fdec16e38ba3f7efe4",
+                "sha256:5de8fb2284422272a1d45abc77c07b888127550a6d602ce619592a2b08a474ff"
             ],
-            "version": "==5.4.0"
+            "version": "==5.4.1"
         },
         "nbformat": {
             "hashes": [
@@ -225,10 +223,10 @@
         },
         "python-dateutil": {
             "hashes": [
-                "sha256:063df5763652e21de43de7d9e00ccf239f953a832941e37be541614732cdfc93",
-                "sha256:88f9287c0174266bb0d8cedd395cfba9c58e87e5ad86b2ce58859bc11be3cf02"
+                "sha256:7e6584c74aeed623791615e26efd690f29817a27c73085b78e4bad02493df2fb",
+                "sha256:c89805f6f4d64db21ed966fda138f8a5ed7a4fdbc1a8ee329ce1b74e3c74da9e"
             ],
-            "version": "==2.7.5"
+            "version": "==2.8.0"
         },
         "pytz": {
             "hashes": [
