@@ -1,13 +1,14 @@
 .. article::
    :date: 2019/02/18
+   :og_image: ./djangocongress2019.png
 
 
 DjangoCongress JP 2019 開催
 =====================================
 
 .. jinja::
-   <div style='margin:10px 0 20px 0'>{{ macros.image(content.load('./djangocongress2019.png'), width='100%',
-                   alt='DjangoCongress JP 2019', link='https://djangocongress.jp/') }}</div>
+   {{utils.page_image(content, 'https://djangocongress.jp/', alt='DjangoCongress JP 2019')}}
+
 
 
 2019年5月18日および19日に東京で「DjangoCongress JP 2019」を開催します!
