@@ -7,7 +7,7 @@
 
 .. jinja::
 
-   {{utils.page_image(content, 'http://www.sbcr.jp/products/4797395440.html')}}
+   {{utils.page_image(content, 'http://www.sbcr.jp/products/4797395440.html', width='80%')}}
 
 出版日
     2018年5月22日

@@ -9,7 +9,7 @@
 
 .. jinja::
 
-   {{utils.page_image(content, 'https://www.nii.ac.jp/about/recruit/2018/1024.html', alt='国立情報学研究所')}}
+   {{utils.page_image(content, 'https://www.nii.ac.jp/about/recruit/2018/1024.html', width='80%', alt='国立情報学研究所')}}
 
 
 国立情報学研究所では、国内外のオープンサイエンスの動向に対応し、研究データを適切に管理・公開するためのサービスを国内の大学や研究機関に提供するために、平成２９年度より研究データ基盤構築の事業を実施しています。
