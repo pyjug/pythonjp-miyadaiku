@@ -2,7 +2,7 @@
 Windows 環境のPython
 --------------------------------
 
-Python公式サイトでは、64bit版Windows用のPythonと、と32bit版Windows用のPythonを公開しています。Windowsの種類が不明な場合は、
+Python公式サイトでは、64bit版Windows用のPythonと、32bit版Windows用のPythonを公開しています。Windowsの種類が不明な場合は、
 
     https://support.microsoft.com/ja-jp/help/958406
 
