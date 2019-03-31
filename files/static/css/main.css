@@ -266,17 +266,20 @@ dd {
 
 
 .index-pagination {
-   font-size: 20px;
+   font-size: 15px;
 }
 
 .index-navi {
-  border-style: solid;
-  padding: 3px;
+  border: solid 1px #999;
+  padding: 5px;
+  color: #f0f0f0;
+  background-color: #17A2D5;
 }
 
 .index-disabled-link {
   pointer-events: none;
-  color: #f0f0f0;
+  color: #808080;
+  background-color: #ffffff;
 }
 
 .snsbuttons {
