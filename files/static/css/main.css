@@ -3,6 +3,7 @@ body {
   font-family:  "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Arial, "ＭＳ Ｐゴシック", sans-serif;
   line-height: 1.7em;
   padding: 1rem;
+  color: #404040;
 }
 
 pre {
@@ -148,13 +149,13 @@ H1,H2,H3,H4,H5 {
   font-family: 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, Arial, 'ＭＳ Ｐゴシック', sans-serif;
   font-weight: bold;
   line-height: 1.5em;
-  color: #234764;
+/*  color: #234764; */
 }
 
 H1
 {
 /*  font-size: 140%; */
-  color: #376A94;
+/*  color: #376A94; */
   text-decoration: none;
 }
 
@@ -166,6 +167,10 @@ H1 A,
 
 .jumbotron H1 {
   margin-bottom: 0;
+}
+
+.entry-content H1 {
+  border-bottom: 1px dotted #999;
 }
 
 
@@ -222,6 +227,7 @@ blockquote {
 }
 
 
+/*
 dl.field-list > dt,
 dl.option-list > dt,
 dl.docinfo > dt,
@@ -238,6 +244,8 @@ dt:before {
     content: "\025B8";
     margin-right: 0.5rem;
 }
+
+*/
 
 dd {
   margin-left: 1.5rem;
@@ -404,4 +412,8 @@ dd {
   flex-basis: 0;
   flex-grow: 1;
   text-align: center;
+}
+
+a {
+  color: #0057b5;
 }
