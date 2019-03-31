@@ -21,17 +21,46 @@
   <div class="index-pagination">
     {% if cur_page != 1 %}
       <a class="index-navi"
-         href="{{page.path_to(page, values=group_values, npage=cur_page-1)}}">&larr;</a>
+         href="{{page.path_to(page, values=group_values, npage=1)}}">&Lang;</a>
+      <a class="index-navi"
+         href="{{page.path_to(page, values=group_values, npage=cur_page-1)}}">&lang;</a>
     {% else %}
-      <span class="index-navi index-disabled-link">&larr;</span>
+      <span class="index-navi index-disabled-link">&Lang;</span>
+      <span class="index-navi index-disabled-link">&lang;</span>
     {% endif %}
+
     
+    {% set s = cur_page-2 if cur_page > 2 else 1 %}
+    {% set e = s+4 if s+4 <= num_pages else num_pages %}
+    {% if (s-e) < 4 %}
+      {% set s = e-4 if e > 4 else 1 %}
+    {% endif %}
+
+    {% if s != 1 %}
+       ・・・
+    {% endif %}
+
+    {% for n in range(s, e+1) %}
+      {% if n != cur_page %}
+        <a class="index-navi"
+          href="{{page.path_to(page, values=group_values, npage=n)}}">{{n}}</a>
+      {% else %}
+        <span class="index-navi index-disabled-link">{{n}}</span>
+      {% endif %}
+    {% endfor %}
+
+    {% if e != num_pages %}
+       ・・・
+    {% endif %}
+
     {% if not is_last %}
       <a class="index-navi"
-         href="{{ page.path_to(page, values=group_values, npage=cur_page+1) }}">&rarr;</a>
+         href="{{page.path_to(page, values=group_values, npage=cur_page+1)}}">&rang;</a>
+      <a class="index-navi"
+         href="{{page.path_to(page, values=group_values, npage=num_pages)}}">&Rang;</a>
     {% else %}
-      <span class="index-navi index-disabled-link">&rarr;</span>
+      <span class="index-navi index-disabled-link">&rang;</span>
+      <span class="index-navi index-disabled-link">&Rang;</span>
     {% endif %}
   </div>
-
 
