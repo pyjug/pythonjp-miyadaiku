@@ -17,7 +17,7 @@ MacOS や Linux などの Unix系OSでは、``python`` コマンドや ``python3
    Type "help", "copyright", "credits" or "license" for more information.
    >>>
 
-``py.exe`` は、最後にインストールしたバージョンの Python を実行します。インストール済みの、他のバージョンの Python を実行する場合は、オプションで指定します。
+``py.exe`` は、インストールされている最新バージョンの Python を実行します。インストール済みの、他のバージョンの Python を実行する場合は、オプションで指定します。
 
 ``py -3.6`` と指定すると、Python 3.6を実行します。
 
