@@ -2,20 +2,46 @@
 Pythonの実行方法
 ===============================
 
+Pythonを起動する方法にもいろいろありますが、ここではWindowsのコマンドプロンプトを使う方法を紹介します。
+
+まず、スタートボタンをクリックし、*Windows システム ツール* の *コマンド プロンプト* を選択します。
+
+:jinja:`{{ utils.enlarge_image(content.load('./commandprompt1.png')) }}`
+
+すると、次のようにコマンドプロンプトが表示されます。
+
+:jinja:`{{ utils.enlarge_image(content.load('./commandprompt2.png')) }}`
+
 
 Windows環境では、Pythonランチャー ``py.exe`` がインストールされます。
+
+コマンドプロンプトxで ``py.exe`` を起動して、``1+1`` と入力してみましょう。
+
+.. code-block::
+
+   C:\Users\user1>py.exe
+   Python 3.6.2 (v3.6.2:5fd33b5, Jul  8 2017, 04:57:36) [MSC v.1900 64 bit (AMD64)] on win32
+   Type "help", "copyright", "credits" or "license" for more information.
+   >>> 1+1
+   2
+
+Pythonを終了するときは、``quit()`` と入力するか、コントロールキーを押しながら ``Z`` キーを押します。
+
+.. code-block::
+
+   C:\Users\user1>py.exe
+   Python 3.6.2 (v3.6.2:5fd33b5, Jul  8 2017, 04:57:36) [MSC v.1900 64 bit (AMD64)] on win32
+   Type "help", "copyright", "credits" or "license" for more information.
+   >>> 1+1
+   2
+   >>> quit()
+   C:\Users\user1>
+
+
 
 MacOS や Linux などの Unix系OSでは、``python`` コマンドや ``python3`` コマンドで Python を実行しますが、Windowsではこの ``py.exe`` で実行したほうが便利です。
 
 通常、Python をコマンドラインから実行するときには、Pythonをインストールしたディレクトリを環境変数というシステム設定に記録する必要がありますが、``py.exe`` は、設定をしなくとも実行できます。
-
-
-.. code-block::
-
-   C:\Users\user1>py
-   Python 3.6.2 (v3.6.2:5fd33b5, Jul  8 2017, 04:57:36) [MSC v.1900 64 bit (AMD64)] on win32
-   Type "help", "copyright", "credits" or "license" for more information.
-   >>>
 
 ``py.exe`` は、インストールされている最新バージョンの Python を実行します。インストール済みの、他のバージョンの Python を実行する場合は、オプションで指定します。
 
