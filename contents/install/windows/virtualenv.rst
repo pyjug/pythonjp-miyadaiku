@@ -5,7 +5,6 @@
 
 .. jinja::
 
-   {% do context.set(no_virtualenvwrapper=1) %}
    {{ content.load('/install/why_virtualenv.rst').html }}
 
 

@@ -18,9 +18,9 @@ timezone: Asia/Tokyo
 # List of site theme
 themes:
   - miyadaiku.themes.pygments
-  - miyadaiku.themes.bootstrap4
-  - miyadaiku.themes.fontawesome
   - miyadaiku.themes.docutils_html5
+  - miyadaiku_theme_bootstrap4
+  - miyadaiku_theme_fontawesome
 
 ga_tracking_id: UA-34175846-1
 
