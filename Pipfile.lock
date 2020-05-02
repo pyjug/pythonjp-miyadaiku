@@ -197,10 +197,11 @@
         },
         "miyadaiku": {
             "hashes": [
-                "sha256:9f7ccb8f21a295eb814dcadc8750fc3bd165433591c0b17c33411884673b1d9e"
+                "sha256:7772a2d51de8714169fad3d08864f81881939cd2989f251b8a2637fca02c1d06",
+                "sha256:b2cc70d7548186013897a9101c44e7c2cad6d7bc61ddf83f1490ef93119a06fb"
             ],
             "index": "pypi",
-            "version": "==1.0.0.post1"
+            "version": "==1.0.1"
         },
         "miyadaiku-theme-bootstrap4": {
             "hashes": [
