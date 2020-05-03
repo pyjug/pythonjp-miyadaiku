@@ -420,3 +420,10 @@ dd {
 a {
   color: #0057b5;
 }
+
+
+div.admonition {
+    border: 1px solid rgba(0,0,0,.25);
+    border-radius: 0.25rem;
+    margin: 2em 1.5em
+}
