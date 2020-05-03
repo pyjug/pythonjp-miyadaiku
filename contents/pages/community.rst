@@ -29,7 +29,7 @@ Python.jp Discordサーバ  :jinja:`<img width='100' src={{ page.path_to("./disc
 
 .. raw:: html
 
-   <div style='clear=both'><br/></div>
+   <div style='clear=both'></div>
 
 `Python.jp Discord サーバ <https://discordapp.com/channels/410969055495847936/411701597861838868>`_ を作成しました。情報交換・質問・雑談などにご利用ください。次のページから登録できます。
 
@@ -43,7 +43,6 @@ Python.jp Discordサーバ  :jinja:`<img width='100' src={{ page.path_to("./disc
    <div id='pythonjpslack'/>
 
 
-----
 
 .. raw:: html
 
@@ -63,26 +62,9 @@ PyLadies Tokyo :jinja:`<img src={{ page.path_to("./pyladies_tokyo.png") }} style
 
 .. raw:: html
 
-   <div style='clear=both' ><br></div> 
-
-----
-
-Python 日本語メーリングリスト |pythonmljp|
-===================================================
-
-`Python 日本語メーリングリスト(python-ml-jp) <https://groups.google.com/forum/#!forum/python-ml-jp>`_ は、Pythonの情報交換をするためのメーリングリストです。Pythonに興味をお持ちの方の参加をお待ちしています。
+   <div style='clear=both' ></div> 
 
 
-.. |pythonmljp| jinja::
-
-   {{ macros.image(content.load('/static/images/pyjug.png'), style='float:right') }}
-
-.. raw:: html
-
-   <div style='clear=both'><br/></div>
-
-
-----
 
 PyCon JP
 ========================
@@ -90,18 +72,15 @@ PyCon JP
 `PyCon JP <http://www.pycon.jp/>`_ は、Pythonユーザが集まり、PythonやPythonを使ったソフトウェアについて情報交換し、交流するためのカンファレンスです。 PyCon JP開催を通してPythonの使い手が一同に集まり、他の分野などの情報や知識や知人を増やす場所とすることが目標です。
 
 
-----
 
 Pythonドキュメント日本語翻訳プロジェクト
 =========================================
 
 `Pythonドキュメント日本語翻訳プロジェクト <https://github.com/python-doc-ja/python-doc-ja>`_ は、Pythonのドキュメントを日本語に翻訳するプロジェクトです。
 
-----
 
-|pylonsjp|
 
-Pylons Project JP
+|pylonsjp| Pylons Project JP
 ===============================
 
 .. |pylonsjp| raw:: html
@@ -112,9 +91,9 @@ Pylons Project JP
 
 .. raw:: html
 
-   <div style='clear=both' ><br></div> 
+   <div style='clear=both' ></div> 
 
-----
+
 
 djangoproject.jp
 ============================
@@ -125,9 +104,8 @@ djangoproject.jp
 
 .. raw:: html
 
-   <div style='clear=both' ><br></div> 
+   <div style='clear=both' ></div> 
 
-----
 
 |sphinxjp| Sphinx-Users.jp
 ===========================
@@ -144,19 +122,18 @@ SphinxはPythonの公式ドキュメントだけでなく、このSphinx-Users.j
 
 .. raw:: html
 
-   <div style='clear=both'><br/></div>
+   <div style='clear=both'></div>
 
-----
 
-|plonejp| 
+
 
 .. |plonejp| raw:: html
 
     <img src='http://plone.jp/++theme++plonejp.stheme/images/logo.png' style='float:right' width='300'>
 
 
-Plone User's Group Japan
-===================================
+|plonejp|  Plone User's Group Japan
+========================================
 
 
 `Plone User's Group Japan <http://plone.jp/>`_ は、エンタープライズ向け高機能オープンソースCMSである `Plone <http://plone.org/>`_ のユーザー会のサイトです。
@@ -165,10 +142,10 @@ Ploneは全オープンソースプロジェクトのトップ2%にあたり、5
 
 .. raw:: html
 
-   <div style='clear=both'><br/></div>
+   <div style='clear=both'></div>
 
 
-----
+
 
 
 Python mini Hack-a-thon
@@ -181,63 +158,24 @@ Python mini Hack-a-thon
 
 .. raw:: html
 
-   <div style='clear=both'><br/></div>
+   <div style='clear=both'></div>
 
 
 
-----
+Python 日本語メーリングリスト |pythonmljp|
+===================================================
 
-Python.jp slack  |pythonmljp|
-===============================================
-
-`Python.jp Slack channnel <https://pythonjp.slack.com>`_ は停止しました。
-:jinja:`{{ content.link(fragment="pythonjp_discord", text='Python.jp Discordサーバ') }}` をご利用ください。
+`Python 日本語メーリングリスト(python-ml-jp) <https://groups.google.com/forum/#!forum/python-ml-jp>`_ は、Pythonの情報交換をするためのメーリングリストです。Pythonに興味をお持ちの方の参加をお待ちしています。
 
 
-.. raw:: html
+.. |pythonmljp| jinja::
 
-    <form
-     id='submit_inviteslackform'
-     style='margin-top:1em; padding: 1em; border:solid 1px #c0c0c0;'
-     action=''>
-        <div>pythonjp.slack.com招待メールを送信</div>
-        <div>
-            <input type='email'
-             required
-             placeholder='メールアドレスを入力してください'
-             size='40'
-             id='slackinvitemail'/>
-            <button type='submit' id='submit_invideslack'>送信</button>
-        </div>
-        <div class='slackresult'></div>
-    </form>
-
-    <script>
-    $(function() {
-      $("#submit_inviteslackform").submit(function(e) {
-        e.preventDefault();
-        $.ajax({
-            url:"/cgi-bin/send_slack_inv.py",
-            type:"POST",
-            dataType: "json",
-            data: {
-                email: $("#slackinvitemail").val()
-            },
-            success: function(json) {
-                $('.slackresult').text(json['result']);
-            },
-            error: function( jqXHR, textStatus, errorThrown) {
-                alert(textStatus)
-                $('.slackresult').text(textStatus);
-            }
-        });
-        return false;
-      })
-    });
-
-    </script>
+   {{ macros.image(content.load('/static/images/pyjug.png'), style='float:right') }}
 
 .. raw:: html
 
-   <div style='clear=both'><br/></div>
+   <div style='clear=both'></div>
+
+
+
 

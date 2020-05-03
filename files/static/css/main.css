@@ -170,9 +170,6 @@ H1 A,
   margin-bottom: 0;
 }
 
-.entry-content H1 {
-  border-bottom: 1px dotted #999;
-}
 
 
 H2
@@ -212,18 +209,21 @@ a:hover {
 
 
 .entry-content h1 {
-  margin: 1.5rem 0 1rem;
-  font-size: 2.0rem;
+  margin: 3.5rem 0 1rem;
+  font-size: 2rem;
 }
 
 .entry-content h2 {
-  margin: 2rem 0 0.5rem;
-  font-size: 1.5rem;
+  margin: 2rem 0 1rem;
+  font-size: 1.4rem;
+  color: rgb(64, 64, 128)
 }
 
 .entry-content h3 {
   margin: 2rem 0 0.5rem;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
+  font-weight: normal;
+  color: rgb(96 96 96)
 }
 
 
@@ -251,6 +251,9 @@ dt:before {
 }
 
 */
+
+dt {
+}
 
 dd {
   margin-left: 1.5rem;
