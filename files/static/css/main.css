@@ -1,7 +1,7 @@
 
 body {
   font-family:  "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Arial, "ＭＳ Ｐゴシック", sans-serif;
-  line-height: 1.7em;
+  line-height: 1.5;
   padding: 1rem;
   color: #404040;
 }
@@ -98,6 +98,7 @@ nav {
 
 .right-box .card-block {
   padding: 10px;
+  font-size: 0.9rem;
 }
 
 
@@ -194,6 +195,10 @@ H4
   margin: 0.4em 0 0.0em 0;
 }
 
+
+a:hover {
+  text-decoration: none;
+}
 
 .dynhashlink a {
   padding-left: 5px;

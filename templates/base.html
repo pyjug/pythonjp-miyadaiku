@@ -72,6 +72,10 @@ $(document).ready(function() {
 
 
 {% block body %}
+
+
+<div class="container">
+
 <div id="fb-root"></div>
 <script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
@@ -125,7 +129,7 @@ $(document).ready(function() {
 
 
 <div id="contentinfo" class="body">
-  {{ page.link_to('/pages/contact.rst', text='【Copyright © 2001-2018 python.jp】') }} {{ page.link_to('/pages/privacy.rst', text='【Privacy Policy】') }}  
+  {{ page.link_to('/pages/contact.rst', text='【Copyright © 2001-2020 python.jp】') }} {{ page.link_to('/pages/privacy.rst', text='【Privacy Policy】') }}  
 
   <a href='https://twitter.com/python_japan/'><i class="fa fa-twitter" aria-hidden="true"></i> python_japan</a>
 </div>
@@ -166,5 +170,6 @@ $(function() {
 })
 </script>
 
+</div> <!-- end container -->
 
 {% endblock body %}
