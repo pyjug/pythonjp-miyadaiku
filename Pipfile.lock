@@ -86,14 +86,6 @@
             ],
             "version": "==1.9.1"
         },
-        "importlib-metadata": {
-            "hashes": [
-                "sha256:2a688cbaa90e0cc587f1df48bdc97a6eadccdcd9c35fb3f976a09e3b5016d90f",
-                "sha256:34513a8a0c4962bc66d35b359558fd8a5e10cd472d37aec5f66858addef32c1e"
-            ],
-            "markers": "python_version < '3.8'",
-            "version": "==1.6.0"
-        },
         "importlib-resources": {
             "hashes": [
                 "sha256:6f87df66833e1942667108628ec48900e02a4ab4ad850e25fbf07cb17cf734ca",
@@ -197,11 +189,11 @@
         },
         "miyadaiku": {
             "hashes": [
-                "sha256:7772a2d51de8714169fad3d08864f81881939cd2989f251b8a2637fca02c1d06",
-                "sha256:b2cc70d7548186013897a9101c44e7c2cad6d7bc61ddf83f1490ef93119a06fb"
+                "sha256:95f8a21a2c23963bfa3c34c6932c296195d5560d877c86f366d2f6f2d0bbedb3",
+                "sha256:ef7110ef85c1dbe93820bc699eab5523d890f034c268e1e57e2fb296660502d4"
             ],
             "index": "pypi",
-            "version": "==1.0.1"
+            "version": "==1.0.2"
         },
         "miyadaiku-theme-bootstrap4": {
             "hashes": [
@@ -411,14 +403,6 @@
             ],
             "index": "pypi",
             "version": "==0.34.2"
-        },
-        "zipp": {
-            "hashes": [
-                "sha256:aa36550ff0c0b7ef7fa639055d797116ee891440eac1a56f378e2d3179e0320b",
-                "sha256:c599e4d75c98f6798c509911d08a22e6c021d074469042177c8c86fb92eefd96"
-            ],
-            "markers": "python_version < '3.8'",
-            "version": "==3.1.0"
         }
     },
     "develop": {}

@@ -1,4 +1,5 @@
 type: index
 title: 求人情報
+og_description: 求人情報 - プログラミング言語 Python
 filters:
   category: [jobboard]
