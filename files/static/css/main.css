@@ -1,6 +1,6 @@
 
 body {
-  font-family:  "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Arial, "ＭＳ Ｐゴシック", sans-serif;
+  font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
   line-height: 1.5;
   padding: 1rem;
   color: #404040;
@@ -103,14 +103,14 @@ nav {
 
 .right-box .card-block {
   padding: 10px;
-  font-size: 0.9rem;
+  font-size: 11pt;
 }
 
 
 .right-box h2 {
   margin: 0;
   color: #234764;
-  font-size: 1em;
+  font-size: 11pt;
 }
 
 .right-box .btn {
@@ -146,8 +146,6 @@ nav {
 }
 
 H1,H2,H3,H4,H5 {
-/*  font-family: Georgia, "Bitstream Vera Serif", "New York", Palatino, serif; */
-  font-family: 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, Arial, 'ＭＳ Ｐゴシック', sans-serif;
   font-weight: bold;
   line-height: 1.5em;
 /*  color: #234764; */
@@ -385,16 +383,16 @@ dd {
 
 
 .headerref_h1 {
-  font-size: 0.9rem;
+  font-size: 11pt;
 }
 
 .headerref_h2 {
-  font-size: 0.8rem;
+  font-size: 11pt;
   margin-left: 1rem;
 }
 
 .headerref_h3 {
-  font-size: 0.8rem;
+  font-size: 11pt;
   margin-left: 1.5rem;
 }
 
