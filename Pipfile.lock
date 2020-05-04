@@ -197,11 +197,11 @@
         },
         "miyadaiku": {
             "hashes": [
-                "sha256:7772a2d51de8714169fad3d08864f81881939cd2989f251b8a2637fca02c1d06",
-                "sha256:b2cc70d7548186013897a9101c44e7c2cad6d7bc61ddf83f1490ef93119a06fb"
+                "sha256:95f8a21a2c23963bfa3c34c6932c296195d5560d877c86f366d2f6f2d0bbedb3",
+                "sha256:ef7110ef85c1dbe93820bc699eab5523d890f034c268e1e57e2fb296660502d4"
             ],
             "index": "pypi",
-            "version": "==1.0.1"
+            "version": "==1.0.2"
         },
         "miyadaiku-theme-bootstrap4": {
             "hashes": [

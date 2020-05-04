@@ -1,4 +1,5 @@
 type: index
 title: ニュース
+og_description: ニュース - プログラミング言語 Python
 filters:
   category: [news]
