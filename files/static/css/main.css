@@ -1,6 +1,6 @@
 
 body {
-  font-family:  "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Arial, "ＭＳ Ｐゴシック", sans-serif;
+  font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
   line-height: 1.5;
   padding: 1rem;
   color: #404040;
@@ -18,16 +18,17 @@ pre {
 
 .jumbotron {
   padding: 1rem 0rem 1rem 2rem;
-  margin: 0 2rem 0.5rem 2rem; 
+/*  margin: 0 2rem 0.5rem 2rem; */
 }
 
 
 .main {
-  margin: 0rem 2rem 0rem 4rem;
+  margin: 0rem 0rem 0rem 0rem;
 }
 
 nav {
-  margin: 0.8em;
+/*  margin: 0.8em; */
+  margin-bottom: 1rem;
   display: -webkit-flex; /* Safari */
   display: flex;
 
@@ -37,18 +38,19 @@ nav {
 
 .topmenu {
   align-items:center;
-  margin-right: 2rem;
+/*  margin-right: 2rem;*/
 }
 
 .topmenu .menublock {
+/*
   padding-left: .5em;
   padding-right: .5em;
+*/
 }
 
 .topmenu .menulink {
   display: inline-block;
-  padding-left: .5em;
-  padding-right: .5em;
+  padding-right: 1rem;
 }
 
 .topmenu .searchform {
@@ -66,6 +68,10 @@ nav {
   }
 
 
+.body {
+  padding-left: 32px;
+}
+
 .ibox {
   display: inline-block;
 }
@@ -80,6 +86,11 @@ nav {
   color: #292b2c;
   font-weight: bold;
 }
+
+.index_menu .acard h4 {
+  margin-bottom: 0.5rem;
+}
+
 
 .acard .card-block {
   padding-top: 0px;
@@ -113,11 +124,6 @@ nav {
   padding: 5px;
 }
 
-.right-box .ibox {
-  margin-right: 10px;
-  margin-bottom: 0.8em;
-}
-
 
 .published {
   font-size: 12px;
@@ -146,8 +152,6 @@ nav {
 }
 
 H1,H2,H3,H4,H5 {
-/*  font-family: Georgia, "Bitstream Vera Serif", "New York", Palatino, serif; */
-  font-family: 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, Arial, 'ＭＳ Ｐゴシック', sans-serif;
   font-weight: bold;
   line-height: 1.5em;
 /*  color: #234764; */
@@ -170,9 +174,6 @@ H1 A,
   margin-bottom: 0;
 }
 
-.entry-content H1 {
-  border-bottom: 1px dotted #999;
-}
 
 
 H2
@@ -212,18 +213,21 @@ a:hover {
 
 
 .entry-content h1 {
-  margin: 1.5rem 0 1rem;
-  font-size: 2.0rem;
+  margin: 3.5rem 0 1rem;
+  font-size: 2rem;
 }
 
 .entry-content h2 {
-  margin: 2rem 0 0.5rem;
-  font-size: 1.5rem;
+  margin: 2rem 0 1rem;
+  font-size: 1.4rem;
+  color: rgb(64, 64, 128)
 }
 
 .entry-content h3 {
   margin: 2rem 0 0.5rem;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
+  font-weight: normal;
+  color: rgb(96 96 96)
 }
 
 
@@ -251,6 +255,9 @@ dt:before {
 }
 
 */
+
+dt {
+}
 
 dd {
   margin-left: 1.5rem;
@@ -382,7 +389,7 @@ dd {
 
 
 .headerref_h1 {
-  font-size: 0.9rem;
+  font-size: 0.85rem;
 }
 
 .headerref_h2 {
@@ -393,6 +400,7 @@ dd {
 .headerref_h3 {
   font-size: 0.8rem;
   margin-left: 1.5rem;
+  color: #404040;
 }
 
 .article_summary_body h1 {
