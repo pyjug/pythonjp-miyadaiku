@@ -110,12 +110,14 @@ nav {
 .right-box .card-block {
   padding: 10px;
   font-size: 0.9rem;
+  color: #70769d;
 }
 
 
 .right-box h2 {
   margin: 0;
-  color: #234764;
+/*  color: #234764; */
+  color: #666e75;
   font-size: 1em;
 }
 
@@ -431,7 +433,8 @@ dd {
 }
 
 a {
-  color: #0057b5;
+/*  color: #4373a6; */
+  color:#25568a;
 }
 
 
