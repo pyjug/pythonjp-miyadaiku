@@ -126,6 +126,15 @@ nav {
   padding: 5px;
 }
 
+.right-box .btn-primary {
+  background-color: #5b82ac;
+  border-color: #5b82ac;
+}
+
+.right-box .btn-primary:hover {
+  background-color: #2d87e8;
+  border-color: #2d87e8;
+}
 
 .published {
   font-size: 12px;
