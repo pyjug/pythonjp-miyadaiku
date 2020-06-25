@@ -31,23 +31,23 @@ Pythonは、さまざまなWebサービスの開発にも使われています�
 <iframe src="//www.slideshare.net/slideshow/embed_code/key/CLh5Laii8e9rEu" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/LisaGuo4/pycon2017-instagram-keynote" title="Pycon2017 instagram keynote" target="_blank">Pycon2017 instagram keynote</a> </strong> from <strong><a href="https://www.slideshare.net/LisaGuo4" target="_blank">Lisa Guo</a></strong> </div>
 
 
+<p>
+Instagramでは数十億ものユーザへのサービスを、PythonのWebアプリケーションフレームワーク <a href="https://www.djangoproject.com/">Django</a> を使って提供しています。
+</p>
 
 <div style="display: flex;align-items: center;">
 
 <img src="django_logo_negative.png" alt="Django logo" style="width:150px; margin:10px;"/>
 
 
-<p>
-Instagramでは数十億ものユーザへのサービスを、PythonのWebアプリケーションフレームワーク <a href="https://www.djangoproject.com/">Django</a> を使って提供しています。
-</p>
-</div>
 
 
 本来、Pythonはいわゆるスクリプト言語で、実行性能よりも使いやすさを優先した構造になっています。C言語などと比べれば実行速度は劣りますし、メモリ使用量も多くなります。Instagramのように、非常に多くのユーザからのリクエストを処理するサービスでは、最適なプログラミング言語とは言えません。
 
 </div>
 
-それでも、Instagram は実行性能では劣るPythonを採用しています。その理由を、次のように述べています
+
+それでも、Instagram は実行性能では劣るPythonとDjangoを採用しています。その理由を、次のように述べています
 
 <div style="text-align: center;">
 <img src="instagram_keynote_2017.png" alt="At Instagram, Out bottoleneck is development velocity, not pure code execution" style="width:90%; border: solid 1px black; margin: 2rem 0; "/>
@@ -58,7 +58,7 @@ Instagramでは数十億ものユーザへのサービスを、PythonのWebア�
 <div style="width:626px; ;border: solid 1px black ;font-weight:bold; font-size: 25pt;text-align: center; margin:auto; margin-bottom: 2rem;">
 <p>    Instagramのボトルネックは</p>
 
-<p>        開発速度</p>
+<p style="color: #3b96ea;">        開発速度</p>
 
 <p>    です。実行速度だけではありません。</p>
 </div>
