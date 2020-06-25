@@ -23,7 +23,7 @@ jobs:
           command: |
             pipenv run miyadaiku-build -d site_url=https://www.python.jp/ .
       - run:
-          command: |
+         command: |
             if [ "${CIRCLE_BRANCH}" != "release" ]; then
               mv outputs "${CIRCLE_BRANCH}"
               tar cjf gen.tjz "${CIRCLE_BRANCH}"

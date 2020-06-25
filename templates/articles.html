@@ -25,8 +25,8 @@
       <a class="index-navi"
          href="{{page.path_to(page, group_value=group_value, npage=cur_page-1)}}">&lang;</a>
     {% else %}
-      <span class="index-navi index-disabled-link">&Lang;</span>
-      <span class="index-navi index-disabled-link">&lang;</span>
+      <span class="index-navi index-navi-disabled">&Lang;</span>
+      <span class="index-navi index-navi-disabled">&lang;</span>
     {% endif %}
 
     
@@ -45,7 +45,7 @@
         <a class="index-navi"
           href="{{page.path_to(page, group_value=group_value, npage=n)}}">{{n}}</a>
       {% else %}
-        <span class="index-navi index-disabled-link">{{n}}</span>
+        <span class="index-navi index-navi-current">{{n}}</span>
       {% endif %}
     {% endfor %}
 
@@ -59,8 +59,8 @@
       <a class="index-navi"
          href="{{page.path_to(page, group_value=group_value, npage=num_pages)}}">&Rang;</a>
     {% else %}
-      <span class="index-navi index-disabled-link">&rang;</span>
-      <span class="index-navi index-disabled-link">&Rang;</span>
+      <span class="index-navi index-navi-disabled">&rang;</span>
+      <span class="index-navi index-navi-disabled">&Rang;</span>
     {% endif %}
   </div>
 
